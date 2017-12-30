@@ -13,7 +13,7 @@ class ImplementationActionsPage extends Component {
         showcased_resources={showcased_resources}
         datagrapher_file='Temp/state/pcpn_2/ANN/MA/'
         sections={[
-          {title: "Identify Potential Solutions",
+          {title: "INT. DEATH STAR - MAIN FORWARD BAY - SERVICE PANEL",
            id: "identify",
            content: <div>
            <p>the walls rumble closed, the room gets smaller and smaller. Chewie is whining and trying to hold a wall back with his giant paws.</p>
@@ -23,35 +23,36 @@ class ImplementationActionsPage extends Component {
             {name: "Mitigation",
              id:"identify_mitigation",
              content: <p>
-               Mitigation is action taken to reduce the severity of climate change, by reducing greenhouse gas emissions. Early mitigation will make it easier to adapt to climate change later on. (search mitigation)
+               Han and Leia try to brace the contracting walls with a pole. Leia begins to sink into the trash.
              </p>
             },
             {name: "Adaptation",
              id:"identify_adaptation",
              content: <p>
-               Adaptation is action taken to prepare for climate change, helping to reduce adverse impacts or take advantage of beneficial ones. Adaptation can be thought of as better planning, incorporating the most current information about climate into a variety of decisions.( search adaptation)
+               Little Artoo carefully plugs his claw arm into a new wall socket and a complex array of electronic sounds spew from the tiny robot.
              </p>
             }
           ]
           },
-          {title: "Evaluate & Prioritize Solutions",
+          {title: "INT. DEATH STAR - GARBAGE ROOM",
             id: "evaluate",
             subsections: [],
             content: <div>
               <p>
-                Consider timing relative to expected impacts; feasibility from perspectives such as engineering, policy, legal, and insurance; efficacy at reducing risks; robustness and opportunities for flexible adaptation pathways; and co-benefits. For each potential solution, assess the anticipated costs and risks, as well as the anticipated benefits from implementing it.
+                The walls are only feet apart. Leia and Han are braced against the walls. The princess is frightened. They look at each other. Leia reaches out and takes Han's hand and she holds it tightly. She's terrified and suddenly groans as she feels the first crushing pressure against her body.
               </p>
               <Collection show_images={true} collection_name='MA/actions/implementation/evaluate_prioritize'/>
               <p>
-                The final step in building resilience is to take action. Put your plan into place, establish benchmarks, and track progress. Revise at regular intervals as necessary. Understanding how to communicate your plan with stakeholders can help build and maintain support.
+                Meanwhile, Luke is lying on his side, trying to keep his head above the rising ooze. Luke's comlink begins to buzz and he rips it off his belt.
               </p>
             </div>
           },
-          { title: "Find Funding?",
+          { title: " INT. DEATH STAR - MAIN FORWARD BAY - SERVICE PANEL",
             id:"funding",
             subsections: [],
             content: <div>
-              <p>Successful implementation may depend on finding funding opportunities to support your project. Below are resources to help you.</p>
+              <p>
+               Muffled sounds of Luke's voice over the comlink can be heard, but not distinctly.</p>
               <p>
                 <SearchLink params={{}} query='Massachusetts funding'>Find More...</SearchLink>
               </p>
@@ -60,7 +61,7 @@ class ImplementationActionsPage extends Component {
           }
         ]} >
           <p>
-            After having identified problems, your next step in building resiliency is to investigate and evaluate potential solutions. Responding to climate change can involve adaptation, mitigation, or both.
+               Will you shut up and listen to me? Shut down all garbage mashers on the detention level, will you? Do you  copy? 
           </p>
         </ActionsLayout>
     );
