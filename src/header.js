@@ -21,7 +21,7 @@ const Logo = (props) =>
         <span className='gray-text'>CCC</span>
       </h1>
       <small className='orange-text'>
-        <strong>Massachusetts</strong>
+        <strong>Hoth</strong>
         Climate Change Clearinghouse
       </small>
     </div>
