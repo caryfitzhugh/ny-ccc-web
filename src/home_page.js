@@ -108,7 +108,7 @@ class Homepage extends Component {
        { title: 'Planning',
          text: 'Leia is marched away down the hallway and into the smoldering hole blasted in the side of the ship. An Imperial Commander turns to Vader.',
          image: planning_img,
-         image_credit: "National Wildlife Federation",
+         image_credit: "",
          href: '/actions/planning',
         },
        {title: 'Implementation',
@@ -120,7 +120,7 @@ class Homepage extends Component {
         {title: 'Outreach / Education',
          text: 'Luke agrees, although it\'s obvious he isn\'t sure why. The group stumbles back into the power station, grumbling about Luke\'s ineptitude.',
          image:outreach_img,
-         image_credit: "MA Division of Ecological Restoration",
+         image_credit: "",
          href: '/actions/outreach-education',
         }
      ];
