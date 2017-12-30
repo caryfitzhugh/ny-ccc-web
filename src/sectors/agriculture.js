@@ -30,16 +30,13 @@ class AgricultureSectorPage extends Component {
           {title: "Impacts",
            id: "impacts",
            content: <p>
-            Climate change may lead to reduced yields due to increased pest pressure from insects,
-            diseases, and weeds. Many farms, particularly those with less access to working capital for
-            infrastructure improvements, are vulnerable to the economic impacts of climate change due to
-            erosion from an increase in heavy rains, and to crop loss from longer and more frequent
-            droughts. An increase in heat stress days (max. temperature of more than 90°F) will have a
-            strong negative impact on farming and livestock, especially dairy production. Crops that rely on
-            specific temperature regimes like apples, cranberries and maple syrup are also likely to fare
-            poorly. Increased cases of pests and diseases will potentially lead to increased pesticide use
-            creating challenges to prevent and mitigate health risks to the farm workers, consumers, the
-            public, and the environment.
+            From high on a rock mesa, the tiny Landspeeder can be seen 
+            gliding across the desert floor. Suddenly in the foreground 
+            two weather-beaten Sandpeople shrouded in their grimy desert 
+            cloaks peer over the edge of the rock mesa. One of the 
+            marginally human creatures raises a long ominous laser rifle 
+            and points it at the speeder but the second creature grabs 
+            the gun before it can be fired.
            </p>,
             subsections: [
               { name: "Changes in Precipitation",
@@ -47,15 +44,15 @@ class AgricultureSectorPage extends Component {
                 content: <ul>
                   <li>
                     <EffectLink sector={"agriculture"}
-                                effect={"Changes in Precipitation::Change in weather patterns during plant development stages, impacting growth"}/>
+                                effect={"Changes in Precipitation::Hey, whoa, just where do you think you're going?"}/>
                   </li>
                   <li>
                     <EffectLink sector={"agriculture"}
-                                effect={"Changes in Precipitation::Timing changes in spring planting and harvest due to flooding"}/>
+                                effect={"Changes in Precipitation::No, he's not going to try anything."}/>
                   </li>
                   <li>
                     <EffectLink sector={"agriculture"}
-                                effect={"Changes in Precipitation::Water demand and competition changes"}/>
+                                effect={"Changes in Precipitation::Hello there! Come here my little friend. Don't be afraid."}/>
                   </li>
                 </ul>,
               },
@@ -64,7 +61,7 @@ class AgricultureSectorPage extends Component {
                 content: <ul>
                   <li>
                     <EffectLink sector={"agriculture"}
-                                effect={"Extreme Weather::Stress on crops from clusters of extreme events"}/>
+                                effect={"Extreme Weather::Hey, whoa, just where do you think you're going?"}/>
                   </li>
                 </ul>,
               },
@@ -73,19 +70,19 @@ class AgricultureSectorPage extends Component {
                 content: <ul>
                   <li>
                     <EffectLink sector={"agriculture"}
-                                effect={"Rising Temperatures::Expansion of crop disease and weeds"}/>
+                                effect={"Rising Temperatures::Hey, whoa, just where do you think you're going?"}/>
                   </li>
                   <li>
                     <EffectLink sector={"agriculture"}
-                                effect={"Rising Temperatures::Changes in agricultural pest population"}/>
+                                effect={"Rising Temperatures::Oh my... sir, he says there are several creatures approaching from the southeast."}/>
                   </li>
                   <li>
                     <EffectLink sector={"agriculture"}
-                                effect={"Rising Temperatures::Changes in crop variety"}/>
+                                effect={"Rising Temperatures::You know him!"}/>
                   </li>
                   <li>
                     <EffectLink sector={"agriculture"}
-                                effect={"Rising Temperatures::Changes in energy use"}/>
+                                effect={"Rising Temperatures::Then the droid does belong to you."}/>
                   </li>
                 </ul>
               },
@@ -94,15 +91,15 @@ class AgricultureSectorPage extends Component {
                 content: <ul>
                   <li>
                     <EffectLink sector={"agriculture"}
-                                effect={"Sea Level Rise::Salinization of coastal agricultural areas"}/>
+                                effect={"Sea Level Rise::Where am I? I must have taken a bad step..."}/>
                   </li>
                   <li>
                     <EffectLink sector={"agriculture"}
-                                effect={"Sea Level Rise::Saltwater intrusion on coastal land"}/>
+                                effect={"Sea Level Rise::No, you're not. What kind of talk is that?"}/>
                   </li>
                   <li>
                     <EffectLink sector={"agriculture"}
-                                effect={"Sea Level Rise::Loss of good quality agricultural land due to rising sea levels and increased erosion"}/>
+                                effect={"Sea Level Rise::Quickly, son... they're on the move."}/>
                   </li>
                 </ul>
               }
@@ -116,18 +113,18 @@ class AgricultureSectorPage extends Component {
                 id: 'actions_planning',
                 content: <ul>
                     <ActionLink q="vulnerability assessment">
-                      Complete a vulnerability assessment to understand vulnerability factors and risks.
+                      Yes, I was once a Jedi Knight the same as your father.
                     </ActionLink>
                     <ActionLink q="emergency plan">
-                      Develop a Farm Emergency Plan
+                      I wish I'd known him.
                     </ActionLink>
                     <ActionLink q="energy audit">
-                      Complete an energy audit
+                      Ben hands Luke the saber.
                     </ActionLink>
-                    <li> Get to know Massachusetts based Best Management Energy Practices for Dairy, Maple Syrup, Greenhouses, Orchards and Renewables by reading the MFEP guides.</li>
-                    <li>Implement energy efficiency and renewable energy projects with technical and financial
-                        (grants and rebates) assistance through MDAR’s MFEP and AgEnergy Grant programs, all
-                        in collaboration with DOER, the MassCEC, MassSave and USDA.
+                    <li> Luke pushes a button on the handle. A long beam shoots out about four feet and flickers there. The light plays across the ceiling.</li>
+                    <li>An elegant weapon for a more civilized time. For over a thousand generations 
+                      the Jedi Knights were the guardians of peace and justice in the Old 
+                      Republic. Before the dark times, before the Empire.
                     </li>
                 </ul>,
               },
@@ -135,41 +132,44 @@ class AgricultureSectorPage extends Component {
                 id: 'actions_management_practices',
                 content: <ul>
                   <ActionLink q="soil land conservation">
-                    Adopt best practices for soil and land conservation to reduce loss of agricultural land.
+                    Now, let's see if we can't figure out what you are, my little friend. And where you come from.
                   </ActionLink>
                   <ActionLink q='best management practices'>
-                    Use Agricultural Best Management Practices (BMPs)
+                    Luke stops his work as the lovely girl's image flickers before his eyes.
                   </ActionLink>
                   <ActionLink q='crop diversification'>
-                    Consider crops variety diversification to increase resiliency to climate changes.
+                    You must learn the ways of the Force if you're to come with me to Alderaan.
                   </ActionLink>
                   <ActionLink q='pest management'>
-                    Update and improve integrated pest management thresholds and strategies in light of
-                    changing pest population dynamics using best management practices for chemical and
-                    non-chemical control of insects, disease, and weeds.
+                    I can't get involved! I've got work 
+                    to do! It's not that I like the 
+                    Empire. I hate it! But there's nothing 
+                    I can do about it right now. It's 
+                    such a long way from here.
                   </ActionLink>
                   <ActionLink q='pest management'>
-                    Update and improve integrated pest management thresholds and strategies in light of
-                    changing pest population dynamics using best management practices for chemical and
-                    non-chemical control of insects, disease, and weeds.
+                    Look, I can take you as far as 
+                    Anchorhead. You can get a transport 
+                    there to Mos Eisley or wherever you're 
+                    going.
                   </ActionLink>
                   <ActionLink q='runoff control'>
-                    Adopt best practices to control runoff of pesticides, nutrients, or fertilizers, and soil.
+                    An Imperial Stardestroyer heads toward the evil planet-like battle station: the Death Star!
                   </ActionLink>
                   <ActionLink q='water conservation'>
-                    Implement water conservation and reuse program.
+                    The bitter Admiral Motti twists nervously in his chair.
                   </ActionLink>
                   <ActionLink q='energy efficiency use'>
-                    Implement efficiency measures to reduce energy use.
+                    That's impossible! How will the Emperor maintain control without the bureaucracy?
                   </ActionLink>
                   <ActionLink q='GHG reductions manure management'>
-                    Implement best practices for manure management.
+                    The plans you refer to will soon be back in our hands.
                   </ActionLink>
                   <ActionLink q='temperature changes planting dates'>
-                    Shift planting or harvesting dates based on forecasted changes in seasons.
+                    Suddenly Motti chokes and starts to turn blue under Vader's spell.
                   </ActionLink>
                   <ActionLink q='carbon sequestration'>
-                    Maintain and increase carbon content of soil by planting cover crops, use no-till
+                    Enough of this! Vader, release him!
                   </ActionLink>
                 </ul>,
               },
@@ -177,13 +177,13 @@ class AgricultureSectorPage extends Component {
                 id: 'actions_technology',
                 content: <ul>
                   <ActionLink q="irrigation water conservation">
-                    Expand irrigation capacity and other (on farm) capital investments.
+                    Ben is crouching in the sand studying the tracks.
                   </ActionLink>
                   <ActionLink q="livestock cooling">
-                    Use fans, sprinklers, and other cooling systems for livestock.
+                    These are the same Jawas that sold us Artoo and Threepio.
                   </ActionLink>
                   <ActionLink q="renewable energy">
-                    Install renewable energy technologies that are compatible with farming such as windmills and solar panels.
+                    Why would Imperial troops want to slaughter Jawas?
                   </ActionLink>
                </ul>
               },
@@ -191,10 +191,10 @@ class AgricultureSectorPage extends Component {
                 id: 'actions_policies_and_laws',
                 content: <ul>
                   <ActionLink q="agriculture laws policy pesticide">
-                    Identify improvements to local and state health and safety laws relating to pesticide/herbicide exposure prevention and increase support for enforcement of existing programs.
+                    Wait, Luke! It's too dangerous.
                   </ActionLink>
                   <ActionLink q="regulations">
-                    Change on food supplies, food quality, and disease transmission to develop appropriate policies and regulations.
+                    Luke races across the wasteland in his battered Landspeeder.
                   </ActionLink>
                </ul>
               },
@@ -202,27 +202,27 @@ class AgricultureSectorPage extends Component {
                 id: 'actions_research_monitoring',
                 content:
                 <ul>
-                  <li>Learn about or obtain technical assistance on:
+                  <li>EXT. SPACE
                     <ul>
                       <ActionLink q="pesticide risk management">
-                        Pesticide risk management
+                        And, now Your Highness, we will discuss the location of your hidden Rebel base.
                       </ActionLink>
                       <ActionLink q="crop adaptation">
-                        Crop adaptation and management.
+                        Mos Eisley Spaceport. You will never find a more wretched hive of scum and villainy. We must be cautious.
                       </ActionLink>
                       <ActionLink q='conservation practices'>
-                        Conservation practices
+                        About three or four seasons.
                       </ActionLink>
                     </ul>
                   </li>
                   <ActionLink q='pesticide tracking'>
-                    Track use and occurrence of pesticides.
+                    Let me see your identification.
                   </ActionLink>
                   <ActionLink q='food borne illness'>
-                    Track food-borne illnesses to determine if new patterns or agents are emerging.
+                     We don't need to see his identification.
                   </ActionLink>
                   <ActionLink q='education environmental justice sensitive population health and safety'>
-                    Conduct outreach and education targeting vulnerable population groups and their employers about health and safety precautions.
+                    As Luke gets out of the speeder he tries to shoo the Jawa away.
                   </ActionLink>
                 </ul>
               },
@@ -231,27 +231,27 @@ class AgricultureSectorPage extends Component {
                 content:
                 <ul>
                   <ActionLink q='funding crop transition irrigation'>
-                    Find low- or no-cost loans for infrastructure adaptations such as irrigation, drainage, crop transition, and livestock facilities.
+                   Go on, go on. I can't understand how we got by those troopers. I thought we were dead.
                   </ActionLink>
                   <ActionLink q='funding energy'>
-                    Find funding for energy related grants, rebates, loans, loan guarantees.
+                    Do you really think we're going to find a pilot here that'll take us to Alderaan?
                   </ActionLink>
                   <ActionLink q='funding food subsidies'>
-                    Increase food subsidies for lower income residents, and modify eligibility requirements to ensure access to healthy food.
+                    Well, most of the best freighter pilots can be found here. Only watch your step. This place can be a little rough.
                   </ActionLink>
                   <ActionLink q='funding small-scale'>
-                    Promote and provide/increase technical and financial support for small-scale farming.
+                    Your droids. They'll have to wait outside. We don't want them here.
                   </ActionLink>
                   <li>
-                    <Link to="https://www.fsa.usda.gov/programs-and-services/farm-loan-programs/beginning-farmers-and-ranchers-loans/index">
-                      USDA Farm Service Agency
+                    <Link to="">
+                      We don't serve their kind here!
                     </Link>
                   </li>
                   <ActionLink q='funding disaster assistance insurance'>
-                    Provide disaster assistance or insurance for small farms for crop losses.
+                    Listen, why don't you wait out by the speeder. We don't want any trouble.
                   </ActionLink>
                   <ActionLink q='funding conservation management'>
-                    Incorporate climate change best practices into funding programs and conservation management incentives
+                    Threepio and his stubby partner go outside and most of the creatures at the bar go back to their drinks.
                   </ActionLink>
                 </ul>
               },
@@ -259,43 +259,46 @@ class AgricultureSectorPage extends Component {
           },
           {title: "Looking for Help?",
            id: "help",
-           content: <div>
-            To help farmers mitigate the pace of climate change, the Massachusetts Department of Agricultural Resources (MDAR) incentivizes the implementation of energy efficiency (EE) and renewable energy (RE)
-            systems on farms statewide through its MA Farm Energy Program (MFEP) and annual AgEnergy Grant Program. Funding for the grant program is due to a partnership between  the Divison of Energy Resources
-            and MDAR to install traditional and cutting edge mitigation EE and RE technologies. All this effort is in collaboration with other MA energy programs such as MassSave and the Massachusetts Clean Energy Center (MassCEC), and federally with the USDA and their Rural Energy for America Program (REAP) and Environmental Quality Incentives Program (EQIP).  Several Massachusetts dairy farms are helping offset their GHGs by installing anaerobic digester systems (ADs) to mitigate manure methane emissions, a GHG 23 times more potent than CO2.
+           content: <div>Ben is standing next to Chewbacca, an eight-foot-tall savage-
+               looking creature resembling a huge grey bushbaby monkey with 
+               fierce baboon-like fangs. His large blue eyes dominate a fur-
+               covered face and soften his otherwise awesome appearance.  
+               Over his matted, furry body he wears two chrome bandoliers, 
+               and little else. He is a two-hundred-year-old Wookiee and a 
+               sight to behold.
             <br/>
             <br/>
 
             <ul>
               <li>
-                <Link to='http://www.mass.gov/agr'> Massachusetts Department of Agriculture </Link>
+                <Link to=''>  He doesn't like you. </Link>
               </li>
               <li>
-                <Link to='http://extension.umass.edu/vegetable'> UMASS Extension </Link>
+                <Link to=''> I'll be careful than </Link>
               </li>
               <li>
-                <Link to='https://www.fsa.usda.gov/programs-and-services/conservation-programs/index'>
-                  USDA Farm Service Agency
+                <Link to=''>
+                  No blasters! No blaster!
                 </Link>
               </li>
               <li>
-                <Link to='https://www.climatehubs.oce.usda.gov/northeast'>
-                  USDA Climate Hub
+                <Link to=''>
+                  I don't like the look of this
                 </Link>
               </li>
               <li>
-                <Link to='http://www.sustainablecampus.cornell.edu/initiatives/cornell-institute-for-climate-change-agriculture'>
-                  Cornell University – Cornell Institute for Climate Change and Agriculture
+                <Link to=''>
+                  Han Solo. I'm captain of the Millennium Falcon. Chewie here tells me you're looking for passage to the Alderaan system.
                 </Link>
               </li>
               <li>
-                <Link to='https://www.ncat.org'>
-                  National Center for Appropriate Technology
+                <Link to=''>
+                  Fast ship? You've never heard of the Millennium Falcon?
                 </Link>
               </li>
               <li>
-                <Link to='http://climatechange.ucdavis.edu/'>
-                  UC Davis
+                <Link to=''>
+                  HAN
                 </Link>
               </li>
             </ul>
@@ -304,29 +307,23 @@ class AgricultureSectorPage extends Component {
           },
 
         ]}>
-        Massachusetts has 7,755 farms, employing 28,000 people, working on over 523,000 acres that produce
-        $492 million in agricultural products. Key Massachusetts market segments include the greenhouse and
-        nursery, cranberry, produce, dairy, poultry and livestock sectors. Agricultural activities are directly and
-        indirectly affected by climate change. Increased CO2 levels and a lengthened growing season may favor
-        certain crops, however, the negative impacts of higher temperatures and more erratic and severe
-        weather, like the drought experienced in the summer of 2016, are likely to outweigh any benefits.
-        Nationwide In 2015, the agriculture economic sector accounted for approximately 9% of total U.S.
-        greenhouse gas emissions (GHGs), an increase of 8% since 1990. A key reason for emission increases
-        has been the growth in emissions from livestock manure management systems, reflecting the increased
-        use of emission-intensive liquid systems. Emissions from other agricultural sources have either remained
-        flat or changed by a relatively small amount since 1990. In comparison, in Massachusetts, non-energy
-        agricultural greenhouse gas emissions account for less than 0.4% of total Massachusetts emissions.
-        This is due to much smaller farms, low animal herd sizes and a relatively limited number of livestock
-        activities.
+        Ben and Luke leave the speeder lot and walk down the dusty 
+        alleyway past a small robot herding a bunch of anteater-like 
+        creatures. Luke turns and gives one last forlorn look at his 
+        faithful speeder as he rounds a corner. A darkly clad creature 
+        moves out of the shadows as they pass and watches them as 
+        they disappear down another alley.
 
         <br/>
         <br/>
-        Preparing for the impacts of climate change on agriculture will require understanding projected changes
-        and planning to ensure that local agriculture can adapt to these changes.
-        Adaptation options may include investment in water infrastructure; emergency preparation for, and
-        response to, extreme weather events; development of resilient crop varieties that tolerate temperature
-        and precipitation stresses; adoption of new crops more suited to changing climate conditions; and new
-        or improved land use and management practices.
+        Han, Han! If only you hadn't had to 
+        dump that shipment of spice... you 
+        understand I just can't make an 
+        exception. Where would I be if every 
+        pilot who smuggled for me dumped 
+        their shipment at the first sign of 
+        an Imperial starship? It's not good 
+        business.
         </SectorDetailLayout>
     );
   }

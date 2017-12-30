@@ -17,7 +17,7 @@ const Logo = (props) =>
     <img className='hidden-sm-down' src={logo_img} alt="logo" />
     <div className='logo-text slate-text'>
       <h1>
-        <em className='slate-text'> MA </em>
+        <em className='slate-text'> NY </em>
         <span className='gray-text'>CCC</span>
       </h1>
       <small className='orange-text'>
