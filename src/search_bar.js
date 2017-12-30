@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import QString from 'query-string';
-import { withRouter } from 'react-router'
+import { withRouter } from 'react-router-dom'
 import './search_bar.css';
 
 class SearchBar extends Component {
