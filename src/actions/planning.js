@@ -24,6 +24,7 @@ class PlanningActionsPage extends Component {
             </p>
             <p>
                HAN looking at his ship There she is.
+            </p>
             <p>
                LUKE See-Threepio, do you copy?
             </p>
