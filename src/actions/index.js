@@ -35,21 +35,22 @@ class ActionsPage extends Component {
         name:"Planning",
         href:"/actions/planning",
         content: <p>
-          Climate planning is much like any other planning activity.  Once problems have been identified, your next step in building resiliency is to investigate and evaluate potential solutions. Developing a climate change action plan involve adaptation, mitigation, or both.
+              Listen to them! They're dying, Artoo! Curse my metal body! I wasn't fast enough. It's all my fault! My poor master!
         </p>
        },
       {id: "implementation",
         name:"Implementation",
         href:"/actions/implementation",
         content: <div>
-          The final step in building resilience is to take action. Put your plan into place, finding funding, establish benchmarks, and track progress. Revise at regular intervals as necessary. Understanding how to communicate your plan with stakeholders can help build and maintain support.
+            The screaming and hollering is the sound of joyous relief. The walls have stopped moving. Han, Chewie and Leia embrace in the background.
+
         </div>
        },
        {id: "outreach",
          name:"Outreach / Education",
          href: "/actions/outreach-education",
          content: <div>
-          Communicating with stakeholders needs to begin early in the process of identifying problems and investigating solutions, and continues through plan development, implementation, monitoring, and reassessment.
+          Ben enters a humming service trench that powers the huge tractor beam. The trench seems to be a hundred miles deep. The clacking sound of huge switching devices can be heard. The old Jedi edges his his way along a narrow ledge leading to a control panel that connects two large cables. He  makes several adjustments in the computer terminal, and several lights on the board go from red to blue.
          </div>
        }
     ];
@@ -63,11 +64,15 @@ class ActionsPage extends Component {
         <h1>Take Action</h1>
         <div className='lead-image col-12 col-md-5 float-right'>
           <img alt={'sectors example'} src={page_image} />
-          <div className='image-credit'>MA Division of Ecological Restoration</div>
+          <div className='image-credit'> INT. DEATH STAR - UNUSED HALLWAY</div>
         </div>
 
         <p>
-          Climate change is among the greatest environmental challenges of this generation, with potentially profound effects on the economy, public health, water resources, infrastructure, coastal resources, energy demand, natural resources, and recreation. The Commonwealth of Massachusetts is committed to doing its part to mitigate and adapt to this challenge, recognizing the necessity of engaging in adaptation planning today by taking a close look at strategies that could help the state become more resilient and ready to adapt to climate change as it occurs.  Taking action will require analysis of key issues and strategies, implementing the strategies and gaining public support for those activities.  Learn about the following:
+               The group exits the garbage room into a dusty, unused hallway.  
+               Han and Luke remove the trooper suits and strap on the blaster 
+               belts. HAN If we can just avoid any more female advice, we ought to be able to get 
+               out of here Chewie begins growling and points to the hatch to the garbage 
+               room, as he runs away and then stops howling.
         </p>
 
         {subsections.map((subsection, indx) => {
