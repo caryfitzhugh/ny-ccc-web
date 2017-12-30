@@ -16,12 +16,8 @@ class ImplementationActionsPage extends Component {
           {title: "Identify Potential Solutions",
            id: "identify",
            content: <div>
-           <p>
-             Consider lessons learned from responses to past climate hazards; think about using new technologies and reusing existing technologies in new ways; consider different types of strategies and different timelines.
-           </p>
-           <p>
-             Learn about successful strategies and barriers encountered by other communities, regions, and organizations. Involve stakeholders - local residents, business owners, and community leaders - in the process of generating solutions.
-           </p>
+           <p>the walls rumble closed, the room gets smaller and smaller. Chewie is whining and trying to hold a wall back with his giant paws.</p>
+           <p>Han is leaning back against the other wall. Garbage is snapping and popping. Luke is trying to reach Threepio.</p>
           </div>,
           subsections: [
             {name: "Mitigation",
