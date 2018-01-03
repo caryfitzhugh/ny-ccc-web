@@ -22,21 +22,21 @@ class ChangesInPrecipitationChangesPage extends Component {
     // collection_name: "MA/agriculture/highlighted_resources",
 
     return (<ChangesLayout
-        title="Changes in Precipitation"
+        title=" EXT. MASSASSI OUTPOST - JUNGLE"
         active_layers="ma_historical_precipitation,ma_historical_consecutive_dry_days"
         image={precipitation_changes_img}
         showcased_resources={showcased_resources}
         datagrapher_file='Temp/state/pcpn/ANN/MA/'
         footnotes={[
-          <span>2011 Report</span>,
-          <span>Horton, R., G. Yohe, W. Easterling, R. Kates, M. Ruth, E. Sussman, A. Whelchel, D. Wolfe, and F. Lipschultz, 2014: Ch. 16: Northeast. Climate Change Impacts in the United States: The Third National Climate Assessment, J. M. Melillo, Terese (T.C.) Richmond, and G. W. Yohe, Eds., U.S. Global Change Research Program, 16-1-nn.</span>
+          <span>BEN'S VOICE</span>,
+          <span>Luke, the Force will be with you.</span>
         ]}
 
         sections={[
-          {title: "Historic and Projected Changes in Massachusetts",
+          {title: "  EXT. MASSASSI OUTPOST - JUNGLE",
            id: "historic_and_projected_changes",
            content: <div>
-           <p>Scientists can use records of rainfall amounts collected at gauges around Massachusetts to see how precipitation has changed in recent decades. Future precipitation patterns are more challenging to project than rising temperatures, but scientists are finding better methods to provide communities with information on the range of future conditions to expect, both annually and within the seasons.</p>
+           <p>  All that can be seen of the fortress is a lone guard standing on a small pedestal jutting out above the dense jungle. The muted gruesome crying sounds that naturally permeate this eerie purgatory are overwhelmed by the thundering din of ion rockets as four silver starships catapult from the fol in a tight formation and disappears into the morning cloud cover.</p>
 
            <h6>Changes in precipitation variables by the middle and end of century under a medium-high emissions scenario.</h6>
            <table className='table chart t-c' style={{textAlign: "center"}}>
@@ -49,6 +49,7 @@ class ChangesInPrecipitationChangesPage extends Component {
                 </tr>
               </thead>
               <tbody>
+     
                 <tr>
                   <td rowSpan="3" className='grey vert-align' > <strong>Days with Precipitation Over 1"</strong></td>
                   <td>Annual</td>

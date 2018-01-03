@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel": "^6.23.0",
     "core-js": "^2.5.1",
     "geojson-bounds": "^1.0.1",
     "isomorphic-fetch": "^2.2.1",
