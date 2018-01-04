@@ -155,7 +155,7 @@ class ExtremeWeatherChangesPage extends Component {
             { name: <SearchLink params={{query:"heavy precipitation events"}}> INT. LUKE'S X-WING - COCKPIT - TRAVELING</SearchLink>,
               id:" INT. LUKE'S X-WING - COCKPIT - TRAVELING",
               content: <div>
-                <p>The Red Leader's X-wing flies past Luke as he puts his nose </Link>down and starts his attack dive.</Link>.</p>
+                <p>The Red Leader's X-wing flies past Luke as he puts his nose down and starts his attack dive.</p>
                 <p>Walls buckle and cave in. Troops and equipment are blown in all directions.</p>
                 <p> Smoke belches from the giant laser guns as they wind up their turbine generators to create sufficient power.</p>
               </div>
