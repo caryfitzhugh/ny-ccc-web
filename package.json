@@ -26,7 +26,7 @@
     "moment": "^2.18.1",
     "query-string": "^5.0.0",
     "react-inlinesvg": "^0.6.2",
-    "react-scripts": "1.0.10",
+    "react-scripts": "^1.0.10",
     "strip": "^3.0.0",
     "url-loader": "^0.5.9"
   },
