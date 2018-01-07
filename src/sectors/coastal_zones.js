@@ -22,7 +22,7 @@ class CoastalZonesSectorPage extends Component {
 
     return (
       <SectorDetailLayout
-        title="Coastal Zones"
+        title="Headline"
         image={coastal_zones_image}
         image_credit=""
         showcased_resources={showcased_resources}
@@ -34,13 +34,13 @@ class CoastalZonesSectorPage extends Component {
         ]}
 
         sections={[
-          {title: "Impacts",
+          {title: "Headline",
            id: 'impacts',
            content: <p>
            The Millennium Falcon pirateship races away from the yellow planet, Tatooine. It is followed by two huge Imperial stardestroyers.<Footnote num='2'/>Stay sharp! There are two more coming in; they're going to try to cut us off. <Footnote num='3'/>Why don't you outrun them? I thought you said this thing was fast. <Footnote num='4'/>Watch your mouth, kid, or you're going to find yourself floating home. We'll be safe enough once we make the jump to hyperspace. Besides, I know a few maneuvers. We'll lose them!
            </p>,
            subsections: [
-            { name: "Rising Temperatures",
+            { name: "Headline",
               id: "impacts_rising_temperatures",
               content: <ul>
                 <li> INT. MILLENNIUM FALCON - COCKPIT </li>
@@ -52,7 +52,7 @@ class CoastalZonesSectorPage extends Component {
                 <li> The ship begins to rock violently as lasers hit it.</li>
               </ul>
             },
-            {  name: "Changes in Precipitation",
+            {  name: "Headline",
                 id: 'impacts_changes_in_precipitation',
                 content: <ul>
                   <li>Are you kidding? At the rate they're gaining...</li>
@@ -61,7 +61,7 @@ class CoastalZonesSectorPage extends Component {
                   <li>We're losing our deflector shield. Go strap yourself in, I'm going to make the jump to light speed.</li>
                  </ul>
             },
-            {  name: "Extreme Weather",
+            {  name: "Headline",
                 id: 'impacts_extreme_weather',
                 content: <ul>
                   <li> EXT. SPACE</li>
@@ -74,7 +74,7 @@ class CoastalZonesSectorPage extends Component {
                   <li> who stands before the huge wall screen displaying a small green planet. </li>
                  </ul>
             },
-            {  name: "Sea Level Rise",
+            {  name: "Headline",
                 id: 'impacts_slr',
                 content: <ul>
                   <li>Princess Leia, before your execution </li>
@@ -99,11 +99,11 @@ class CoastalZonesSectorPage extends Component {
                   </ul>
             }
           ]},
-          { title: "Actions",
+          { title: "Headline",
             id: "actions",
             content: null,
             subsections: [
-              { name: "Planning",
+              { name: "Headline",
                 id: "actions_planning",
                 content: <ul>
                   <ActionLink q='coastal zone planning wetland'>You would prefer another target? A military target? Then name the system!</ActionLink>
@@ -115,7 +115,7 @@ class CoastalZonesSectorPage extends Component {
                   <ActionLink q='coastal zone planning open space plan'>There. You see Lord Vader, she can be reasonable. </ActionLink>
                 </ul>
               },
-              {name: "Management Practices",
+              {name: "Headline",
                id: "actions_management_practices",
                content: <ul>
                 <ActionLink q='coastal zone management practice conserve land'>Continue with the operation. You may fire when ready.</ActionLink>
@@ -130,7 +130,7 @@ class CoastalZonesSectorPage extends Component {
                 <ActionLink q='coastal zone management practice estuary'>INT. MILLENNIUM FALCON - CENTRAL HOLD AREA</ActionLink>
               </ul>
               },
-              { name: "Technology",
+              { name: "Headline",
                 id: 'actions_technology',
                 content: <ul>
                   <ActionLink q='coastal zone technology bioengineering'>Ben watches Luke practice the lightsaber with a small "seeker" robot.</ActionLink>
@@ -139,7 +139,7 @@ class CoastalZonesSectorPage extends Component {
                   <ActionLink q='coastal zone technology water storage'>I felt a great disturbance in the Force...</ActionLink>
                 </ul>
               },
-              {name: "Policies / Laws",
+              {name: "Headline",
                 id: 'actions_policies_and_laws',
                 content: <ul>
                   <ActionLink q='coastal zone policy climate change'>as if millions of voices suddenly cried out in terror and were suddenly silenced.</ActionLink>
@@ -153,7 +153,7 @@ class CoastalZonesSectorPage extends Component {
                   <ActionLink q='coastal zone regulation rolling easement'>Don't everyone thank me at once.</ActionLink>
                 </ul>
               },
-              { name: "Research / Monitoring",
+              { name: "Headline",
                 id: 'actions_research_monitoring',
                 content: <ul>
                   <ActionLink q='coastal zone monitoring wetland health'>Threepio watches Chewbacca and Artoo who are engrossed in a game in which three-dimensional holographic figures move along a chess-type board.</ActionLink>
@@ -163,7 +163,7 @@ class CoastalZonesSectorPage extends Component {
                   <ActionLink q='coastal zone monitoring remote sensing'>Chewbacca seems very pleased with himself as he rests his lanky fur- covered arms over his head.</ActionLink>
                 </ul>
               },
-              { name: "Funding",
+              { name: "Headline",
                 id: "actions_funding",
                 content: <ul>
                   <ActionLink q='coastal zone funding buzzard bay'>Artoo immediately reaches up and taps the computer with his stubby claw hand</ActionLink>
