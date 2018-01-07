@@ -69,15 +69,7 @@ class AboutPage extends Component {
 
             <h2>EXT. TATOOINE - DESERT - LARS HOMESTEAD - AFTERNOON</h2>
 
-            <h4>THREEPIO</h4>
-            <p>The MACCC contains resources, data, and information that support
-            decision-makers and planners in their work to address climate change. This content includes
-            information on greenhouse gas emissions and atmospheric concentrations, climate changes, effects,
-            strategies for mitigating, adapting to, and building resiliency for climate change, and tools for
-            implementing these strategies. The MACCC is committed to including only information with scientific merit
-            from credible sources. Where applicable, the MACCC chooses data and information that Massachusetts
-            used for statewide and local climate planning.</p>
-
+     
             <h4>THREEPIO</h4>
             <p>Out of the shadows of a dingy side-building limps Owen Lars, 
             a large burly man in his mid-fifties. His reddish eyes are 
