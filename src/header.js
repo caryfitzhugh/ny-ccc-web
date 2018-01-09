@@ -18,11 +18,14 @@ const Logo = (props) =>
     <div className='logo-text slate-text'>
       <h1>
         <em className='slate-text'> NY </em>
-        <span className='gray-text'>CCC</span>
+        <span className='gray-text'>CCSC</span>
       </h1>
-      <small className='orange-text'>
-        <strong>Hoth</strong>
-        Climate Change Clearinghouse
+      <small>
+        New York&nbsp;
+        <small className='orange-text'>
+         Climate Change
+        </small>
+        &nbsp;Science Clearinghouse
       </small>
     </div>
   </Link>;
