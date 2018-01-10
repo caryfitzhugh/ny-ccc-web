@@ -5,7 +5,7 @@ import nescaum_logo from './images/nescaum_logo.png';
 import eea_logo from './images/eea_logo.png';
 import esf_logo from './images/esf_logo.png';
 import cornell_logo from './images/cornell_logo.png';
-import ma_logo from './images/ma_seal.png';
+import nyserda_logo from './images/nyserda_logo.png';
 import './footer.css';
 
 class Footer extends Component {
@@ -17,12 +17,9 @@ class Footer extends Component {
     return <div className='container-fluid footer'>
       <div className='footer-content container'>
         <div className='row'>
-          <div className='logos col-md-6'>
+          <div className='logos col-md-4'>
             <a href='' rel="noopener noreferrer" target="_blank">
-              <img className='primary-logo' alt=''  src={eea_logo} />
-            </a>
-            <a href='' rel="noopener noreferrer" target="_blank">
-              <img className='primary-logo' alt=''  src={ma_logo} />
+              <img alt=''  src={nyserda_logo} />
             </a>
 
             <hr/>
@@ -30,6 +27,9 @@ class Footer extends Component {
             <a href='' rel="noopener noreferrer" target="_blank">
               <img alt=''  src={esf_logo} />
             </a>
+
+            <hr/>
+            
             <a href='' rel="noopener noreferrer" target="_blank">
               <img alt=''  src={cornell_logo} />
             </a>
@@ -37,14 +37,28 @@ class Footer extends Component {
               <img alt=''  src={nescaum_logo} />
             </a>
           </div>
-          <div className='content col-md-6'>
+          <div className='content col-md-4'>
             <Link to='/about#about_macc'> </Link>
+            <h3>About NYCCSC</h3>
             <p className='hidden-md-down'>
-             Luke rushes out of the small doomed entry to the homestead and searches the darkening horizon for the small triped astro-robot. Threepio struggles out of the homestead and on the salt flat as Luke scans the landscape with his electrobinoculars.
+              The New York Climate Change Science Clearinghouse (NYCCSC) is a regional gateway to data and information relevant to climate change adaptation and mitigation across New York State. It provides climate science data and literature and other resources for policy-makers, practitioners, and the public, to support scientifically sound and cost-effective decision making.
               <Link to='/about#about_macc'> More ... </Link>
             </p>
-            <label> Email <Link to='mailto:'>  </Link> </label>
-            <Link className='btn btn-sm btn-primary' to='/suggestions'>Content Suggestions</Link>
+            <h3>Content Suggestions</h3>
+            <p className='hidden-md-down'>
+              We want to hear from you!  If you have ideas for datasets, data products, GIS layers, websites, documents, or other resources that would add value to the New York Climate Change Science Clearinghouse, please submit them. Content proposals are moderated, and submission of an idea is not a guarantee of inclusion in the Clearinghouse.
+            </p>
+            <Link className='btn btn-primary btn-sm' to="/suggestions">
+            Propose Content
+            </Link>
+          </div>
+          <div className='content col-md-3'>
+            <h3>Contact</h3>
+            <p>
+            Email:
+            <label><Link to='mailto:info@nyclimatescience.org'></Link>info@nyclimatescience.org</label>
+            Phone: 607.273.6623 ext 22
+            </p>
             <Link className='btn btn-sm btn-primary' to='/comments'>Provide Feedback</Link>
           </div>
         </div>
@@ -57,3 +71,4 @@ class Footer extends Component {
 }
 
 export default Footer;
+
