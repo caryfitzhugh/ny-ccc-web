@@ -9,11 +9,11 @@
 .resource-blocks a.block p > a {
   margin-left: 0.5em;
 }
-.resource-blocks .block h1 > a ,
-.resource-blocks .block h1 > a:hover ,
-.resource-blocks .block h1 > a:active ,
-.resource-blocks .block h1 > a:focus ,
-.resource-blocks .block h1 > a:visited {
+.resource-blocks .block h2 > a ,
+.resource-blocks .block h2 > a:hover ,
+.resource-blocks .block h2 > a:active ,
+.resource-blocks .block h2 > a:focus ,
+.resource-blocks .block h2 > a:visited {
   color: white;
 }
 .resource-blocks .block {
@@ -22,22 +22,30 @@
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 0;
-  border: 1em solid transparent;
+  padding:0 15px;
 }
-.resource-blocks .block h1 {
-  background: #113f83;
+.resource-blocks .block h2 {
+  background: #5690ca;
   font-weight: 300;
   padding: 0.5em;
-  border-bottom: 8px solid #3f69a7;
+  border-bottom: 8px solid #3b7cbc;
   color: white;
   margin-bottom: 0;
 }
 
-.resource-blocks .block h1 {
-  font-size: 1.4em;
+.resource-blocks .block h2 {
+  font-size: 34px;
 }
 
 .resource-blocks .block img {
   height: auto;
   width: 100%;
+}
+
+.resource-blocks .no-select {
+  margin-top:-40px;
+}
+
+.resource-blocks .no-select .pull-right {
+  font-size:.5em;
 }

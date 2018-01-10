@@ -13,10 +13,15 @@ class ResourceBlocks extends Component {
       <div className='row'>
         {(this.props.blocks || []).map ( (block, indx) => {
           return (<div
-                  key={indx} className='block no-select col-12 col-sm-6 col-md-4 col-lg-3 '>
-            <h1 className='no-select'>
-              <Link id={block.id} to={block.href}>{block.title}</Link>
-            </h1>
+                  key={indx} className='col-sm-4 block '>
+            <h2 className='no-select'>
+              <Link id={block.id} to={block.href}>{block.title}
+                <small className="pull-right">
+                  More <i className="fa fa-angle-double-right"></i>
+                </small>
+              </Link>
+
+            </h2>
             <Link to={block.href}>
               <img src={block.image} alt={block.text}/>
             </Link>

@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 1em;
 }
 
 .header .nav-blocks {
@@ -17,24 +18,22 @@
   justify-content: center;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  align-items: center;
 }
 
 .header .nav-blocks .nav-block {
   transition: all 0.2s;
   cursor: pointer;
-  height: 7rem;
   width: 7rem;
-  padding: 1em;
-  font-size: 1.2em;
+  font-size: 14px;
   display: block;
   margin-right: 2em;
   background: #5690ca;
   color: white;
   position: relative;
   text-align: center;
-  line-height: 1.2em;
-  padding-top: 1.7em;
   vertical-align: middle;
+  padding:30px 12px;
 }
 
 .header .nav-blocks .nav-block:last-child {
@@ -88,17 +87,15 @@
   height: 7rem;
 }
 
-.header .logo .logo-text {
-  font-family: 'Raleway', sans-serif;
-  display: flex;
-  flex-direction: column;
-}
+.header .logo .logo-text {   font-family: 'Raleway', sans-serif;   display:
+flex;   flex-direction: column;   color:black; }
 
 .header .logo .logo-text h1 {
   font-weight: 300;
   margin-bottom: 0;
   font-size: 5em;
   margin-top: 0;
+  line-height:1;
 }
 
 .header .logo .logo-text h1 em {

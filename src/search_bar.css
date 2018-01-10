@@ -1,6 +1,5 @@
 .search-bar {
-  background: #113f83;
-  padding: 2em;
+  padding: 20px;
 }
 .search-bar .input-group-btn {
   position: relative;
@@ -21,4 +20,18 @@
   color: black;
   z-index: 1000;
   top: 15px;
+}
+
+.search-bar .search {
+  border-radius: 4px 4px 4px 0;
+}
+
+.search-bar .text-right a {
+  color:#f8a55f;
+  text-shadow: 0 1px 0 #414c54
+}
+
+.search-bar .text-right a:hover {
+  color:#f6892e;
+  text-shadow: 0 1px 0 #414c54
 }

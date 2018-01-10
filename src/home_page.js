@@ -7,6 +7,7 @@ import ResourceBlocks from './home_page/resource_blocks';
 import Sectors from './home_page/sectors';
 import SectionHeader from './home_page/section_header';
 import Footer from './footer';
+import SearchBar from './search_bar';
 import SectorsAll from './sectors/all';
 import './home_page.css';
 
@@ -127,21 +128,33 @@ class Homepage extends Component {
 
     return (
       <div className="home-page">
-        <Header hide_subnav={false} anchors={true}/>
+        <Header hide_subnav={true} anchors={true}/>
+        <div className='header-search'>
         <div className='tag-line'>
-         <span>A long time ago, in a galaxy far, far, away...
+         <div className='container'>
+          <h4>Providing climate change data and information relevant to New York State to support scientifically sound decision making
              <Link to='/about'> More <span className='fa fa-angle-double-right'></span> </Link>
-             </span>
+          </h4>
+         </div>
         </div>
-        <ImageCarousel className='welcome-carousel' slides={slides}/>
+        <span className="credit">
+          <a href="https://www.flickr.com/photos/brbirke/8136033826/in/photostream/" class="tip" title="" target="_blank" data-original-title="Cropped from original">Photo: Brian Birke</a>, 
+          <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC</a> 
+        </span>
+        <div className="search-container container">
+        
+          <div className="search-form">
+            <SearchBar className='' size='sm'/>
+          </div>
 
+        </div>
+        </div>
         <ResourceBlocks blocks={blocks}/>
 
         <SectionHeader href="/sectors" anchor_id='explore_sectors' text="Explore Sectors" />
         <Sectors sectors={sectors} />
 
         <SectionHeader href="/changes" anchor_id='identify_changes' text="Identify Changes" />
-        <ImageCarousel slides={changes} />
 
         <SectionHeader href="/actions" anchor_id='take_action' text="Take Action" />
         <ResourceBlocks className='take-actions' blocks={take_actions} />

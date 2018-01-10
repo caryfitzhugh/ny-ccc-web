@@ -34,33 +34,20 @@ const NavBlocks = (props) =>
   <div className='no-select nav-blocks hidden-md-down'>
     <Link to={props.anchors ? '/#explore_sectors' : '/sectors'} className={'nav-block col-xs ' + (props.nav_block === 'explore_sectors' ? 'active': null)}>
       <div className='content'>
-        Explore Sectors
+        Identify Problems
       </div>
     </Link>
     <Link to={props.anchors ? '/#identify_changes': '/changes'} className={'nav-block col-xs ' + (props.nav_block === 'identify_changes' ? 'active': null)}>
       <div className='content'>
-          Identify Changes
+        Investigate Solutions
       </div>
     </Link>
     <Link to={props.anchors ? '/#take_action' : "/actions"} className={'nav-block col-xs ' + (props.nav_block === 'take_action' ? 'active': null)}>
       <div className='content'>
-        Take Action
+        Take <br /> Action 
       </div>
     </Link>
-  </div>;
-/*
-import eea_bg from './images/eea_bg.png';
-const EEABanner = () => {
- return <div className='eea-banner container-fluid' style={{'backgroundImage': `url(${eea_bg})`}}>
-        <h1>
-          <a href='http://eea.mass.gov'>
-            <span className='eea-icons eea-icons-stateseal' ></span>
-            <span className='hidden-sm-down'> Energy and Environmental Affairs </span>
-            <span className='hidden-md-up'> EEA </span>
-          </a>
-        </h1>
-      </div>
-};*/
+  </div>;  
 class Header extends Component {
   render() {
     return <div className='header-wrap'>
