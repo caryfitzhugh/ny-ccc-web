@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Layout from './layout';
 import BannerData from './banner_data';
 import FeaturedData from './featured_data';
-import map_image from '../images/data/mass_ccc_map.png';
+import map_image from '../images/data/ny_ccsc_map.png';
 
 class MapsPage extends Component {
   render() {

@@ -70,8 +70,8 @@ class SearchBar extends Component {
             {this.query_string() ? <span className='clear-button'><span onClick={(evt) => this.clear_query()} className='fa fa-times-circle-o' ></span> </span>: null }
             <button className='btn btn-primary search' type='button'
                   onClick={(evt) => { this.submit_search(evt)}}>
+              Search&nbsp;
               <span className='fa fa-search'></span>
-              Search
             </button>
           </span>
         </div>

@@ -9,7 +9,6 @@
 }
 
 .home-page .tag-line {
-  text-align: center;
   display: block;
   width: 100%;
   font-weight: 500;
@@ -44,6 +43,13 @@
     width: 55%;
     background: rgba(65,76,84,0.65);
     color: #fff;
+}
+
+@media (max-width: 767px) {
+  .home-page .search-form {
+    width: 100%;
+    top: 1em;
+  }
 }
 
 .home-page .search-container {

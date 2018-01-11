@@ -27,7 +27,6 @@ class ResourceBlocks extends Component {
             </Link>
             {block.image_credit ? <div className='image-credit'>{block.image_credit}</div> : null}
             <p className='hidden-sm-down'>{block.text} </p>
-            <Link className='more' to={block.href}> More <span className='fa fa-angle-double-right'></span></Link>
           </div>);
         })}
       </div>

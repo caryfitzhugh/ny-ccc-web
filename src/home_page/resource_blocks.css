@@ -29,6 +29,11 @@
   padding: 0;
   padding:0 15px;
 }
+
+.resource-blocks .block > a {
+  margin-bottom:15px;
+}
+
 .resource-blocks .block h2 {
   background: #5690ca;
   font-weight: 300;
@@ -38,19 +43,33 @@
   margin-bottom: 0;
 }
 
+
+.resource-blocks .block p {
+  font-size:14px;
+}
+
 .resource-blocks .block h2 {
-  font-size: 34px;
+  font-size: 28px;
 }
 
 .resource-blocks .block img {
   height: auto;
-  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  display: block;
 }
 
 .resource-blocks .no-select {
   margin-top:-40px;
 }
 
+@media (max-width: 767px) {
+  .resource-blocks .no-select {
+    margin:1px;
+  }
+}
+
 .resource-blocks .no-select .pull-right {
   font-size:.5em;
+  float:right;
 }
