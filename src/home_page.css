@@ -26,7 +26,7 @@
 .home-page .tag-line h4 {
   margin:0;
   padding:15px 0;
-  font-size:18px;
+  font-size:17px;
 }
 
 .home-page .slide.slr-image .image {
@@ -40,7 +40,7 @@
 .home-page .search-form {
     position: absolute;
     right: 0;
-    top: 5em;
+    top: 4em;
     width: 55%;
     background: rgba(65,76,84,0.65);
     color: #fff;

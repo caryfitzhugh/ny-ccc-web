@@ -132,7 +132,7 @@ class Homepage extends Component {
         <div className='header-search'>
         <div className='tag-line'>
          <div className='container'>
-          <h4>Providing climate change data and information relevant to New York State to support scientifically sound decision making
+          <h4>Providing climate change data and information relevant to New York State to support scientifically sound decision making.
              <Link to='/about'> More <span className='fa fa-angle-double-right'></span> </Link>
           </h4>
          </div>

@@ -15,6 +15,11 @@
 .resource-blocks .block h2 > a:focus ,
 .resource-blocks .block h2 > a:visited {
   color: white;
+  text-transform: uppercase;
+}
+
+.resource-blocks .block h2 > a small {
+  text-transform: none;
 }
 .resource-blocks .block {
   background: white;

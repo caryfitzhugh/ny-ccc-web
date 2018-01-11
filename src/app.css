@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900');
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   min-width: 480px;
 }
 .image-credit {
@@ -14,7 +14,7 @@ body {
 a {
   cursor: pointer;
   color: #113f83;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .btn {
@@ -74,4 +74,15 @@ ol.footnotes :target {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+}
+
+@media (max-width: 767px) {
+ .hidden-xs {
+  display:none !important
+ }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+ .hidden-sm {
+  display:none !important
+ }
 }

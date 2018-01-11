@@ -14,7 +14,7 @@ const ActiveLink = (props) => {
 
 const Logo = (props) =>
   <Link to='/' className='logo'>
-    <img className='hidden-sm-down' src={logo_img} alt="logo" />
+    <img className='hidden-xs' src={logo_img} alt="logo" />
     <div className='logo-text slate-text'>
       <h1>
         <em className='slate-text'> NY </em>
@@ -31,7 +31,7 @@ const Logo = (props) =>
   </Link>;
 
 const NavBlocks = (props) =>
-  <div className='no-select nav-blocks hidden-md-down'>
+  <div className='no-select nav-blocks hidden-md-down hidden-xs hidden-sm'>
     <Link to={props.anchors ? '/#explore_sectors' : '/sectors'} className={'nav-block col-xs ' + (props.nav_block === 'explore_sectors' ? 'active': null)}>
       <div className='content'>
         Identify Problems
