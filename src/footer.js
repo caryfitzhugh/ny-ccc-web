@@ -17,19 +17,13 @@ class Footer extends Component {
     return <div className='container-fluid footer'>
       <div className='footer-content container'>
         <div className='row'>
-          <div className='logos col-md-4'>
+          <div className='logos col-md-3'>
             <a href='' rel="noopener noreferrer" target="_blank">
               <img alt=''  src={nyserda_logo} />
             </a>
-
-            <hr/>
-
             <a href='' rel="noopener noreferrer" target="_blank">
               <img alt=''  src={esf_logo} />
             </a>
-
-            <hr/>
-            
             <a href='' rel="noopener noreferrer" target="_blank">
               <img alt=''  src={cornell_logo} />
             </a>
@@ -37,7 +31,7 @@ class Footer extends Component {
               <img alt=''  src={nescaum_logo} />
             </a>
           </div>
-          <div className='content col-md-4'>
+          <div className='content col-md-6'>
             <Link to='/about#about_macc'> </Link>
             <h3>About NYCCSC</h3>
             <p className='hidden-md-down'>
@@ -56,19 +50,16 @@ class Footer extends Component {
             <h3>Contact</h3>
             <p>
             Email:
-            <label><Link to='mailto:info@nyclimatescience.org'></Link>info@nyclimatescience.org</label>
+            <label><a href='mailto:info@nyclimatescience.org'>info@nyclimatescience.org</a></label>
             Phone: 607.273.6623 ext 22
             </p>
             <Link className='btn btn-sm btn-primary' to='/comments'>Provide Feedback</Link>
           </div>
         </div>
       </div>
-      <div className='row copyright'>
-        &copy; 2017 <Link to=''></Link>
-      </div>
     </div>;
   }
 }
 
 export default Footer;
-
+ 

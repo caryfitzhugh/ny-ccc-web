@@ -1,13 +1,12 @@
 .footer {
   margin-top: 2em;
   background: rgb(67,77,85);
-  padding: 2em 2em 0em 2em;
+  padding: 2em 2em 2em 2em;
 }
 
 .footer .logos {
   display: flex;
   flex-direction: row;
-  max-width: 40%;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -25,8 +24,8 @@
   height: 125px;
 }
 .footer .logos img {
-  margin: 1em;
-  max-height: 50px;
+  margin: 20px;
+  max-width: 185px;
 }
 
 .footer .footer-content .row{
@@ -37,7 +36,6 @@
 }
 
 .footer .footer-content .content {
-  max-width: 50%;
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -55,23 +53,11 @@
   margin-top: 1em;
   white-space: normal;
   word-break: break-word;
-}
-.footer .copyright {
-  display: block;
-  border-top: 1px solid white;
-  text-align: right;
-  padding: 1em;
-  color: white;
-  background: #113f83;
-  margin-top: 2em;
-}
-
-.footer .copyright > a{
-  color: #6388bf;
+  width: 150px;
 }
 
 .footer .content a {
-  color: #6388bf;
+  color: #F68832;
 }
 
 .footer hr {
