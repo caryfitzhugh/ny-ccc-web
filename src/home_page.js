@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 //import SearchBar from './search_bar';
 import ResourceBlocks from './home_page/resource_blocks';
 import Sectors from './home_page/sectors';
+import Tiles from './home_page/tiles';
 import SectionHeader from './home_page/section_header';
 import Footer from './footer';
 import SearchBar from './search_bar';
@@ -16,13 +17,13 @@ import carousel2 from './images/home_page/carousel/2.jpg';
 import carousel3 from './images/home_page/carousel/3.jpg';
 import carousel4 from './images/home_page/carousel/4.jpg';
 import maps_block_img from './images/home_page/blocks/maps.png';
+import coastal_zones_img from './images/home_page/coastal_zones.jpg';
 import data_block_img from './images/home_page/blocks/data.png';
 import documents_block_img from './images/home_page/blocks/documents.png';
+import heat_wave_img from './images/home_page/heatwave.jpg';
+import downpour_img from './images/home_page/downpours.jpg';
+import extreme_weather_img from './images/home_page/extreme_weather.jpg';
 
-import rising_temperatures_img from './images/home_page/carousel/rising_temperatures.jpg';
-import precipitation_changes_img from './images/home_page/carousel/precipitation_changes.jpg';
-import extreme_weather_img from './images/home_page/carousel/extreme_weather.jpg';
-import sea_level_rise_img from './images/home_page/carousel/sea_level_rise.jpg';
 
 import planning_img from './images/home_page/blocks/planning.jpg';
 import outreach_img from './images/home_page/blocks/outreach.png';
@@ -30,29 +31,6 @@ import take_action_implementation_img from './images/home_page/blocks/take_actio
 
 class Homepage extends Component {
   render() {
-    let slides = [
-      {   src: climate_change_data_img,
-          className: 'climate-change-data-slide',
-          label: "Climate Change Data",
-          text: " Everyone laughs. The dazzling spectacle of his dashing friend is almost too much for Luke, but suddenly he snaps out of it.",
-          href: "/data/data"},
-      {   src: carousel2,
-          image_credit: "MA Division of Ecological Restoration",
-          className: 'take-action-slide',
-          label: "Take Action",
-          text: " Biggs takes the binoculars from Luke as the others strain to see something with the naked eye. Through the binoculars Biggs sees two small silver specks.",
-          href: "/actions"},
-      {   src: carousel3,
-          //image_credit: "National Wildlife Federation",
-          label: "Climate Planning",
-          text: " A new explosion, this time very close, sends dust and debris through the narrow subhallway. Flames lick at Threepio and, after a flurry of electronic swearing from Artoo, the lanky robot jumps into the lifepod.",
-          href: "/actions/planning"},
-      {   src: carousel4,
-          className: 'mvp-slide',
-          label: "Municipal Vulnerability Preparedness",
-          text: " Artoo stops before the small hatch of an emergency lifepod. He snaps the seal on the main latch and a red warning light begins to flash. The stubby astro-robot works his way into the cramped four-man pod.",
-          href: "http://www.mass.gov/eea/air-water-climate-change/climate-change/massachusetts-global-warming-solutions-act/municipal-vulnerability-preparedness-program.html"},
-    ];
 
     let blocks = [
        {title: 'Maps',
@@ -75,34 +53,39 @@ class Homepage extends Component {
        }
      ];
 
+     let tiles = [
+       {title: 'Coastal Flooding',
+        id: 'coastal',
+        text: ' due to sea level risk and storm surge will increasingly put lives and property at risk. Health, water quality, energy, infrastructure, and coastal ecosystems are all affected.  ',
+        image: coastal_zones_img,
+        href: "/sectors/coastal_zones",
+        image_credit: "Photo: Metropolitan Transportation Authority / Patrick Cashin"
+        },
+       {title: 'Heat Waves',
+        text: '  will become more frequent and intense, increasing heat-related illness and death and posing new challenges to the energy system, air quality, and agriculture.  ',
+        id: "heatwaves",
+        image: heat_wave_img,
+        href: "#",
+        image_credit: "Photo: Tom Kaminski / WCBS 880"
+        },
+       {title: 'Heavy Downpours',
+        text: ' are increasing and are projected to increase further. These can lead to flooding and related impacts on water quality, infrastructure, and agriculture. ',
+        id: 'downpours',
+        image: downpour_img,
+        href: `#`,
+        image_credit: ""
+       }
+       ,
+       {title: 'Extreme Weather',
+        text: ' can have a big impact in a short time. Climate models predict significant changes in the frequency and intensity of some extreme weather events over the coming decades.  ',
+        id: 'weather',
+        image: extreme_weather_img,
+        href: `#`,
+        image_credit: "Photo: Melinda Stoldt"
+       }
+     ];
+
      let sectors = SectorsAll.sorted;
-
-     let changes= [
-      {src: rising_temperatures_img,
-        image_credit: "",
-          label: "Rising Temperatures",
-          text: "A death-white wasteland stretches from horizon to horizon. The tremendous heat of two huge twin suns settle on a lone figure, Luke Skywalker, a farm boy with heroic aspirations who looks much younger than his eighteen years ",
-          href: "/changes/rising-temperatures"},
-
-      {src: precipitation_changes_img,
-        image_credit: "",
-          label: "Changes in Precipitation",
-          text: " The robot scoots around in a tight circle, stops short, and smoke begins to pour out of every joint. Luke throws his arms up in disgust.",
-          href: "/changes/changes-in-precipitation"},
-
-      {src: extreme_weather_img,
-        image_credit: "",
-          label: "Extreme Weather",
-          text: "Climate models predict changes in the frequency and intensity of some extreme weather events, such as nor’easters over the coming decades.",
-          href: "/changes/extreme-weather"},
-
-      {src: sea_level_rise_img,
-        image_credit: "",
-          label: "Sea Level Rise",
-          className: "slr-image",
-          text: " Threepio stands in a hallway, somewhat bewildered. Artoo is nowhere in sight. The pitiful screams of the doomed Rebel soldiers can be heard in the distance.",
-          href: "/changes/sea-level-rise"},
-    ];
 
      let take_actions = [
        { title: 'Planning',
@@ -150,13 +133,9 @@ class Homepage extends Component {
         </div>
         <ResourceBlocks blocks={blocks}/>
 
-        <SectionHeader href="/sectors" anchor_id='explore_sectors' text="Explore Sectors" />
         <Sectors sectors={sectors} />
 
-        <SectionHeader href="/changes" anchor_id='identify_changes' text="Identify Changes" />
-
-        <SectionHeader href="/actions" anchor_id='take_action' text="Take Action" />
-        <ResourceBlocks className='take-actions' blocks={take_actions} />
+        <Tiles tiles={tiles} />
 
         <Footer />
       </div>

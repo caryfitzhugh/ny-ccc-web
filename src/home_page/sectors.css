@@ -3,8 +3,9 @@
   color: white;
 }
 .sectors {
-  background: #113f83;
-  padding: 2em 0;
+  background: #5690ca;
+  padding: 4em 0;
+
 }
 .sectors .container {
   display: flex;
@@ -22,11 +23,14 @@
   transition: all 0.2s;
 }
 
+.sectors .sector:nth-child(6) {
+  margin-left:8%;
+}
+
 .sectors .sector .icon {
   width: 100%;
   height: auto;
-  max-height: 60px;
-  font-size: 2.5em;
+  font-size: 4em;
   align-self: middle;
 }
 .sectors .sector:hover {
@@ -34,6 +38,16 @@
   background: white;
   color: #113f83;
   border: 2px solid white;
+}
+
+.sectors .sector-tile {
+  color:white;
+  font-weight:400;
+  font-family: 'Raleway', sans-serif;
+}
+
+.sectors .browse-by {
+  margin-left:8%;
 }
 
 .home-page .sectors .isvg svg {
