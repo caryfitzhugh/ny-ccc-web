@@ -1,0 +1,24 @@
+.solutions {
+	font-size:14px;
+}
+
+.solutions .solution {
+	background:#5690ca;
+	padding:20px;
+	margin-top:10px;
+	color:white;
+}
+
+.solutions .solution .description {
+	margin-bottom:10px;
+}
+
+.solutions .solution .more {
+	text-align:right;
+	margin-bottom:10px;
+	color:white;
+}
+
+.solutions .solution a {
+	color:white;
+}

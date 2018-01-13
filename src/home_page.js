@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import ResourceBlocks from './home_page/resource_blocks';
 import Sectors from './home_page/sectors';
 import Tiles from './home_page/tiles';
+import Solutions from './home_page/solutions';
+import Actions from './home_page/actions';
 import SectionHeader from './home_page/section_header';
 import Footer from './footer';
 import SearchBar from './search_bar';
@@ -23,6 +25,7 @@ import documents_block_img from './images/home_page/blocks/documents.png';
 import heat_wave_img from './images/home_page/heatwave.jpg';
 import downpour_img from './images/home_page/downpours.jpg';
 import extreme_weather_img from './images/home_page/extreme_weather.jpg';
+import primary_story_img from './images/home_page/primary_story.jpg';
 
 
 import planning_img from './images/home_page/blocks/planning.jpg';
@@ -108,6 +111,21 @@ class Homepage extends Component {
         }
      ];
 
+     let squares = [
+        { squareLink: "#",
+          squareText: "Preparing for heavy downpours: Save the Rain"
+         },
+         { squareLink: "#",
+          squareText: "Promoting renewable energy: Solar Tompkins"
+         },
+         { squareLink: "#",
+          squareText: "Managing stormwater along the coast: the Staten Island Bluebelt"
+         },
+         { squareLink: "#",
+          squareText: "Building for resilience along New York City's coast"
+         }
+      ];
+
     return (
       <div className="home-page">
         <Header hide_subnav={true} anchors={true}/>
@@ -136,6 +154,10 @@ class Homepage extends Component {
         <Sectors sectors={sectors} />
 
         <Tiles tiles={tiles} />
+
+        <Solutions />
+
+        <Actions squares={squares} primaryStory={primary_story_img} />
 
         <Footer />
       </div>
