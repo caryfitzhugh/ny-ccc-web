@@ -42,18 +42,20 @@ class Footer extends Component {
             <p className='hidden-md-down'>
               We want to hear from you!  If you have ideas for datasets, data products, GIS layers, websites, documents, or other resources that would add value to the New York Climate Change Science Clearinghouse, please submit them. Content proposals are moderated, and submission of an idea is not a guarantee of inclusion in the Clearinghouse.
             </p>
-            <Link className='btn btn-primary btn-sm' to="/suggestions">
-            Propose Content
-            </Link>
+            <div className="footer-button">
+              <Link className='btn btn-primary btn-sm' to="/suggestions">
+                Propose Content
+              </Link>
+            </div>
           </div>
           <div className='content col-md-3'>
             <h3>Contact</h3>
-            <p>
             Email:
-            <label><a href='mailto:info@nyclimatescience.org'>info@nyclimatescience.org</a></label>
+            <a href='mailto:info@nyclimatescience.org'>info@nyclimatescience.org</a>
             Phone: 607.273.6623 ext 22
-            </p>
-            <Link className='btn btn-sm btn-primary' to='/comments'>Provide Feedback</Link>
+            <div className="footer-button">
+              <Link className='btn btn-sm btn-primary' to='/comments'>Provide Feedback</Link>
+            </div>
           </div>
         </div>
       </div>
