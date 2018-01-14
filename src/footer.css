@@ -54,7 +54,6 @@
   white-space: normal;
   word-break: break-word;
   width: 150px;
-  justify-content: flex-end;
 }
 
 .footer .content a {
@@ -63,9 +62,4 @@
 
 .footer hr {
   width: 100%;
-}
-
-.footer-button {
-  display:flex;
-  justify-content: flex-end;
 }
