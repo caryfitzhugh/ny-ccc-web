@@ -7,7 +7,7 @@
 }
 
 .actions .story-caption {
-	font-size:18px;
+	font-size:1rem;
 	background:#3b7cbc;
 	padding:20px;
 	color:white;
@@ -21,4 +21,22 @@
 
 .actions .primary-story {
 	overflow:hidden;
+}
+
+.actions .square-caption p {
+	padding:20px;
+	color:#5690ca;
+}
+
+.actions .square-background {
+	background:url('../images/home_page/background.png');
+} 
+
+@media (mix-width: 767px) {
+	.actions .square-background {
+		height:214px;
+	} 
+	.actions .squares > div:nth-child(n+3) .square-background {
+		margin-top:20px;
+	} 
 }

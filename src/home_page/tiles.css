@@ -19,3 +19,10 @@
 .tiles-region .tile a {
 	color:#5690ca;
 }
+
+.tiles .tile {
+	display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}

@@ -23,8 +23,10 @@
   transition: all 0.2s;
 }
 
-.sectors .sector:nth-child(6) {
-  margin-left:8%;
+@media (min-width: 767px) {
+  .sectors .sector:nth-child(6) {
+    margin-left:8%;
+  }
 }
 
 .sectors .sector .icon {

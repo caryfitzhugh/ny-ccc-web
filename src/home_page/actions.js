@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import HeadlineArrow from './headline_arrow';
-import {Link} from 'react-router-dom';
 
 import './actions.css';
 
@@ -22,15 +21,17 @@ const Actions = (props) => (
         </div>
       </div>
       <div className="col-sm-5">
-        <div className="row">
+        <div className="row squares">
           {(props.squares).map(square => {
-            <div className="col-xs-6">
-              <a className="square-caption" href={square.squareLink}>
-               <h4>
-                {square.squareText}
-               </h4>
-              </a>
-            </div>
+            return (<div className="col-sm-6">
+              <div className="square-background">
+                <a className="square-caption" href={square.squareLink}>
+                 <p>
+                  {square.squareText}
+                 </p>
+                </a>
+              </div>
+            </div>)
           })}
         </div>
       </div>
