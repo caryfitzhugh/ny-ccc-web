@@ -9,10 +9,7 @@ class MapPage extends Component {
     return (
       <div className='map-page'>
         <Header />
-          <div className='container'>
-              <iframe src="http://i0.kym-cdn.com/photos/images/original/000/969/743/037.jpg" className="map"></iframe>
-          </div>
-        <Footer />
+            <iframe src="http://i0.kym-cdn.com/photos/images/original/000/969/743/037.jpg" className="map"></iframe>
       </div>
     );
   }
