@@ -12,6 +12,8 @@ import AboutPage  from "./about_page";
 import CommentsPage  from "./comments";
 import SuggestionsPage  from "./suggestions";
 import ResourcesPage  from "./resources_page";
+import MapPage  from "./map_page";
+import DatagrapherPage  from "./datagrapher_page";
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './app.css';
@@ -33,7 +35,10 @@ class App extends Component {
               <Route exact path="/about" component={AboutPage} />
               <Route exact path="/comments" component={CommentsPage} />
               <Route exact path="/suggestions" component={SuggestionsPage} />
+              <Route exact path="/map" component={MapPage} />
+              <Route exact path="/datagrapher" component={DatagrapherPage} />
               <Route path='*' component={NotFoundPage} />
+
             </Switch>
           </div>
         </ScrollToTop>
@@ -42,3 +47,7 @@ class App extends Component {
 }
 
 export default App;
+
+
+
+
