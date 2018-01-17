@@ -7,7 +7,7 @@ import './tiles.css';
 const Tiles = (props) => (
 <section>
   <div className="tiles-region container">
-    <HeadlineArrow title="Identify Problems" href="/sectors"/>
+    <HeadlineArrow title="Identify Problems" href="/sectors" showMore={true}/>
     <div className='row'>
       {(props.tiles).map (tile => { 
         return (<div  className='col-sm-3 tile '>

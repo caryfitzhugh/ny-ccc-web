@@ -35,3 +35,8 @@
   color:#f6892e;
   text-shadow: 0 1px 0 #414c54
 }
+
+.search-bar .search-related-links a {
+  font-size: .6em;
+  color: #e6e9eb;
+}

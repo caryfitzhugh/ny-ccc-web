@@ -1,0 +1,27 @@
+.content-area {
+    border-right: 1px solid #e6e9eb;
+    font-family: 'Raleway', sans-serif;
+    color: #414c54;
+}
+
+.content-area hr {
+	margin:40px 0;
+}
+
+.content-area .img-responsive {
+	max-width:100%;
+}
+
+.content-area .btn {
+	color: #f8a55f;
+	background-color: #fff;
+	border-color: #d2d8dc;
+	border-radius: 0.25rem;
+	font-size:14px;
+}
+
+.content-area .source{
+	font-style: italic;
+	font-size: .6em;
+	font-weight: 200;
+}

@@ -37,7 +37,7 @@ const NavBlocks = (props) =>
         Identify Problems
       </div>
     </Link>
-    <Link to={props.anchors ? '/#identify_changes': '/changes'} className={'nav-block col-xs ' + (props.nav_block === 'identify_changes' ? 'active': null)}>
+    <Link to={props.anchors ? '/#investigate_solutions': '/highlights/solutions'} className={'nav-block col-xs ' + (props.nav_block === 'identify_changes' ? 'active': null)}>
       <div className='content'>
         Investigate Solutions
       </div>

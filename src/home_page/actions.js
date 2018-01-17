@@ -7,7 +7,7 @@ const Actions = (props) => (
 <section>
   <div className="container actions">
     <div className="row">
-      <HeadlineArrow title="Take Action" href="#"/>
+      <HeadlineArrow title="Take Action" href="#" showMore={true}/>
     </div>
     <div className="row">
       <div className="col-sm-7">

@@ -58,22 +58,33 @@ class SearchBar extends Component {
   render() {
     return (
       <div className={'search-bar ' + this.props.className}>
-        <p className="text-right">
-          <a href="/catalog">Browse Resources</a>
-        </p>
-        <div className={'input-group input-group-' + (this.props.size || 'lg')}>
-          <input value={this.query_string()}
-                onChange={(evt) => { this.update_search_text(evt.target.value)}}
-                onKeyDown={(evt) => this.handle_key_press(evt)}
-                type='text' className='form-control' placeholder="Find maps, data products, reports, article, and more..."/>
-          <span className='input-group-btn'>
-            {this.query_string() ? <span className='clear-button'><span onClick={(evt) => this.clear_query()} className='fa fa-times-circle-o' ></span> </span>: null }
-            <button className='btn btn-primary search' type='button'
-                  onClick={(evt) => { this.submit_search(evt)}}>
-              Search&nbsp;
-              <span className='fa fa-search'></span>
-            </button>
-          </span>
+        <div className="row">
+          <div className="search-related-links hidden-xs">
+            <a href="/advanced">Advanced Search</a>
+            &nbsp; | &nbsp;
+            <a id="bookmarks_nav" href="/bookmarks">
+            Selected Items
+            (<span data-role="bookmark-counter">0</span>)
+            </a>
+            &nbsp; | &nbsp;
+            <a href="/search_history">Search History</a>
+          </div>
+        </div>
+        <div className="row">
+          <div className={'input-group input-group-' + (this.props.size || 'lg')}>
+            <input value={this.query_string()}
+                  onChange={(evt) => { this.update_search_text(evt.target.value)}}
+                  onKeyDown={(evt) => this.handle_key_press(evt)}
+                  type='text' className='form-control' placeholder="Find maps, data products, reports, article, and more..."/>
+            <span className='input-group-btn'>
+              {this.query_string() ? <span className='clear-button'><span onClick={(evt) => this.clear_query()} className='fa fa-times-circle-o' ></span> </span>: null }
+              <button className='btn btn-primary search' type='button'
+                    onClick={(evt) => { this.submit_search(evt)}}>
+                Search&nbsp;
+                <span className='fa fa-search'></span>
+              </button>
+            </span>
+          </div>
         </div>
       </div>);
   }

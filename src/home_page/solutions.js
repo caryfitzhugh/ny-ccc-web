@@ -9,7 +9,7 @@ const Solutions = (props) => (
   <div className="container solutions">
     <div className="row">
       <div className="col-sm-6">
-        <HeadlineArrow title="Investigate Solutions" href="/sectors"/>
+        <HeadlineArrow title="Investigate Solutions" href="/highlights/solutions" showMore={true}/>
         <p>
           We can best address climate change, in the form of mitigation or adaptation, through careful, long-term planning and by considering lessons learned from the past. Solutions might be very broad or specific to a particular sector. Learn more about sector- specific solutions.
         </p>

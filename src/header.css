@@ -114,9 +114,8 @@ flex;   flex-direction: column;   color:black; }
 }
 
 .header-wrap .subnav {
-  background: #5e5e5e;
+  background: #5690ca;
   color: white;
-  padding-top: 1em;
   margin: 1em 0;
 }
 .header-wrap .subnav .nav-item {
@@ -132,7 +131,6 @@ flex;   flex-direction: column;   color:black; }
   text-decoration: none !important;
 }
 .header-wrap .subnav .nav-item {
-  border-bottom: 0.5em solid transparent;
   padding-bottom: 0em;
 }
 .header-wrap .subnav .nav-item.active:hover ,
@@ -140,6 +138,7 @@ flex;   flex-direction: column;   color:black; }
   border-bottom-color: white;
 }
 .header-wrap .subnav .nav-item:hover {
+  border-bottom: 0.5em solid #333;
   border-bottom-color: #333;
 }
 .header-wrap .subnav .search-bar {
@@ -150,12 +149,16 @@ flex;   flex-direction: column;   color:black; }
   flex-basis: 400px;
   background: transparent;
   padding: 0.5em;
+  flex-direction: column;
+  max-width: 350px;
 }
+
 .header-wrap .subnav > .container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  align-items:center;
 }
 
 .header-wrap .eea-banner {

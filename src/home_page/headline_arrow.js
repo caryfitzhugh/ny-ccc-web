@@ -7,12 +7,15 @@ const HeadlineArrow = (props) => (
 	<div className="headline-arrow container">
 		<div className='row'>
 		    <h2 className="home arrow">{props.title}&nbsp;  
+		     {props.showMore ?
 		      <small> 
 		        <a href={props.href}>
 		          More 
 		          <i className="fa fa-angle-double-right"></i>
 		        </a>
-		      </small>
+		      </small> :
+		      null
+		  	  }
 		    </h2>
 		 </div>
 	</div>
