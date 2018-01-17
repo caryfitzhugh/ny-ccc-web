@@ -1,24 +1,21 @@
 import React, { Component } from 'react';
 import Collection from '../layouts/collection';
-import Header from './header';
-import Footer from './footer';
 
-import datagrapher_img from '../images/highlights/datagrapher.jpeg';
+import datagrapher_img from '../images/highlights/datagrapher.jpg';
 
 const DataProductPage = (props) => (
-  render() {
-    return (
-      <div className='data-product-page'>
-        <Header />
-          <div className='container'>
-            <div className="col-md-3">
+<section>
+    <div className="col-sm-9 col-xs-12 content-area">
+          <a href='' rel="noopener noreferrer" target="_blank">
+              <img alt=''  src={datagrapher_img} />
+          </a>
+    <hr />
 
-            </div>
-          </div>
-        <Footer />
-      </div>
-    );
-  }
-}
+  
+
+    </div>
+</section>
+)
+
 
 export default DataProductPage;
