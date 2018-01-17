@@ -38,7 +38,6 @@ class App extends Component {
               <Route exact path="/map" component={MapPage} />
               <Route exact path="/datagrapher" component={DatagrapherPage} />
               <Route path='*' component={NotFoundPage} />
-
             </Switch>
           </div>
         </ScrollToTop>
