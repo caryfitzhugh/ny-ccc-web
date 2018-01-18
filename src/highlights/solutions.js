@@ -32,39 +32,48 @@ let strategies = [
 let potentialSolutions = [
     {
         title: "Water Resources",
-        collection: "NY/highlights/investigate_solutions/water_resources"
+        collection: "NY/highlights/investigate_solutions/water_resources",
+        icon: "tint"
     },
     {
         title: "Agriculture",
-        collection: "NY/highlights/investigate_solutions/agriculture"
+        collection: "NY/highlights/investigate_solutions/agriculture",
+        icon: "leaf"
     },
     {
         title: "Telecommunications",
-        collection: "NY/highlights/investigate_solutions/telecommunications"
+        collection: "NY/highlights/investigate_solutions/telecommunications",
+        icon: "mobile-phone"
     },
     {
         title: "Ecosystems",
-        collection: "NY/highlights/investigate_solutions/ecosystems"
+        collection: "NY/highlights/investigate_solutions/ecosystems",
+        icon: "tree"
     },
     {
         title: "Energy",
-        collection: "NY/highlights/investigate_solutions/energy"
+        collection: "NY/highlights/investigate_solutions/energy",
+        icon: "lightbulb-o"
     },
     {
         title: "Buildings",
-        collection: "NY/highlights/investigate_solutions/buildings"
+        collection: "NY/highlights/investigate_solutions/buildings",
+        icon: "university"
     },
     {
         title: "Coastal Zones",
-        collection: "NY/highlights/investigate_solutions/coastal_zones"
+        collection: "NY/highlights/investigate_solutions/coastal_zones",
+        icon: "anchor"
     },
     {
         title: "Public Health",
-        collection: "NY/highlights/investigate_solutions/public_health"
+        collection: "NY/highlights/investigate_solutions/public_health",
+        icon: "medkit"
     },
     {
         title: "Transportation",
-        collection: "NY/highlights/investigate_solutions/transportation"
+        collection: "NY/highlights/investigate_solutions/transportation",
+        icon: "truck"
     }
 ]
 
@@ -87,6 +96,8 @@ const Solutions = (props) => (
 
     <PotentialSolutions potentialSolutions={potentialSolutions} />
 
+    <hr />
+    
     </div>
 </section>
 )
