@@ -1,7 +1,8 @@
 import React from 'react';
 import HeadlineArrow from '../home_page/headline_arrow';
 import Collection from '../layouts/collection';
-import Strategies from './solutions_strategies.js'
+import Strategies from './solutions_strategies.js';
+import PotentialSolutions from './potential_solution.js';
 
 import water_treatment_img from '../images/highlights/water-treatment.jpeg';
 import windmill_img from '../images/highlights/windmill.jpeg';
@@ -28,6 +29,45 @@ let strategies = [
   }
 ]
 
+let potentialSolutions = [
+    {
+        title: "Water Resources",
+        collection: "NY/highlights/investigate_solutions/water_resources"
+    },
+    {
+        title: "Agriculture",
+        collection: "NY/highlights/investigate_solutions/agriculture"
+    },
+    {
+        title: "Telecommunications",
+        collection: "NY/highlights/investigate_solutions/telecommunications"
+    },
+    {
+        title: "Ecosystems",
+        collection: "NY/highlights/investigate_solutions/ecosystems"
+    },
+    {
+        title: "Energy",
+        collection: "NY/highlights/investigate_solutions/energy"
+    },
+    {
+        title: "Buildings",
+        collection: "NY/highlights/investigate_solutions/buildings"
+    },
+    {
+        title: "Coastal Zones",
+        collection: "NY/highlights/investigate_solutions/coastal_zones"
+    },
+    {
+        title: "Public Health",
+        collection: "NY/highlights/investigate_solutions/public_health"
+    },
+    {
+        title: "Transportation",
+        collection: "NY/highlights/investigate_solutions/transportation"
+    }
+]
+
 const Solutions = (props) => (
 <section>
     <div className="col-sm-9 col-xs-12 content-area">
@@ -37,6 +77,15 @@ const Solutions = (props) => (
     <hr />
 
     <Strategies strategies={strategies} />
+
+    <hr />
+
+    <h3 className="identify">Identify Potential Solutions</h3>
+
+    <p>Consider lessons learned from responses to past climate hazards; think about using new technologies and reusing existing technologies in new ways; consider different types of strategies and different timelines.</p>
+    <p>Learn about successful strategies and barriers encountered by other communities, regions, and organizations. Involve stakeholders - local residents, business owners, and community leaders - in the process of generating solutions.</p>
+
+    <PotentialSolutions potentialSolutions={potentialSolutions} />
 
     </div>
 </section>
