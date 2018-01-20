@@ -5,7 +5,7 @@ import Collection from '../layouts/collection';
 import './potential_solution.css';
 
 const PotentialSolutions = (props) => (
-  <div className="potentialSolution row justify-content-around">
+  <div className="potentialSolution row justify-content-around" id="potentialSolution">
     {(props.potentialSolutions).map(solution => {
       return (
       <div className="col-sm-4">

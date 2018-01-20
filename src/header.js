@@ -37,7 +37,7 @@ const NavBlocks = (props) =>
         Identify Problems
       </div>
     </Link>
-    <Link to={props.anchors ? '/#investigate_solutions': '/highlights/solutions'} className={'nav-block col-xs ' + (props.nav_block === 'identify_changes' ? 'active': null)}>
+    <Link to='/highlights/solutions' className={'nav-block col-xs ' + (props.nav_block === 'identify_changes' ? 'active': null)}>
       <div className='content'>
         Investigate Solutions
       </div>
@@ -56,18 +56,35 @@ class Header extends Component {
         <NavBlocks anchors={this.props.anchors} nav_block={this.props.nav_block || {}}/>
       </div>
       {this.props.hide_subnav ?  null : (
-      <div className='container-fluid subnav'>
+      <div className='container-fluid navigation'>
         <div className='container'>
-          <div className='nav'>
-            <ActiveLink to={this.props.anchors ? '/#maps' : '/data/maps'}> Maps </ActiveLink>
-            <ActiveLink to={this.props.anchors ? '/#data' : '/data/data'}>Data</ActiveLink>
-            <ActiveLink to={this.props.anchors ? '/#documents' : `/data/documents`}>Documents</ActiveLink>
+          <div className='navbar navbar-expand-lg'>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNav">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse justify-content-between" id="toggleNav">
+            <div className="nav-links row">
+             <div className="col-sm-3">
+              <ActiveLink to={this.props.anchors ? '/#maps' : '/data/maps'}> Maps </ActiveLink>
+             </div>
+             <div className="col-sm-3">
+             <ActiveLink to={this.props.anchors ? '/#data' : '/data/data'}>Data</ActiveLink>
+             </div>
+             <div className="col-sm-3">
+             <ActiveLink to={this.props.anchors ? '/#documents' : `/data/documents`}>Documents</ActiveLink>
+             </div>
+            </div>
+            <SearchBar className='' size='sm'/>
+
           </div>
-          <SearchBar className='' size='sm'/>
+          
+
+          </div>
         </div>
       </div>)}
     </div>
   }
 }
+
 
 export default Header;

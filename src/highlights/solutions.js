@@ -1,11 +1,13 @@
 import React from 'react';
 import HeadlineArrow from '../home_page/headline_arrow';
 import Collection from '../layouts/collection';
-import Strategies from './solutions_strategies.js';
-import PotentialSolutions from './potential_solution.js';
+import Strategies from './solutions_strategies';
+import PotentialSolutions from './potential_solution';
+import Sidebar from './sidebar';
 
 import water_treatment_img from '../images/highlights/water-treatment.jpeg';
 import windmill_img from '../images/highlights/windmill.jpeg';
+import solutions_img from '../images/highlights/solutions.jpg';
 
 
 import './solutions.css';
@@ -76,28 +78,67 @@ let potentialSolutions = [
         icon: "truck"
     }
 ]
+ 
+let anchors = [
+    {
+        title: "Adaptation & Mitigation",
+        href: "#strategies"
+    },
+    {
+        title: "Identify Potential Solutions",
+        href: "#potentialSolution"
+    },
+    {
+        title: "Evaluate & Prioritize Solutions",
+        href: "#evaluate"
+    }
+]
 
 const Solutions = (props) => (
 <section>
-    <div className="col-sm-9 col-xs-12 content-area">
-        <HeadlineArrow title="Investigate Solutions" href="#"/>
+    <div className="container">
+        <div className="row">
+            <div className="col-sm-9 col-12 content-area">
+                <HeadlineArrow title="Investigate Solutions" href="#"/>
 
-        <p>After having identified problems, your next step in building resiliency is to investigate and evaluate potential solutions. Responding to climate change can involve adaptation, mitigation, or both.</p>
-    <hr />
+                <p>After having identified problems, your next step in building resiliency is to investigate and evaluate potential solutions. Responding to climate change can involve adaptation, mitigation, or both.</p>
+            <hr />
 
-    <Strategies strategies={strategies} />
+            <Strategies strategies={strategies} />
 
-    <hr />
+            <hr />
 
-    <h3 className="identify">Identify Potential Solutions</h3>
+            <h3 className="identify">Identify Potential Solutions</h3>
 
-    <p>Consider lessons learned from responses to past climate hazards; think about using new technologies and reusing existing technologies in new ways; consider different types of strategies and different timelines.</p>
-    <p>Learn about successful strategies and barriers encountered by other communities, regions, and organizations. Involve stakeholders - local residents, business owners, and community leaders - in the process of generating solutions.</p>
+            <p>Consider lessons learned from responses to past climate hazards; think about using new technologies and reusing existing technologies in new ways; consider different types of strategies and different timelines.</p>
+            <p>Learn about successful strategies and barriers encountered by other communities, regions, and organizations. Involve stakeholders - local residents, business owners, and community leaders - in the process of generating solutions.</p>
 
-    <PotentialSolutions potentialSolutions={potentialSolutions} />
+            <PotentialSolutions potentialSolutions={potentialSolutions} />
 
-    <hr />
-    
+            <hr />
+
+            <div className="evaluate row" id="evaluate">
+                <div className="col-sm-6">
+                    <img src={solutions_img} alt="Photo: Evaluate Solutions"/>
+                    <h3 className="identify">Evaluate & Prioritize Solutions</h3>
+
+                    <p>Consider lessons learned from responses to past climate hazards; think about using new technologies and reusing existing technologies in new ways; consider different types of strategies and different timelines.</p>
+                    <p>Learn about successful strategies and barriers encountered by other communities, regions, and organizations. Involve stakeholders - local residents, business owners, and community leaders - in the process of generating solutions.</p>
+
+                </div>
+                <div className="col-sm-6">
+                    <p>
+                      <strong>Highlighted Resources:</strong>
+                    </p>
+
+                    <Collection collection_name="NY/highlights/investigate_solutions/evaluate" />
+                </div>
+            </div>
+            
+            </div>
+
+            <Sidebar anchors={anchors} resourcesCollection="NY/highlights/stakeholder_resources" mapsCollection="NY/highlights/highlights_maps" />
+        </div>
     </div>
 </section>
 )

@@ -4,11 +4,11 @@ import Collection from '../layouts/collection';
 import './solutions.css';
 
 const Strategies = (props) => (
-  <div className="strategies">
+  <div className="strategies" id="strategies">
       <div className="row">
         {(props.strategies).map(strategy => {
           return (
-            <div className="col-sm-6">
+            <div className="col-sm-6 strategy">
               <img src={strategy.image} className="img-responsive" alt={"Photo: " + strategy.type} />
 
               <p className="caption">
