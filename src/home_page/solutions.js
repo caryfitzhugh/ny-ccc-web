@@ -18,17 +18,17 @@ const Solutions = (props) => (
         <div className="solution">
           <p className="description"><b>Mitigation</b> is action taken to reduce the severity of climate change. Early mitigation will make it easier to adapt to climate change later on.</p>
           <p className="more">
-            <a href="#">
+            <Link to="/highlights/solutions#strategies">
               More <i className="fa fa-angle-double-right"></i>
-            </a>
+            </Link>
           </p>
         </div>
         <div className="solution">
           <p className="description"><b>Adaptation</b> refers to actions taken to prepare for climate change, helping to reduce adverse impacts or take advantage of beneficial impacts.</p>
           <p className="more">
-            <a href="#">
+            <Link to="/highlights/solutions#strategies">
               More <i className="fa fa-angle-double-right"></i>
-            </a>
+            </Link>
           </p>
         </div>
       </div>

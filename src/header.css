@@ -120,6 +120,7 @@
 .header-wrap .navigation {
   background: #5690ca;
   color: white;
+  margin-bottom:40px;
 }
 
 .header-wrap .nav-item a{
