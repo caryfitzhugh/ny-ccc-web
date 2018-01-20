@@ -98,45 +98,6 @@ const Solutions = (props) => (
 <section>
     <div className="container">
         <div className="row">
-            <div className="col-sm-9 col-12 content-area">
-                <HeadlineArrow title="Investigate Solutions" href="#"/>
-
-                <p>After having identified problems, your next step in building resiliency is to investigate and evaluate potential solutions. Responding to climate change can involve adaptation, mitigation, or both.</p>
-            <hr />
-
-            <Strategies strategies={strategies} />
-
-            <hr />
-
-            <h3 className="identify">Identify Potential Solutions</h3>
-
-            <p>Consider lessons learned from responses to past climate hazards; think about using new technologies and reusing existing technologies in new ways; consider different types of strategies and different timelines.</p>
-            <p>Learn about successful strategies and barriers encountered by other communities, regions, and organizations. Involve stakeholders - local residents, business owners, and community leaders - in the process of generating solutions.</p>
-
-            <PotentialSolutions potentialSolutions={potentialSolutions} />
-
-            <hr />
-
-            <div className="evaluate row" id="evaluate">
-                <div className="col-sm-6">
-                    <img src={solutions_img} alt="Photo: Evaluate Solutions"/>
-                    <h3 className="identify">Evaluate & Prioritize Solutions</h3>
-
-                    <p>Consider lessons learned from responses to past climate hazards; think about using new technologies and reusing existing technologies in new ways; consider different types of strategies and different timelines.</p>
-                    <p>Learn about successful strategies and barriers encountered by other communities, regions, and organizations. Involve stakeholders - local residents, business owners, and community leaders - in the process of generating solutions.</p>
-
-                </div>
-                <div className="col-sm-6">
-                    <p>
-                      <strong>Highlighted Resources:</strong>
-                    </p>
-
-                    <Collection collection_name="NY/highlights/investigate_solutions/evaluate" />
-                </div>
-            </div>
-            
-            </div>
-
             <Sidebar anchors={anchors} resourcesCollection="NY/highlights/stakeholder_resources" mapsCollection="NY/highlights/highlights_maps" />
         </div>
     </div>

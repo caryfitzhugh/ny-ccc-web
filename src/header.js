@@ -32,7 +32,7 @@ const Logo = (props) =>
 
 const NavBlocks = (props) =>
   <div className='no-select nav-blocks hidden-md-down hidden-xs hidden-sm'>
-    <Link to={props.anchors ? '/#explore_sectors' : '/sectors'} className={'nav-block col-xs ' + (props.nav_block === 'explore_sectors' ? 'active': null)}>
+    <Link to="/highlights/problems" className={'nav-block col-xs ' + (props.nav_block === 'explore_sectors' ? 'active': null)}>
       <div className='content'>
         Identify Problems
       </div>
