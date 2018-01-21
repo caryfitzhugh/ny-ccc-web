@@ -15,7 +15,7 @@ const Hazards = (props) => (
           <img src={hazard.img} alt={hazard.source} class="img-responsive"/>
           <p className="caption">
             <p className="caption">{hazard.caption}
-              <span className="source">{hazard.source}</span>
+              <span className="source">Source: {hazard.source}</span>
             </p>
           </p>
         </div>

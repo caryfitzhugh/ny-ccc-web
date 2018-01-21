@@ -9,6 +9,11 @@
 
 .sidebar li {
 	list-style-type: none;
+	margin-bottom: 10px;
+}
+
+.sidebar li > ul {
+	margin-top: 10px;
 }
 
 .sidebar hr {
