@@ -7,12 +7,12 @@ import './tiles.css';
 const Tiles = (props) => (
 <section>
   <div className="tiles-region container">
-    <HeadlineArrow title="Identify Problems" href="/sectors" showMore={true}/>
+    <HeadlineArrow title="Identify Problems" href="/highlights/problems" showMore={true}/>
     <div className='row'>
       {(props.tiles).map (tile => { 
-        return (<div  className='col-sm-3 tile '>
+        return (<div  className='col-sm-3 tile col-12 '>
           <Link to={tile.href}>
-            <img src={tile.image} alt={tile.text}/>
+            <img className="img-responsive" src={tile.image} alt={tile.text}/>
           </Link>
           {tile.image_credit ? <div className='image-credit'>{tile.image_credit}</div> : <div className="no-credit" />}
           <p className='hidden-sm-down'>

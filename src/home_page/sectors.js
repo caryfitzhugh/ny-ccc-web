@@ -9,7 +9,7 @@ class Sectors extends Component {
     this.state = {current_index: 0};
   }
   render() {
-    return <div className='container-fluid sectors no-select '>
+    return <div className='sectors no-select '>
       <div className='container'>
         <div className='row'>
         <div className='col-sm-2 browse-by'>

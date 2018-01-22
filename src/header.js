@@ -42,7 +42,7 @@ const NavBlocks = (props) =>
         Investigate Solutions
       </div>
     </Link>
-    <Link to={props.anchors ? '/#take_action' : "/actions"} className={'nav-block col-xs ' + (props.nav_block === 'take_action' ? 'active': null)}>
+    <Link to='/highlights/actions' className={'nav-block col-xs ' + (props.nav_block === 'take_action' ? 'active': null)}>
       <div className='content'>
         Take <br /> Action 
       </div>

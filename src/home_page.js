@@ -61,21 +61,21 @@ class Homepage extends Component {
         id: 'coastal',
         text: ' due to sea level risk and storm surge will increasingly put lives and property at risk. Health, water quality, energy, infrastructure, and coastal ecosystems are all affected.  ',
         image: coastal_zones_img,
-        href: "/sectors/coastal_zones",
+        href: "/highlights/problems#flooding",
         image_credit: "Photo: Metropolitan Transportation Authority / Patrick Cashin"
         },
        {title: 'Heat Waves',
         text: '  will become more frequent and intense, increasing heat-related illness and death and posing new challenges to the energy system, air quality, and agriculture.  ',
         id: "heatwaves",
         image: heat_wave_img,
-        href: "#",
+        href: "/highlights/problems#heatWaves",
         image_credit: "Photo: Tom Kaminski / WCBS 880"
         },
        {title: 'Heavy Downpours',
         text: ' are increasing and are projected to increase further. These can lead to flooding and related impacts on water quality, infrastructure, and agriculture. ',
         id: 'downpours',
         image: downpour_img,
-        href: `#`,
+        href: "/highlights/problems#downpours",
         image_credit: ""
        }
        ,
@@ -83,7 +83,7 @@ class Homepage extends Component {
         text: ' can have a big impact in a short time. Climate models predict significant changes in the frequency and intensity of some extreme weather events over the coming decades.  ',
         id: 'weather',
         image: extreme_weather_img,
-        href: `#`,
+        href: "/highlights/problems#weather",
         image_credit: "Photo: Melinda Stoldt"
        }
      ];
@@ -112,16 +112,16 @@ class Homepage extends Component {
      ];
 
      let squares = [
-        { squareLink: "#",
+        { squareLink: "/highlights/actions#rain",
           squareText: "Preparing for heavy downpours: Save the Rain"
          },
-         { squareLink: "#",
+         { squareLink: "/highlights/actions#renewable",
           squareText: "Promoting renewable energy: Solar Tompkins"
          },
-         { squareLink: "#",
+         { squareLink: "/highlights/actions#stormwater",
           squareText: "Managing stormwater along the coast: the Staten Island Bluebelt"
          },
-         { squareLink: "#",
+         { squareLink: "/highlights/actions#resilience",
           squareText: "Building for resilience along New York City's coast"
          }
       ];
@@ -144,21 +144,25 @@ class Homepage extends Component {
         <div className="search-container container">
         
           <div className="search-form">
-            <SearchBar className='' size='sm'/>
+            <p className="text-right">
+              <a href="/catalog">Browse Resources</a>
+            </p>
+            <SearchBar className='hide-subnav' size='sm'/>
           </div>
 
         </div>
         </div>
-        <ResourceBlocks blocks={blocks}/>
+        <div className="container-fluid">
+          <ResourceBlocks blocks={blocks}/>
 
-        <Sectors sectors={sectors} />
+          <Sectors sectors={sectors} />
 
-        <Tiles tiles={tiles} />
+          <Tiles tiles={tiles} />
 
-        <Solutions />
+          <Solutions />
 
-        <Actions squares={squares} primaryStory={primary_story_img} />
-
+          <Actions squares={squares} primaryStory={primary_story_img} />
+        </div>
         <Footer />
       </div>
     );

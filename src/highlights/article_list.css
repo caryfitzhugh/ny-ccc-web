@@ -1,0 +1,21 @@
+.articleListItem {
+	margin-bottom:10px;
+}
+
+.articleListItem .btn {
+	white-space:normal;
+}
+.articleListItem .abstract {
+	font-size:14px;
+}
+
+.articleListItem .title {
+	background:#e6e9eb;
+	padding:10px 5px;
+	color:#414c54;
+}
+
+.articleListItem .caption {
+	font-size:12px;
+	font-weight:300;
+}

@@ -1,6 +1,8 @@
 .home-page .sectors {
   margin-top: 2em;
   margin-bottom: 4em;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .home-page .resource-blocks.take-actions h1 {
@@ -43,7 +45,14 @@
     width: 55%;
     background: rgba(65,76,84,0.65);
     color: #fff;
+    padding:20px;
 }
+
+.home-page .search-form a{
+    color:#f8a55f;
+    text-shadow: 0 1px 0 #414c54;
+}
+
 
 @media (max-width: 767px) {
   .home-page .search-form {

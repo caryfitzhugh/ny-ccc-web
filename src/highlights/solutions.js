@@ -1,7 +1,7 @@
 import React from 'react';
 import HeadlineArrow from '../home_page/headline_arrow';
 import Collection from '../layouts/collection';
-import Strategies from './solutions_strategies';
+import ArticleBlocks from './article_blocks';
 import PotentialSolutions from './potential_solution';
 import Sidebar from './sidebar';
 
@@ -104,7 +104,7 @@ const Solutions = (props) => (
                 <p>After having identified problems, your next step in building resiliency is to investigate and evaluate potential solutions. Responding to climate change can involve adaptation, mitigation, or both.</p>
             <hr />
 
-            <Strategies strategies={strategies} />
+            <ArticleBlocks articles={strategies} id="strategies" />
 
             <hr />
 

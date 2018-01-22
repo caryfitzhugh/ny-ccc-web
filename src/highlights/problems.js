@@ -3,7 +3,7 @@ import HeadlineArrow from '../home_page/headline_arrow';
 import Collection from '../layouts/collection';
 import Sidebar from './sidebar';
 import Assessments from './assessments';
-import Hazards from './hazards';
+import ArticleList from './article_list';
 
 import flooding_img from '../images/highlights/flooding.jpeg';
 import coastal_flooding_img from '../images/highlights/coastal_flooding.jpeg';
@@ -199,7 +199,7 @@ const Problems = (props) => (
                 <Assessments assessments={assessments} />
 
                 <h3 id="hazards">Key Hazards</h3>
-                <Hazards hazards={hazards}/>
+                <ArticleList list={hazards}/>
             </div>         
 
             <Sidebar anchors={anchors} resourcesCollection="NY/highlights/stakeholder_resources" mapsCollection="NY/highlights/highlights_maps" />

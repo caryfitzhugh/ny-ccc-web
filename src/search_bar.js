@@ -58,7 +58,7 @@ class SearchBar extends Component {
   render() {
     return (
       <div className={'search-bar ' + this.props.className}>
-        <div className="row">
+        <div className="row row no-gutters">
           <div className="search-related-links hidden-xs">
             <a href="/advanced">Advanced Search</a>
             &nbsp; | &nbsp;
@@ -70,7 +70,7 @@ class SearchBar extends Component {
             <a href="/search_history">Search History</a>
           </div>
         </div>
-        <div className="row">
+        <div className="row no-gutters">
           <div className={'input-group input-group-' + (this.props.size || 'lg')}>
             <input value={this.query_string()}
                   onChange={(evt) => { this.update_search_text(evt.target.value)}}

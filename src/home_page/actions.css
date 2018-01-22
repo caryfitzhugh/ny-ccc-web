@@ -30,6 +30,8 @@
 
 .actions .square-background {
 	background:url('../images/home_page/background.png');
+	min-height:214px;
+	margin-bottom: 20px;
 } 
 
 @media (mix-width: 767px) {

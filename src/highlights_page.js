@@ -5,6 +5,7 @@ import {NotFound} from './not_found';
 import Footer from './footer';
 
 import Solutions from './highlights/solutions';
+import Actions from './highlights/actions';
 import Data_Products from './highlights/data_products';
 import Datagrapher_Map from './highlights/datagrapher_map';
 import Problems from './highlights/problems';
@@ -21,6 +22,7 @@ class HighlightsPage extends Component {
                 <Route exact path='/' component={HighlightsIndex} />
                 <Route exact path='/highlights/solutions' component={Solutions} />
                 <Route exact path='/highlights/problems' component={Problems} />
+                <Route exact path='/highlights/actions' component={Actions} />
                 <Route exact path='/highlights/data_products' component={Data_Products} />
                 <Route exact path='/highlights/datagrapher_map' component={Datagrapher_Map} />
                 <Route path='/' component={NotFound} />
