@@ -9,6 +9,7 @@ import Actions from './highlights/actions';
 import Data_Products from './highlights/data_products';
 import Datagrapher_Map from './highlights/datagrapher_map';
 import Problems from './highlights/problems';
+import Maps from './highlights/maps';
 import HighlightsIndex from './highlights/index';
 
 class HighlightsPage extends Component {
@@ -18,13 +19,14 @@ class HighlightsPage extends Component {
         <Header />
           <div className='container'>
             <div className="row">
-              <Switch>
+              <Switch> 
                 <Route exact path='/' component={HighlightsIndex} />
                 <Route exact path='/highlights/solutions' component={Solutions} />
                 <Route exact path='/highlights/problems' component={Problems} />
                 <Route exact path='/highlights/actions' component={Actions} />
                 <Route exact path='/highlights/data_products' component={Data_Products} />
                 <Route exact path='/highlights/datagrapher_map' component={Datagrapher_Map} />
+                <Route exact path='/highlights/maps' component={Maps} />
                 <Route path='/' component={NotFound} />
               </Switch>
             </div>
