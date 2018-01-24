@@ -1,0 +1,25 @@
+.products img {
+	width:100%;
+}
+
+.products h1 {
+	font-size:33px;
+}
+
+.products h3 {
+	font-size:24px;
+}
+
+.products .btn {
+	border-radius:3px;
+	font-size:12px;
+}
+
+.products .btn-primary {
+	text-transform: uppercase
+} 
+
+.products small {
+	color:#a6b2bb;
+	font-size:65%;
+}

@@ -5,3 +5,12 @@
 .maps h1 {
 	font-size:33px;
 }
+
+.maps .btn {
+	border-radius:3px;
+	font-size:12px;
+}
+
+.maps .btn-primary {
+	text-transform: uppercase
+} 

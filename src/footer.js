@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import nescaum_logo from './images/nescaum_logo.png';
-import eea_logo from './images/eea_logo.png';
 import esf_logo from './images/esf_logo.png';
 import cornell_logo from './images/cornell_logo.png';
 import nyserda_logo from './images/nyserda_logo.png';

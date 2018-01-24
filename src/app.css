@@ -16,6 +16,19 @@ a {
   font-weight: 400;
 }
 
+hr {
+  margin:40px 0;
+}
+
+img {
+  width:100%;
+}
+
+small {
+  font-size:65%;
+  color: #a6b2bb;
+}
+
 .btn {
   border-radius: 0;
 }

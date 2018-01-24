@@ -1,0 +1,23 @@
+.documents h4 {
+	font-size:18px;
+	margin:10px 0;
+}
+
+.documents .btn {
+	border-radius:4px;
+}
+
+.documents .btn-tile {
+	width:100%;
+}
+.documents .fa-search {
+	margin-right: 4px;
+}
+
+.documents .sidebar {
+	padding: 20px 0 20px 40px;
+}
+
+.documents .main {
+	border-right: 1px solid #e6e9eb;
+}

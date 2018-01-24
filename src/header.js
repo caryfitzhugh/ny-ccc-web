@@ -65,13 +65,13 @@ class Header extends Component {
             <div className="collapse navbar-collapse justify-content-between" id="toggleNav">
             <div className="nav-links row">
              <div className="col-sm-3">
-              <ActiveLink to={this.props.anchors ? '/#maps' : '/data/maps'}> Maps </ActiveLink>
+              <ActiveLink to='/highlights/maps'> Maps </ActiveLink>
              </div>
              <div className="col-sm-3">
-             <ActiveLink to={this.props.anchors ? '/#data' : '/data/data'}>Data</ActiveLink>
+             <ActiveLink to='/highlights/data_products'>Data</ActiveLink>
              </div>
              <div className="col-sm-3">
-             <ActiveLink to={this.props.anchors ? '/#documents' : `/data/documents`}>Documents</ActiveLink>
+             <ActiveLink to='/highlights/documents'>Documents</ActiveLink>
              </div>
             </div>
             <SearchBar className='' size='sm'/>

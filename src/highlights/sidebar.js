@@ -38,11 +38,11 @@ const Sidebar = (props) => (
       <p>
         <strong>Highlighted Resources</strong>
       </p>
-      <Collection collection_name={props.mapCollection} />
+      <Collection collection_name={props.resourcesCollection} />
       <p>
         <strong>Use these interactive maps and charts to build your own data visualizations:</strong>
       </p>
-      <Collection collection_name={props.resourcesCollection} />
+      <Collection collection_name={props.mapCollection} show_images={true} />
     </div>
   </div>
 )

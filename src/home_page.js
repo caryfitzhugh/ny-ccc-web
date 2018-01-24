@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Header from './header';
-import ImageCarousel from './home_page/image_carousel';
 import { Link } from 'react-router-dom';
 //import SearchBar from './search_bar';
 import ResourceBlocks from './home_page/resource_blocks';
@@ -8,16 +7,11 @@ import Sectors from './home_page/sectors';
 import Tiles from './home_page/tiles';
 import Solutions from './home_page/solutions';
 import Actions from './home_page/actions';
-import SectionHeader from './home_page/section_header';
 import Footer from './footer';
 import SearchBar from './search_bar';
 import SectorsAll from './sectors/all';
 import './home_page.css';
 
-import climate_change_data_img from './images/home_page/carousel/climate_change_data.png';
-import carousel2 from './images/home_page/carousel/2.jpg';
-import carousel3 from './images/home_page/carousel/3.jpg';
-import carousel4 from './images/home_page/carousel/4.jpg';
 import maps_block_img from './images/home_page/blocks/maps.png';
 import coastal_zones_img from './images/home_page/coastal_zones.jpg';
 import data_block_img from './images/home_page/blocks/data.png';
@@ -40,19 +34,19 @@ class Homepage extends Component {
         id: 'maps',
         text: ' Use maps to identify climate change impacts and assess vulnerabilities in New York State. ',
         image: maps_block_img,
-        href: "/data/maps",
+        href: "/highlights/maps",
         },
        {title: 'Data',
         text: ' Explore New York State climate information through interactive charts and find a broad range of datasets and data products. ',
         id: "data",
         image: data_block_img,
-        href: "/data/data",
+        href: "/highlights/data_products",
         },
        {title: 'Documents',
         text: ' Discover reports, articles, plans, and other climate-related resources. ',
         id: 'documents',
         image: documents_block_img,
-        href: `/data/documents`
+        href: `/highlights/documents`
        }
      ];
 

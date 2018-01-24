@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Header from './header';
-import Footer from './footer';
 
 import './map_page.css';
 
