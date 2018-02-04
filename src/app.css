@@ -34,11 +34,15 @@ small {
 }
 
 .btn-primary {
-  background: #f27421 !important;
-  border-color: #f27421 !important;
+  background: #f6892e;
+  border-color: #f6892e;
   color: white !important;
-
 }
+.btn-primary:hover {
+  background-color: #e76f0a;
+  border-color: #dd6a0a;
+}
+
 .app {
   padding: 0em;
 }
