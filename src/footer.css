@@ -4,21 +4,20 @@
   padding: 2em 2em 2em 2em;
 }
 
-.footer .logos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.footer .img-responsive {
+  margin-bottom: 30px;
+  max-width: 100%;
+  height: auto;
 }
 
-.footer .footer-content {
+.footer .logos {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+
 }
 
 .footer p {
-  font-size: .8em;
+  font-size: 10px;
 }
 
 .footer .btn {
@@ -27,24 +26,12 @@
 }
 
 .footer h5 {
-  font-size: 1.1em;
+  font-size: 14px;
 }
 
 .footer .btn-primary:hover {
   background-color: #e76f0a;
   border-color: #dd6a0a;
-}
-
-.footer .logos a {
-  text-align: center;
-}
-.footer .logos img.primary-logo {
-  max-height: 125px;
-  height: 125px;
-}
-.footer .logos img {
-  margin: 20px;
-  max-width: 250px;
 }
 
 .footer .footer-content .row{
@@ -54,19 +41,12 @@
   justify-content: space-between;
 }
 
-.footer .footer-content .content {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  color: white;
-}
-
-.footer .content label {
+.footer .footer-content .content, .footer .content label {
   color: white;
 }
 
 .footer .content .btn {
-  margin-top: 1em;
+  margin-top: 10px;
   white-space: normal;
   word-break: break-word;
   width: 150px;

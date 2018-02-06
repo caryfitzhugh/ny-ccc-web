@@ -16,19 +16,31 @@ class Footer extends Component {
     return <div className='container-fluid footer'>
       <div className='footer-content container'>
         <div className='row'>
-          <div className='logos col-md-4 col-sm-4 col-xs-12'>
-            <a href='' rel="noopener noreferrer" target="_blank">
-              <img alt=''  src={nyserda_logo} />
-            </a>
-            <a href='' rel="noopener noreferrer" target="_blank">
-              <img alt=''  src={esf_logo} />
-            </a>
-            <a href='' rel="noopener noreferrer" target="_blank">
-              <img alt=''  src={cornell_logo} />
-            </a>
-            <a href='' rel="noopener noreferrer" target="_blank">
-              <img alt=''  src={nescaum_logo} />
-            </a>
+          <div className='col-md-4 col-sm-4 col-xs-12'>
+            <div className="col-sm-12 col-xs-8">
+              <a href='' rel="noopener noreferrer" target="_blank">
+                <img className="img-responsive logo" alt='New York State Energy Research and Development Authority (NYSERDA)'  src={nyserda_logo} />
+              </a>
+            </div>
+            <div className="col-sm-12 col-xs-8">
+              <a href='' rel="noopener noreferrer" target="_blank">
+                <img className="img-responsive logo" alt='SUNY College of Environmental Science and Forestry (ESF)'  src={esf_logo} />
+              </a>
+            </div>
+            <div className="col-sm-12">
+              <div className="row">
+                <div className="col-sm-5 col-12 logos">
+                  <a href='' rel="noopener noreferrer" target="_blank">
+                    <img className="img-responsive logo" alt='Cornell University'  src={cornell_logo} />
+                  </a>
+                </div>
+                <div className="col-sm-7 col-12">
+                  <a href='' rel="noopener noreferrer" target="_blank">
+                    <img className="img-responsive logo" alt='Northeast States for Coordinated Air Use Management (NESCAUM)'  src={nescaum_logo} />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <div className='content col-md-4 col-xs-12'>
             <Link to='/about#about_macc'> </Link>
@@ -41,7 +53,7 @@ class Footer extends Component {
             <p className='hidden-md-down'>
               We want to hear from you!  If you have ideas for datasets, data products, GIS layers, websites, documents, or other resources that would add value to the New York Climate Change Science Clearinghouse, please submit them. Content proposals are moderated, and submission of an idea is not a guarantee of inclusion in the Clearinghouse.
             </p>
-            <Link className='btn btn-primary btn-sm' to="/suggestions">
+            <Link className='btn btn-primary btn-sm pull-right' to="/suggestions">
             Propose Content
             </Link>
           </div>
