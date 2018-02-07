@@ -35,10 +35,16 @@
 }
 
 .search-bar .search-related-links a {
-  font-size: .6em;
+  font-size: 12px;
   color: #e6e9eb;
 }
 
 .search-bar.hide-subnav .search-related-links {
   display:none;
+}
+
+.search-bar .truncate {
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis; 
 }
