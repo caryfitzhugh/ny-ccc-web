@@ -48,7 +48,7 @@ class FacetGroup extends Component {
       {available_facets.length === 0 ?
         <ul> <li> <span>None</span></li></ul> :
         <FacetTree
-            parent={this.props.prefixed ? "ma" : null}
+            parent={this.props.prefixed ? "ny" : null}
             facets={shown_facets}
             apply_filters={this.props.apply_filters}
             on_toggle_facet={this.props.on_toggle_facet}
@@ -60,7 +60,7 @@ class FacetGroup extends Component {
           apply_filters={this.props.apply_filters}
           is_checked={this.props.is_checked}
           facets={available_facets}
-          parent={this.props.prefixed ? "ma" : null}
+          parent={this.props.prefixed ? "ny" : null}
           />
         : null}
     </div>;
