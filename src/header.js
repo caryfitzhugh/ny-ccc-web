@@ -58,7 +58,7 @@ class Header extends Component {
       {this.props.hide_subnav ?  null : (
       <div className='container-fluid navigation'>
         <div className='container'>
-          <div className='navbar navbar-expand-lg'>
+          <div className='navbar navbar-expand-lg justify-content-end'>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNav">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -74,7 +74,7 @@ class Header extends Component {
              <ActiveLink to='/highlights/documents'>Documents</ActiveLink>
              </div>
             </div>
-            <SearchBar className='' size='sm'/>
+            <SearchBar className='col-sm-4' size='sm'/>
 
           </div>
           

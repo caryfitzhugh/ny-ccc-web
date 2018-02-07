@@ -58,7 +58,7 @@ class SearchBar extends Component {
   render() {
     return (
       <div className={'search-bar ' + this.props.className}>
-        <div className="row row no-gutters">
+        <div className="row no-gutters">
           <div className="search-related-links hidden-xs">
             <a href="/advanced">Advanced Search</a>
             &nbsp; | &nbsp;
@@ -75,7 +75,7 @@ class SearchBar extends Component {
             <input value={this.query_string()}
                   onChange={(evt) => { this.update_search_text(evt.target.value)}}
                   onKeyDown={(evt) => this.handle_key_press(evt)}
-                  type='text' className='form-control' placeholder="Find maps, data products, reports, article, and more..."/>
+                  type='text' className='form-control truncate' placeholder="Search maps, reports, & more"/>
             <span className='input-group-btn'>
               {this.query_string() ? <span className='clear-button'><span onClick={(evt) => this.clear_query()} className='fa fa-times-circle-o' ></span> </span>: null }
               <button className='btn btn-primary search' type='button'
