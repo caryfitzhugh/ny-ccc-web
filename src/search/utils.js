@@ -54,8 +54,8 @@ const paramsToQString = (params) => {
         }
       });
 
-    query.sort_by_center_lat = "42.377117";
-    query.sort_by_center_lng = "-71.925258";
+    query.sort_by_center_lat = "43.094722";
+    query.sort_by_center_lng = "-75.275833";
     query.states = STATE;
     query.per_page = 20;
 

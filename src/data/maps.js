@@ -11,7 +11,7 @@ class MapsPage extends Component {
       banner={<BannerData
                 image={map_image}
                 href='/map'
-                title='MA CCC Map'
+                title='NY CCC Map'
                 content={
                  <div>
                   <p>
@@ -24,15 +24,15 @@ class MapsPage extends Component {
                 /> }
       featured_data={<FeaturedData
         collections={[
-          ["All", 'MA/data/maps/featured/all'],
-          ["Agriculture", 'MA/data/maps/featured/agriculture'],
-          ["Coastal", 'MA/data/maps/featured/coastal'],
-          ["Energy", 'MA/data/maps/featured/energy'],
-          ["Natural Resources", 'MA/data/maps/featured/natural-resources'],
-          ["Public Health", 'MA/data/maps/featured/public-health'],
-          ["Precipitation", 'MA/data/maps/featured/precipitation'],
-          ["Temperature", 'MA/data/maps/featured/temperature'],
-          ["Flooding", 'MA/data/maps/featured/flooding']
+          ["All", 'NY/data/maps/featured/all'],
+          ["Agriculture", 'NY/data/maps/featured/agriculture'],
+          ["Coastal", 'NY/data/maps/featured/coastal'],
+          ["Energy", 'NY/data/maps/featured/energy'],
+          ["Natural Resources", 'NY/data/maps/featured/natural-resources'],
+          ["Public Health", 'NY/data/maps/featured/public-health'],
+          ["Precipitation", 'NY/data/maps/featured/precipitation'],
+          ["Temperature", 'NY/data/maps/featured/temperature'],
+          ["Flooding", 'NY/data/maps/featured/flooding']
         ]}
         />}
       >
