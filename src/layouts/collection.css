@@ -10,4 +10,15 @@
   box-shadow: 0 0 3px rgba(0,0,0,0.2);
 }
 
-.collections {padding:0;margin:0;}
+.collections {
+	padding:0;margin:0;
+}
+
+.collections span {
+	color:#5690ca;
+	font-size:14px;
+}
+
+.collections li {
+	margin-bottom: 5px;
+}
