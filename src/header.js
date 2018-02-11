@@ -63,7 +63,6 @@ class Header extends Component {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse justify-content-between" id="toggleNav">
-              <hr />
               <div className="nav-links row">
                  <div className="col-sm-3">
                   <ActiveLink to='/highlights/maps'> Maps </ActiveLink>
