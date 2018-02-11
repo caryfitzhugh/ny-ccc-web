@@ -201,6 +201,17 @@
   margin-right: 0.3em;
 }
 
+@media (max-width: 480px) {
+  .header-wrap .navigation,
+  .header-wrap .navigation > .container {
+    padding:0;
+  }
+}
+
+.header-wrap hr {
+  margin:10px;
+}
+
 @font-face{
    font-family:eea-icons;src:url(/fonts/eea-icons.eot?#iefix)
     format("embedded-opentype"),

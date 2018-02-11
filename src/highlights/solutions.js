@@ -104,7 +104,7 @@ const Solutions = (props) => (
                 <p>After having identified problems, your next step in building resiliency is to investigate and evaluate potential solutions. Responding to climate change can involve adaptation, mitigation, or both.</p>
             <hr />
 
-            <ArticleBlocks articles={strategies} id="strategies" />
+            <ArticleBlocks articles={strategies} showSearchBtn={true} id="strategies" />
 
             <hr />
 

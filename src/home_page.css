@@ -36,7 +36,14 @@
 
 .home-page .header-search {
   background: url(./images/home_page/flooding.jpg) 20%;
-  height:320px;}
+  height:320px;
+}
+
+@media (max-width:480px) {
+  .home-page .header-search {
+    margin-bottom:30px;
+  }
+}
 
 .home-page .search-form {
     position: absolute;

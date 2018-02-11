@@ -10,6 +10,14 @@
 	margin-left:30px;
 }
 
+@media (max-width: 480px) {
+	.data-tabs h1 > a {
+		margin-left:0;
+		display:block;
+		margin-top:10px;
+	}
+}
+
 .data-tabs .nav-tabs li > a {
 	padding:10px 15px;
 	border-radius:4px 4px 0 0;
@@ -27,4 +35,8 @@
 
 .data-tabs .fa {
 	margin-right:2px;
+}
+
+.data-tabs .tab-content .collections {
+	display:flex;
 }

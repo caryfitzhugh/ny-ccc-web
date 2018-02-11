@@ -132,12 +132,12 @@ class DataProductPage extends Component {
 			          </div>
 			          <hr />
 			          <div className="row">
-					      <div className="col-sm-7">
+					      <div className="col-sm-7 col-6">
 					        <h3>Spatial Data Products <small>Climate Data Grapher - County, State, Basin</small></h3>
 					        <br />
 					        <Collection collection_name="NY/highlights/data_products/spatial_products" />
 					      </div>
-					      <div className="col-sm-5">
+					      <div className="col-sm-5 col-6">
 					        <h3>Station Data Products <small>Climate Data Grapher</small></h3>
 					        <br />
 					        <Collection collection_name="NY/highlights/data_products/station_products" />

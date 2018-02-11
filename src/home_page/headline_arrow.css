@@ -1,3 +1,7 @@
+.headline-arrow {
+	margin-bottom:25px;
+}
+
 .headline-arrow .arrow {
 	padding: 20px;
 	background: #e6e9eb;
@@ -31,14 +35,18 @@
 	}
 }
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
 	.headline-arrow h1.home,.headline-arrow h2.home {
-	    font-size: 28px;
-	    display: inline-block;
+	    font-size: 20px;
+	    width:100%;
+	    display:block;
+	}
+	.headline-arrow {
+		margin:0;
 	}
 }
 
 .headline-arrow .home {
-	font-size:20px;
-	display:block;
+	font-size:28px;
+	display:inline;
 }

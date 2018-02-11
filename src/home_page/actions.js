@@ -6,9 +6,7 @@ import './actions.css';
 const Actions = (props) => (
 <section>
   <div className="container actions">
-    <div className="row">
-      <HeadlineArrow title="Take Action" href="/highlights/actions" showMore={true}/>
-    </div>
+    <HeadlineArrow title="Take Action" href="/highlights/actions" showMore={true}/>
     <div className="row">
       <div className="col-sm-7">
         <div className="primary-story">
@@ -23,7 +21,7 @@ const Actions = (props) => (
       <div className="col-sm-5">
         <div className="row squares">
           {(props.squares).map(square => {
-            return (<div className="col-sm-6">
+            return (<div className="col-6 ">
               <div className="square-background">
                 <a className="square-caption" href={square.squareLink}>
                  <p>

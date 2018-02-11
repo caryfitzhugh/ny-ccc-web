@@ -9,7 +9,7 @@
 
 .tiles-region .image-credit {
 	color: #414c54;
-	font-size: .5em;
+	font-size: 10px;
 }
 
 .tiles-region .no-credit {
@@ -17,5 +17,10 @@
 }
 
 .tiles-region .tile a {
+	color:#5690ca;
+}
+
+.tiles-region .more-link {
+	font-size:14px;
 	color:#5690ca;
 }

@@ -28,7 +28,7 @@ const DataTabs = (props) => (
         return (
           <div className="tab-pane" id={tab.id}>
             <div className="highlights-collection grid">
-              <Collection collection_name={tab.collection} show_images={true} />
+              <Collection collection_name={tab.collection} collections_class="row" show_images={true} />
             </div>
           </div>
         )

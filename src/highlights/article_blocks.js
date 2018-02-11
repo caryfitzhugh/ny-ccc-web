@@ -8,7 +8,7 @@ const ArticleBlocks = (props) => (
       <div className="row">
         {(props.articles).map(article => {
           return (
-            <div className="col-sm-6 article">
+            <div className="col-sm-6 col-6 article">
               <img src={article.image} className="img-responsive" alt={"Photo: " + article.type} />
 
               <p className="caption">

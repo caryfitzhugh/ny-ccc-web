@@ -36,9 +36,9 @@ class Collection extends Component {
       return null;
     } else {
     return (
-      <ul className='collections'>
+      <ul className={'collections ' + this.props.collections_class}>
       {props.collection_result.resources.map((res, i) => {
-          return <li className='collections-resource' key={i}> <Link to={`/resources/${res.docid}`}>
+          return <li className={'collections-resource ' + ((this.props.show_images) ? ' col-sm-3 with-image' : null)} key={i}> <Link to={`/resources/${res.docid}`}>
             { (this.props.show_images && res.image) ? <img alt={res.title} src={res.image}/> : null}
             <span>{res.title}</span> </Link> </li>
         })}

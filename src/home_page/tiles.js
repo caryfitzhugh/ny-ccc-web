@@ -18,12 +18,12 @@ const Tiles = (props) => (
           <p className='hidden-sm-down'>
             <b>{tile.title}</b>
             {tile.text} 
-          </p>
           <Link id={tile.id} to={tile.href}>
-            <small className="pull-right">
+            <span className=" more-link pull-right">
               More <i className="fa fa-angle-double-right"></i>
-            </small>
+            </span>
           </Link>
+          </p>
         </div>);
       })}
     </div>

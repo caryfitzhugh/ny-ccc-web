@@ -63,23 +63,22 @@ class Header extends Component {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse justify-content-between" id="toggleNav">
-            <div className="nav-links row">
-             <div className="col-sm-3">
-              <ActiveLink to='/highlights/maps'> Maps </ActiveLink>
-             </div>
-             <div className="col-sm-3">
-             <ActiveLink to='/highlights/data_products'>Data</ActiveLink>
-             </div>
-             <div className="col-sm-3">
-             <ActiveLink to='/highlights/documents'>Documents</ActiveLink>
-             </div>
-            </div>
-            <SearchBar className='col-sm-4' size='sm'/>
-
+              <hr />
+              <div className="nav-links row">
+                 <div className="col-sm-3">
+                  <ActiveLink to='/highlights/maps'> Maps </ActiveLink>
+                 </div>
+                 <div className="col-sm-3">
+                  <ActiveLink to='/highlights/data_products'>Data</ActiveLink>
+                 </div>
+                 <div className="col-sm-3">
+                  <ActiveLink to='/highlights/documents'>Documents</ActiveLink>
+                 </div>
+              </div>
+              <hr />
+              <SearchBar className='col-sm-4' size='sm'/>
           </div>
-          
-
-          </div>
+        </div>
         </div>
       </div>)}
     </div>
