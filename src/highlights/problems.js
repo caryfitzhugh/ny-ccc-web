@@ -32,7 +32,8 @@ let assessments = [
                 definition: " is the product of the likelihood of a hazardous event occurring and the magnitude of consequences should that event occur. For example, two roads in a river valley may have the same vulnerability to flooding, but the risk is greater for a main traffic artery than for a road with little traffic."
             }
         ],
-        collection: "NY/highlights/problems/impacts_risks"
+        collection: "NY/highlights/problems/impacts_risks",
+        query: "impacts+risks"
     },
     {
         title: "Vulnerability Assessment",
@@ -45,7 +46,8 @@ let assessments = [
                 definition: " is the degree to which natural and human systems are susceptible to, and unable to cope with, adverse impacts of climate change. For example, aging culverts designed to older standards and with pre-existing erosion are more vulnerable to damage and failure than newer culverts at a similar location."
             }
         ],
-        collection: "NY/highlights/problems/vulnerability"
+        collection: "NY/highlights/problems/vulnerability",
+        query: "vulnerability assessment"
     }
 ]
 

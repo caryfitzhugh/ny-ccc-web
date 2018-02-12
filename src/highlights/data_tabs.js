@@ -1,5 +1,6 @@
 import React from 'react';
 import Collection from '../layouts/collection';
+import SearchLink from '../utils/search_link';
 
 import './data_tabs.css';
 
@@ -8,10 +9,10 @@ const DataTabs = (props) => (
   <div className="col-12 data-tabs">
     <h1>
       {props.title}
-      <a href="/not-yet-implemented/search-all-maps" className="btn btn-sm btn-primary">
+      <SearchLink className="btn btn-sm btn-primary" params={{facets: {formats: [props.query]}}}>
         <i className="fa fa-search"></i>
         {props.btnTitle}
-      </a>
+      </SearchLink>
     </h1>
     <ul className="nav nav-tabs">
       {(props.tabs).map((tab, index) => {

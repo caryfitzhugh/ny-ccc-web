@@ -1,6 +1,6 @@
 import React from 'react';
 import Collection from '../layouts/collection';
-
+import SearchLink from '../utils/search_link';
 
 import './potential_solution.css';
 
@@ -20,7 +20,8 @@ const PotentialSolutions = (props) => (
 
           <Collection collection_name={solution.collection} />
 
-          <a className="btn btn-default btn-wrap-text" href="/not-yet-implemented/solutions">More on {solution.title}</a>
+          <SearchLink className="btn btn-default btn-wrap-text" params={{facets: {sectors: [solution.query]}}}>More on {solution.title}</SearchLink>
+
         </div>
       </div>
       )

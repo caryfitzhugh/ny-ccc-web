@@ -1,6 +1,7 @@
 import React from 'react';
 import Collection from '../layouts/collection';
 import DataTabs from './data_tabs';
+import MapLink from '../utils/map_link';
 
 import map_img from '../images/highlights/interactive_map.jpeg';
 
@@ -62,13 +63,13 @@ const Maps = (props) => (
           <div className="highlights-collection">
             <div className="row">
               <div className="col-sm-5">
-                <a href="/not-yet-implemented/maps">
-                  <img src={map_img} className="img-responsive" alt=""/> 
-                </a>
+                <MapLink>
+                  <img src={map_img} className="img-responsive" alt="Interactive Map and GIS Viewer"/>
+                </MapLink>
               </div>
               <div className="col-sm-7">
                 <h1>Interactive Map and GIS Viewer</h1>
-                <a href="/not-yet-implemented/maps" className="btn btn-sm btn-primary">Interactive Map</a>
+                <MapLink className="btn btn-sm btn-primary">Interactive Map</MapLink>
                 <br/><br/>
                 <p>An interactive map of climate change and related data for New York State. Users can select data layers to display from a menu, filter layers by sector, vary parameters within certain layers, and select from a variety of base layers and regional boundaries.  For each layer, links are available to metadata and the original source.</p>
                 <p>A video tutorial on how to use the Interactive Map and GIS Viewer can be found here.</p>
@@ -79,7 +80,7 @@ const Maps = (props) => (
         </div>
       </div>
       <div className="row">
-        <DataTabs tabs={mapsTabs} title="Featured Maps" btnTitle="Search All Maps" />
+        <DataTabs tabs={mapsTabs} query="ny::maps" title="Featured Maps" btnTitle="Search All Maps" />
       </div>
     </div>
   </section>

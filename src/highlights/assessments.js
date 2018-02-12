@@ -1,5 +1,6 @@
 import React from 'react';
 import Collection from '../layouts/collection';
+import SearchLink from '../utils/search_link';
 
 import './assessments.css';
 
@@ -24,7 +25,7 @@ const Assessments = (props) => (
 
               <Collection collection_name={assessment.collection} />
 
-              <a className="btn btn-default btn-wrap-text" href="/not-yet-implemented/solutions">More {assessment.title} Resources</a>
+              <SearchLink className="btn btn-default btn-wrap-text" params={{query: assessment.query}}>More {assessment.title} Resources</SearchLink>
 
               <hr />
 

@@ -21,22 +21,20 @@ let articles = [
     image: meeting_img,
     type: "Create a Plan",
     abstract: "Decide on an approach, formulate an implementation plan, and set up a process to monitor and reassess.",
-    collection: "NY/highlights/actions/plan",
-    searchLink: "not-yet-implemented/actions/plan"
+    collection: "NY/highlights/actions/plan"
   },
   {
     image: change_img,
     type: "Find Funding",
     abstract: "Successful implementation may depend on finding funding opportunities to support your project.",
-    collection: "NY/highlights/actions/find_funding",
-    searchLink: "not-yet-implemented/actions/find_funding"
+    collection: "NY/highlights/actions/find_funding"
   },
 ]
 
 let articleList = [
     {
         title: "Reducing greenhouse gas emissions and preparing for climate change: Climate Smart Communities",
-        buttonLabel: "More on greenhouse gas emissions",
+        buttonLabel: "greenhouse gas emissions",
         id: "greenhouse",
         img: greenhouse_img,
         caption: "Climate Smart Community certification ",
@@ -50,7 +48,7 @@ let articleList = [
     },
     {
         title: "Preparing for heavy downpours: Save the Rain",
-        buttonLabel: "More on preparing for heavy downpours",
+        buttonLabel: "preparing for heavy downpours",
         id: "rain",
         img: rainbarrel_img,
         caption: "Rain barrel ",
@@ -64,7 +62,7 @@ let articleList = [
     },
     {
         title: "Preparing for extreme weather along lakes, rivers, and the coast: stabilizing shorelines",
-        buttonLabel: "More on stabilizing shorelines",
+        buttonLabel: "stabilizing shorelines",
         id: "shoreline",
         img: shoreline_img,
         caption: "Shoreline Stabilization Handbook for Lake Champlain and Other Inland Lakes ",
@@ -78,7 +76,7 @@ let articleList = [
     },
     {
         title: "Managing stormwater along the coast: the Staten Island Bluebelt",
-        buttonLabel: "More on managing stormwater",
+        buttonLabel: "managing stormwater",
         id: "stormwater",
         img: stormwater_img,
         caption: "Staten Island Bluebelt ",
@@ -92,7 +90,7 @@ let articleList = [
     },
     {
         title: "Building for resilience along New York City's coast",
-        buttonLabel: "More on coastal resilience",
+        buttonLabel: "coastal resilience",
         id: "resilience",
         img: coastal_resilience_img,
         caption: "Cross section of buildings showing flood ",
@@ -106,7 +104,7 @@ let articleList = [
     },
     {
         title: "Promoting renewable energy: Solar Tompkins",
-        buttonLabel: "More on renewable energy",
+        buttonLabel: "renewable energy",
         id: "renewable",
         img: renewable_energy_img,
         caption: "Solar Tompkins ",
@@ -151,20 +149,21 @@ const Actions = (props) => (
             <div className="col-sm-9 col-12 content-area">
 
                 <HeadlineArrow title="Take Action" href="#"/>
-                <p>The final step in building resilience is to take action. Put your plan into place, establish benchmarks, and track progress. Revise at regular intervals as necessary. Understanding how to communicate your plan with stakeholders can help build and maintain support.</p>
 
+                <p>The final step in building resilience is to take action. Put your plan into place, establish benchmarks, and track progress. Revise at regular intervals as necessary. Understanding how to communicate your plan with stakeholders can help build and maintain support.</p>
                 <hr />
 
                 <ArticleBlocks articles={articles} id="action" />
 
                 <hr />
-
                 <h3 id="successStories">Success Stories</h3>
+
                 <ArticleList list={articleList} />
                 
             </div>
 
             <Sidebar anchors={anchors} resourcesCollection="NY/highlights/stakeholder_resources" mapsCollection="NY/highlights/highlights_maps" />
+       
         </div>
     </div>
 </section>

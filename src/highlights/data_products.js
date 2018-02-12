@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Collection from '../layouts/collection';
 import DataTabs from './data_tabs';
+import DatagrapherLink from '../utils/datagrapher_link';
 
 import datagrapher_img from '../images/highlights/datagrapher.jpg';
 
@@ -73,13 +74,13 @@ class DataProductPage extends Component {
 			          <div className="highlights-collection">
 			            <div className="row">
 			              <div className="col-sm-5">
-			                <a href="/not-yet-implemented/data_products">
-			                  <img src={datagrapher_img} className="img-responsive" alt="Climate Data Grapher"/> 
-			                </a>
+			              	<DatagrapherLink file="Temp/state/maxt/ANN/NY/">
+			              		<img src={datagrapher_img} className="img-responsive" alt="Climate Data Grapher"/>
+			             	</DatagrapherLink>
 			              </div>
 			              <div className="col-sm-7">
 			             	<h1>Climate Data Grapher</h1>
-			                <a href="/not-yet-implemented/data_products" className="btn btn-sm btn-primary">Interactive Chart</a>
+			             	<DatagrapherLink file="Temp/state/maxt/ANN/NY/" className="btn btn-sm btn-primary">Interactive Chart</DatagrapherLink>
 			                <br/><br/>
 			            	<p>
 			            		User-generated time series graphs of climate data, both observed and projected (future and historical.)  
@@ -147,7 +148,7 @@ class DataProductPage extends Component {
 			        </div>
 			      </div>
 			      <div className="row">
-			        <DataTabs tabs={dataTabs} title="Featured Data Products" btnTitle="Search All Data Products" />
+			        <DataTabs tabs={dataTabs} query="ny::data" title="Featured Data Products" btnTitle="Search All Data Products" />
 			      </div>
 			    </div>
 			  </section>

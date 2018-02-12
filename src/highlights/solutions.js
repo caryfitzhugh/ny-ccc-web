@@ -19,7 +19,7 @@ let strategies = [
     source: "NYC Department of Environmental Protection, 2008",
     abstract: "Adaptation is action taken to prepare for climate change, helping to reduce adverse impacts or take advantage of beneficial ones. Adaptation can be thought of as better planning, incorporating the most current information about climate into a variety of decisions.",
     collection: "NY/highlights/investigate_solutions/adaptation",
-    searchLink: "not-yet-implemented/solutions/adaptation"
+    query: "ny::adaptation"
   },
   {
     image: windmill_img,
@@ -27,7 +27,7 @@ let strategies = [
     source: "Iberdrola Renewables, Inc., NREL 15232",
     abstract: "Mitigation is action taken to reduce the severity of climate change, by reducing greenhouse gas emissions. Early mitigation will make it easier to adapt to climate change later on.",
     collection: "NY/highlights/investigate_solutions/mitigation",
-    searchLink: "not-yet-implemented/solutions/mitigation"
+    query: "ny::mitigation"
   }
 ]
 
@@ -35,47 +35,56 @@ let potentialSolutions = [
     {
         title: "Water Resources",
         collection: "NY/highlights/investigate_solutions/water_resources",
-        icon: "tint"
+        icon: "tint",
+        query: "ny::water resources" 
     },
     {
         title: "Agriculture",
         collection: "NY/highlights/investigate_solutions/agriculture",
-        icon: "leaf"
+        icon: "leaf",
+        query: "ny::agriculture"
     },
     {
         title: "Telecommunications",
         collection: "NY/highlights/investigate_solutions/telecommunications",
-        icon: "mobile-phone"
+        icon: "mobile-phone",
+        query: "ny::telecommunications"
     },
     {
         title: "Ecosystems",
         collection: "NY/highlights/investigate_solutions/ecosystems",
-        icon: "tree"
+        icon: "tree",
+        query: "ny::ecosystems"
     },
     {
         title: "Energy",
         collection: "NY/highlights/investigate_solutions/energy",
-        icon: "lightbulb-o"
+        icon: "lightbulb-o",
+        query: "ny::energy"
     },
     {
         title: "Buildings",
         collection: "NY/highlights/investigate_solutions/buildings",
-        icon: "university"
+        icon: "university",
+        query: "ny::buildings"
     },
     {
         title: "Coastal Zones",
         collection: "NY/highlights/investigate_solutions/coastal_zones",
-        icon: "anchor"
+        icon: "anchor",
+        query: "ny::coastal zones"
     },
     {
         title: "Public Health",
         collection: "NY/highlights/investigate_solutions/public_health",
-        icon: "medkit"
+        icon: "medkit",
+        query: "ny::public health"
     },
     {
         title: "Transportation",
         collection: "NY/highlights/investigate_solutions/transportation",
-        icon: "truck"
+        icon: "truck",
+        query: "ny::transportation"
     }
 ]
  

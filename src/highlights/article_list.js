@@ -1,5 +1,6 @@
 import React from 'react';
 import Collection from '../layouts/collection';
+import SearchLink from '../utils/search_link';
 
 import './article_list.css';
 
@@ -33,7 +34,7 @@ const ArticleList = (props) => (
 
           <Collection collection_name={listItem.collection} />
 
-          <a className="btn btn-default btn-wrap-text" href="/not-yet-implemented/solutions"> {(listItem.buttonLabel) ? listItem.buttonLabel : <span>More {listItem.title} Resources</span>}</a>
+          <SearchLink className="btn btn-default btn-wrap-text" params={{query:(listItem.buttonLabel ? listItem.buttonLabel : listItem.title).toLowerCase()}}>{(listItem.buttonLabel) ? <span>More on {listItem.buttonLabel}</span> : <span>More {listItem.title} Resources</span>}</SearchLink>
         </div> 
       </div>  
       )
