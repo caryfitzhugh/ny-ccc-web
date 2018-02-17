@@ -23,7 +23,7 @@ const Assessments = (props) => (
               )}
               <p>{assessment.definition}</p>
 
-              <Collection collection_name={assessment.collection} />
+              <Collection collections_class={"row"} show_images={true} collection_name={assessment.collection} />
 
               <SearchLink className="btn btn-default btn-wrap-text" params={{query: assessment.query}}>More {assessment.title} Resources</SearchLink>
 

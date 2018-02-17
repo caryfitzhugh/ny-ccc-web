@@ -1,6 +1,8 @@
 import React from 'react';
 import Collection from '../layouts/collection';
 import SearchLink from '../utils/search_link';
+import DetailedList from '../layouts/detailed_list';
+
 
 
 import './documents.css';
@@ -11,7 +13,7 @@ const Documents = (props) => (
       <div className="col-sm-9 col-12 main">
         <h1>Key Reports <small>New York State</small></h1>
         <br/>
-        <Collection collection_name="NY/highlights/data_products/key_reports" />
+        <DetailedList collection_name="NY/highlights/data_products/key_reports" />
       </div>
       <div className="col-sm-3 hidden-xs sidebar">
        
