@@ -61,13 +61,6 @@ class SearchBar extends Component {
         <div className="row no-gutters">
           <div className="search-related-links hidden-xs">
             <a href="/advanced">Advanced Search</a>
-            &nbsp; | &nbsp;
-            <a id="bookmarks_nav" href="/bookmarks">
-            Selected Items
-            (<span data-role="bookmark-counter">0</span>)
-            </a>
-            &nbsp; | &nbsp;
-            <a href="/search_history">Search History</a>
           </div>
         </div>
         <div className="row no-gutters">
