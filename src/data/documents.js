@@ -126,7 +126,7 @@ class DocumentsPage extends Component {
               </div>
               <FacetSection {... facet_section_props}
                 title="Sectors" field='sectors' facets={[
-                  "ma::agriculture",
+                  "ny::agriculture",
                   "ma::coastal zones",
                   "ma::economy",
                   "ma::energy",
