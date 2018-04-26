@@ -189,7 +189,7 @@ const Problems = (props) => (
 
                     </div>
                     <div className="col-sm-6">
-                        <img src={flooding_img} alt="NY 416 flooded by nearby Wallkill River, already high after Hurricane Irene, following Tropical Storm Lee, south of Montgomery, NY."/>
+                        <img src={flooding_img} alt="Flooded NY road due to a Hurrican and Tropical Storm"/>
                         <p className="caption">
                             NY 416 flooded by nearby Wallkill River, already high after Hurricane Irene, following Tropical Storm Lee, south of Montgomery, NY.
                         </p>

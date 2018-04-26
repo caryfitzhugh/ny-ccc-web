@@ -20,7 +20,7 @@ class Sectors extends Component {
         {(this.props.sectors || []).map ( (sector, indx) => {
           return (<Link to={sector.href || "#"} key={indx} className='sector col-sm-2 '>
             <div className='icon'>{sector.icon}</div>
-            <span> {sector.name}</span>
+            <p> {sector.name}</p>
           </Link>);
         })}
       </div>
