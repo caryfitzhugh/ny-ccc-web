@@ -43,8 +43,9 @@ class Footer extends Component {
             </div>
           </div>
           <div className='content col-md-4 col-xs-12'>
-            <Link to='/about#about_macc'> </Link>
-            <h5>About NYCCSC</h5>
+            <Link to='/about#about_macc'> 
+              <h5>About NYCCSC</h5>
+            </Link>
             <p className='hidden-md-down'>
               The New York Climate Change Science Clearinghouse (NYCCSC) is a regional gateway to data and information relevant to climate change adaptation and mitigation across New York State. It provides climate science data and literature and other resources for policy-makers, practitioners, and the public, to support scientifically sound and cost-effective decision making.
               <Link to='/about#about_macc'> More <i className="fa fa-angle-double-right"></i> </Link>

@@ -22,9 +22,7 @@ class ResourceBlocks extends Component {
               </Link>
 
             </h2>
-            <Link to={block.href}>
-              <img src={block.image} alt={block.text}/>
-            </Link>
+              <img src={block.image} alt={block.imageText}/>
             {block.image_credit ? <div className='image-credit'>{block.image_credit}</div> : null}
             <p className='hidden-sm-down'>{block.text} </p>
           </div>);

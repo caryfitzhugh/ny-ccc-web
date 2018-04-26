@@ -33,17 +33,20 @@ class Homepage extends Component {
        {title: 'Maps',
         id: 'maps',
         text: ' Use maps to identify climate change impacts and assess vulnerabilities in New York State. ',
+        imageText: ' Climate Change Maps ',
         image: maps_block_img,
         href: "/highlights/maps",
         },
        {title: 'Data',
         text: ' Explore New York State climate information through interactive charts and find a broad range of datasets and data products. ',
+        imageText: ' Climate Information Charts ',
         id: "data",
         image: data_block_img,
         href: "/highlights/data_products",
         },
        {title: 'Documents',
         text: ' Discover reports, articles, plans, and other climate-related resources. ',
+        imageText: ' Climate Change Documents ',
         id: 'documents',
         image: documents_block_img,
         href: `/highlights/documents`
@@ -54,12 +57,14 @@ class Homepage extends Component {
        {title: 'Coastal Flooding',
         id: 'coastal',
         text: ' due to sea level risk and storm surge will increasingly put lives and property at risk. Health, water quality, energy, infrastructure, and coastal ecosystems are all affected.  ',
+        alt: ' Urban Flooding ',
         image: coastal_zones_img,
         href: "/highlights/problems#flooding",
         image_credit: "Photo: Metropolitan Transportation Authority / Patrick Cashin"
         },
        {title: 'Heat Waves',
         text: '  will become more frequent and intense, increasing heat-related illness and death and posing new challenges to the energy system, air quality, and agriculture.  ',
+        alt: ' Heat Wave Over City ',
         id: "heatwaves",
         image: heat_wave_img,
         href: "/highlights/problems#heatWaves",
@@ -67,6 +72,7 @@ class Homepage extends Component {
         },
        {title: 'Heavy Downpours',
         text: ' are increasing and are projected to increase further. These can lead to flooding and related impacts on water quality, infrastructure, and agriculture. ',
+        alt: ' Heavy Rain ',
         id: 'downpours',
         image: downpour_img,
         href: "/highlights/problems#downpours",
@@ -75,6 +81,7 @@ class Homepage extends Component {
        ,
        {title: 'Extreme Weather',
         text: ' can have a big impact in a short time. Climate models predict significant changes in the frequency and intensity of some extreme weather events over the coming decades.  ',
+        alt: ' Snow Bank ',
         id: 'weather',
         image: extreme_weather_img,
         href: "/highlights/problems#weather",
@@ -126,9 +133,9 @@ class Homepage extends Component {
         <div className='header-search'>
         <div className='tag-line'>
          <div className='container'>
-          <h4>Providing climate change data and information relevant to New York State to support scientifically sound decision making.
-             <Link to='/about'> More <span className='fa fa-angle-double-right'></span> </Link>
-          </h4>
+          <p>Providing climate change data and information relevant to New York State to support scientifically sound decision making.
+             <Link to='/about'> About <span className='fa fa-angle-double-right'></span> </Link>
+          </p>
          </div>
         </div>
         <span className="credit">

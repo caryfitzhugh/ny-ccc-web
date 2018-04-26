@@ -14,7 +14,7 @@ const ActiveLink = (props) => {
 
 const Logo = (props) =>
   <Link to='/' className='logo'>
-    <img className='hidden-xs' src={logo_img} alt="logo" />
+    <img className='hidden-xs' src={logo_img} alt="NY CCSC Logo" />
     <div className='logo-text slate-text'>
       <h1>
         <em className='slate-text'> NY </em>

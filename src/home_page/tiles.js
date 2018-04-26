@@ -11,17 +11,15 @@ const Tiles = (props) => (
     <div className='row'>
       {(props.tiles).map (tile => { 
         return (<div  className='col-sm-3 tile col-12 '>
-          <Link to={tile.href}>
-            <img className="img-responsive" src={tile.image} alt={tile.text}/>
-          </Link>
+          <img className="img-responsive" src={tile.image} alt={tile.alt}/>
           {tile.image_credit ? <div className='image-credit'>{tile.image_credit}</div> : <div className="no-credit" />}
           <p className='hidden-sm-down'>
             <b>{tile.title}</b>
             {tile.text} 
           <Link id={tile.id} to={tile.href}>
-            <span className=" more-link pull-right">
-              More <i className="fa fa-angle-double-right"></i>
-            </span>
+            <p className=" more-link text-right">
+              More on {tile.title}<i className="fa fa-angle-double-right"></i>
+            </p>
           </Link>
           </p>
         </div>);
