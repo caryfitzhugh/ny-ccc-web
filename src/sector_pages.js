@@ -15,6 +15,7 @@ import PublicSafetyEmergencyResponse from './sectors/public_safety_emergency_res
 import RecreationSectorPage from './sectors/recreation';
 import BuildingsSectorPage from './sectors/buildings';
 import WaterResourcesSectorPage from './sectors/water_resources';
+import TelecommunicationSectorPage from './sectors/telecommunications';
 
 import SectorsPage from './sectors/index';
 
@@ -38,6 +39,8 @@ class SectorPages extends Component {
               <Route path='/sectors/recreation' component={RecreationSectorPage} />
               <Route path='/sectors/buildings' component={BuildingsSectorPage} />
               <Route path='/sectors/water-resources' component={WaterResourcesSectorPage} />
+              <Route path='/sectors/water-resources' component={WaterResourcesSectorPage} />
+              <Route path='/sectors/telecommunications' component={TelecommunicationSectorPage} />
               <Route path='/' component={NotFound} />
             </Switch>
           </div>
