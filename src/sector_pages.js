@@ -13,7 +13,7 @@ import NaturalResourcesHabitatsSectorPage from './sectors/natural_resources_habi
 import PublicHealthSectorPage from './sectors/public_health';
 import PublicSafetyEmergencyResponse from './sectors/public_safety_emergency_response';
 import RecreationSectorPage from './sectors/recreation';
-import InfrastructureSectorPage from './sectors/infrastructure';
+import BuildingsSectorPage from './sectors/buildings';
 import WaterResourcesSectorPage from './sectors/water_resources';
 
 import SectorsPage from './sectors/index';
@@ -36,7 +36,7 @@ class SectorPages extends Component {
               <Route path='/sectors/public-health' component={PublicHealthSectorPage} />
               <Route path='/sectors/public-safety-emergency-response' component={PublicSafetyEmergencyResponse} />
               <Route path='/sectors/recreation' component={RecreationSectorPage} />
-              <Route path='/sectors/infrastructure' component={InfrastructureSectorPage} />
+              <Route path='/sectors/buildings' component={BuildingsSectorPage} />
               <Route path='/sectors/water-resources' component={WaterResourcesSectorPage} />
               <Route path='/' component={NotFound} />
             </Switch>
