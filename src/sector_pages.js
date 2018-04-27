@@ -4,7 +4,7 @@ import {NotFound} from './not_found';
 import Header from './header';
 import Footer from './footer';
 import AgricultureSectorPage from './sectors/agriculture';
-import ForestrySectorPage from './sectors/forestry';
+import EcosystemsSectorPage from './sectors/ecosystems';
 import CoastalZonesSectorPage from './sectors/coastal_zones';
 import EconomySectorPage from './sectors/economy';
 import EnergySectorPage from './sectors/energy';
@@ -27,7 +27,7 @@ class SectorPages extends Component {
             <Switch>
               <Route exact path="/sectors/" component={SectorsPage} />
               <Route path="/sectors/agriculture" component={AgricultureSectorPage} />
-              <Route path="/sectors/forestry" component={ForestrySectorPage} />
+              <Route path="/sectors/ecosystems" component={EcosystemsSectorPage} />
               <Route path='/sectors/coastal-zones' component={CoastalZonesSectorPage} />
               <Route path='/sectors/economy' component={EconomySectorPage} />
               <Route path='/sectors/energy' component={EnergySectorPage} />
