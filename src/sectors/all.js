@@ -15,7 +15,7 @@ const sectors = {
   'ecosystems': {name: "Ecosystems", icon: (<span className='fa fa-tree'></span>), href: "/sectors/ecosystems"},
   'energy': {name: "Energy", icon: (<span className='fa fa-lightbulb-o'></span>), href: "/sectors/energy"},
   'public_health': {name: "Public Health", icon: (<span className='fa fa-medkit'></span>), href: "/sectors/public-health"},
-  'telecommunications': {name: "Telecommunications", icon: (<span className='fa fa-mobile-phone'></span>), href: "/sectors/telecommuncations"},
+  'telecommunications': {name: "Telecommunications", icon: (<span className='fa fa-mobile-phone'></span>), href: "/sectors/telecommunications"},
   'transportation': {name: "Transportation", icon: (<span className='fa fa-truck'></span>), href: "/sectors/transportation"},
   'water_resources': {name: "Water Resources", icon: (<span className='fa fa-tint'></span>), href: "/sectors/water-resources"},
 };

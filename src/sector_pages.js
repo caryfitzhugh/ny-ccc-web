@@ -39,7 +39,6 @@ class SectorPages extends Component {
               <Route path='/sectors/recreation' component={RecreationSectorPage} />
               <Route path='/sectors/buildings' component={BuildingsSectorPage} />
               <Route path='/sectors/water-resources' component={WaterResourcesSectorPage} />
-              <Route path='/sectors/water-resources' component={WaterResourcesSectorPage} />
               <Route path='/sectors/telecommunications' component={TelecommunicationSectorPage} />
               <Route path='/' component={NotFound} />
             </Switch>

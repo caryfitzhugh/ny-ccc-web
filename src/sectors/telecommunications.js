@@ -26,7 +26,7 @@ Telecommunications adaptation strategies include placing communication cables un
                 </ul>
               },
               { name: "Changes in Precipitation",
-                id: 'impacts_extreme_weather',
+                id: 'impacts_precipitation',
                 content: <ul>
                   <li>Damage to telecommunication lines and other infrastructure from increased heavy precipitation events resulting in floods or icing during freezing rain</li>
                   <li>Strain on trees and utility lines from wet snow</li>

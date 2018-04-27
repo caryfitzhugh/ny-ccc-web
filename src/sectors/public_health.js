@@ -11,10 +11,10 @@ class PublicHealthSectorPage extends Component {
 
     return (
       <SectorDetailLayout
-        title="Telecommunications"
-        children={<p>The Water Resources sector encompasses four major themes: flooding in non-coastal regions, drinking water supply, water availability for non-potable uses (primarily agriculture and hydropower), and water quality.<br /><br />
+        title="Public Health"
+        children={<p>The Public Health sector includes New York State's and New York City's public health systems, services, and infrastructure; public health funding; emergency preparedness; current health status for climate-sensitive diseases; and economic impact.<br /><br />
 Potential climate change vulnerabilities for water resources and related infrastructure include flooding, an increase in duration and/or frequency of dry periods affecting drinking water supplies, changes in demand for commercial and agricultural water, and declines in water quality due to higher water temperatures and decreased stream flows in summer.  Climate change may bring New York State opportunities as a potentially water-rich area under future climate conditions.<br /><br />
-Water resource adaptation strategies include phased withdrawal of infrastructure from high-risk, floodprone areas, implementation of an automatic gauging and reporting network to provide improved early-warning systems for supply shortages, mechanisms for better coordination of water use in shared water bodies, and establishment of minimum flow requirements for water withdrawals.</p>}
+Public health adaptation strategies include implementing urban heat warning and response systems, planting low-pollen trees in cities to reduce urban heat without increasing allergenic pollen, ensuring access for low-income, vulnerable individuals to functional, high-efficiency air conditioners and cooling centers, and integrating climate forecasts into ongoing planning for air quality.</p>}
         sections={ [
           {title: "Impacts",
             id: 'impacts',
@@ -22,28 +22,38 @@ Water resource adaptation strategies include phased withdrawal of infrastructure
               { name:"Temperature Changes",
                 id: "impacts_temps",
                 content: <ul>
-                  <li>Spikes in air conditioning demand may trigger power outages that disrupt water and wastewater treatment</li>
-                  <li>Warmer temperatures and more winter rain may cause stream flows to peak and decline earlier with many impacts on wildlife </li>
-                  <li>Lower summer flows may affect aquatic life, habitat health, and drinking water supplies</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::temperature"]}, query: "water resources"}}>> Find more information</SearchLink>
+                  <li>Increased days of extreme heat may cause more heat-related illnesses and hospital visits</li>
+                  <li>Warming temperatures may contribute to higher ozone levels and poorer air quality</li>
+                  <li>Increases in allergenic pollen production may exacerbate allergies, asthma and other respiratory illnesses</li>
+                  <li>Warmer winters could contribute to an increase in incidence of vector-borne diseases, such as Lyme disease, Eastern Equine Encephalitis, and West Nile Virus </li>
+                  <li>The risk of industrial accidents, chemical releases and explosions could increase when temperature thresholds for safe storage are surpassed</li>
+                  <SearchLink params={{query: 'public health rising temperatures'}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Precipitation Changes",
-                id: 'impacts_extreme_weather',
+                id: 'impacts_precipitation',
                 content: <ul>
-                  <li>Water supplies for drinking, agriculture, and water-dependent industries may be depleted by smaller winter snow packs and drier summers </li>
-                  <li>Storm water from larger storms may overwhelm culverts sized to accommodate smaller events</li>
-                  <li>More frequent summer droughts may strain municipal drinking water supplies</li>
-                  <li>Water quality may decline as wetter storms wash nutrients and pollutants into surface waters</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::precipitation"]}, query: "water resources"}}>> Find more information</SearchLink>
+                  <li>Pathogens, nutrients, and pesticides carried to local waterways by stormwater from large storm events may elevate risks for swimming, fishing, or drinking water quality</li>
+                  <li>Flooding of industrial facilities may increase the risk for explosions or chemical releases, threatening drinking water safety</li>
+                  <li>Extensive flooding could increase the potential for water-borne disease outbreaks</li>
+                  <SearchLink params={{query: 'public health changes in precipitation'}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Extreme Weather",
                 id: "impacts_extreme_weather",
                 content: <ul>
-                  <li>Flood risks may increase for the many gravity-fed water and wastewater systems located in low lying areas near rivers, reservoirs, and the shore</li>
-                  <li>• Combined sewer overflows may increase, degrading water quality and creating public health risks</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::oceans sea level rise"]}, query: "water resources"}}>> Find more information</SearchLink>
+                  <li>Extreme storms may disrupt sanitary, energy, and health care services, and impair access to safe drinking water and nutritious food</li>
+                  <li>Severe flooding may damage or obstruct roadways, making evacuation and emergency transport more difficult</li>
+                  <li>Coping with extreme weather may increase mental and physical health stress</li>
+                  <SearchLink params={{query: 'public health extreme weather'}}>> Find more information</SearchLink>
+                </ul>
+              },
+              { name: "Sea Level Rise",
+                id: "impacts_sea_level_rise",
+                content: <ul>
+                  <li>Coastal storm surges may become more dangerous, forcing emergency evacuations</li>
+                  <li>Flood damage to coastal infrastructure like power plants, drinking water pipes and wastewater treatment plants could increase public health risks, especially for vulnerable populations</li>
+                  <SearchLink params={{query: 'public health changes in precipitation'}}>> Find more information</SearchLink>
                 </ul>
               }
             ]},
@@ -53,49 +63,48 @@ Water resource adaptation strategies include phased withdrawal of infrastructure
               { name:"Planning",
                 id: "preparing_planning",
                 content: <ul>
-                  <li>Collect and analyze basic geographic, geologic, and engineering information to characterize vulnerabilities for water resources and infrastructure</li>
-                  <li>Forecast future scenarios for water demand and identify areas vulnerable to water shortages</li>
-                  <li>Identify potential emergency water system connections</li>
-                  <li>Plan for relocating and flood-proofing water infrastructure in flood hazard areas</li>
-                  <SearchLink params={{query: "water resources planning"}}>> Find more information</SearchLink>
+                  <li>Plan climate and health education campaigns targeted to vulnerable populations</li>
+                  <li>Develop plans to ensure that local health systems can respond to climate-related health risks</li>
+                  <li>Adopt strategies to promote walking, biking, public transit and use of electric vehicles for their environmental and health benefits</li>
+                  <li>Develop a heat emergency plan with measures to ensure vulnerable populations can access cooling centers, especially in urban areas</li>
+                  <li>Ensure evacuation plans and routes consider climate change impacts</li>
+                  <SearchLink params={{query: "public health planning"}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Management Practices",
                 id: 'preparing_management_practices',
                 content: <ul>
-                  <li>Acquire emergency equipment such as a mobile pumps, water tanks and filters, and back-up generators</li>
-                  <li>Build or retrofit storm water infrastructure to accommodate runoff from projected precipitation </li>
-                  <li>Make water supplies more resilient by promoting water conservation and infiltration of storm water for groundwater recharge</li>
-                  <SearchLink params={{query: 'water resources management'}}>> Find more information</SearchLink>
+                  <li>Coordinate across local boards of health to prepare for climate impacts</li>
+                  <li>Implement urban heat warning and response systems</li>
+                  <li>Plant low-pollen shade trees and increase green roofs, urban trees, gardens and parks to mitigate heat and air pollution</li>
+                  <li>Promote training for first responders on the prevention of, and response to, severe weather or heat-related chemical releases and industrial accidents</li>
+                  <li>Identify ways to help property owners detect and remediate mold in buildings</li>
+                  <li>Encourage wider use of cooling features like ceiling fans and reflective paints </li>
+                  <SearchLink params={{query: 'public health management'}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Technology",
-                id: "actions_outreach",
+                id: "actions_technology",
                 content: <ul>
-                  <li>Test and evaluate new green storm water infrastructure technologies that can absorb and clean stormwater</li>
-                  <li>Install energy efficient equipment in water and waste water treatment facilities</li>
-                  <SearchLink params={{query: 'water resources technology'}}>> Find more information</SearchLink>
+                  <li>Use green stormwater infrastructure like rain gardens, swales, and porous pavement</li>
+                  <li>Promote less pesticide-intensive strategies to manage mosquitoes and ticks </li>
+                  <SearchLink params={{query: 'public health technology'}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Policies / Laws",
                 id: "actions_policies_laws",
                 content: <ul>
-                  <li>Examine policies and incentives to encourage more energy efficient water infrastructure powered with renewable energy</li>
-                  <li>Consider local policies that can improve management of agricultural and urban runoff</li>
-                  <li>Adopt local ordinances to protect floodplains that reduce flood risks for infrastructure</li>
-                  <li>Evaluate long-term control plans for combined sewer overflows under future scenarios for extreme storms</li>
-                  <li>Promote use of treated wastewater in commercial and industrial settings</li>
-                  <SearchLink params={{query: 'water resources policy law'}}>> Find more information</SearchLink>
+                  <li>Consider policies and incentives to increase urban tree canopy and vegetation for cooling</li>
+                  <li>Communicate about the health benefits of clean energy policies</li>
+                  <SearchLink params={{query: 'public health policy law'}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Research / Monitoring",
                 id: "actions_research",
                 content: <ul>
-                  <li>Compile critical information on water and wastewater treatment facilities, including location and elevation of key structures as well as their proximity to floodplains and water bodies</li>
-                  <li>Research how low flows and higher temperatures will affect nutrient, sediment, and pathogen pollution</li>
-                  <li>Implement an automatic gauging and reporting network to better assess hydrological conditions and provide improved early-warning systems for supply shortages</li>
-                  <li>Identify water and sewer facilities susceptible to saltwater intrusion and coastal inundation</li>
-                  <SearchLink params={{query: 'water resources research monitoring'}}>> Find more information</SearchLink>
+                  <li>Develop a systematic tick surveillance program to monitor vector densities and infection rates</li>
+                  <li>Investigate relationships between climate change, air quality, and health outcomes</li>
+                  <SearchLink params={{query: 'public health research monitoring'}}>> Find more information</SearchLink>
                 </ul>
               }
             ]},
@@ -103,9 +112,8 @@ Water resource adaptation strategies include phased withdrawal of infrastructure
             id: 'looking_for_help',
             subsections: [],
             content: <ul>
-              <li><Link to="https://wri.cals.cornell.edu/hudson-river-estuary/climate-change-hudson-river-estuary" target="_blank">New York State Water Resources Institute</Link></li>
-              <li><Link to="http://drought.unl.edu/" target="_blank">National Drought Mitigation Center</Link></li>
-              <li><Link to="http://neiwpcc.org/" target="_blank">New England Interstate Water Pollution Control Commission (NEIWPCC)</Link></li>
+              <li><Link to="New York State Department of Health" target="_blank">New York State Department of Health</Link></li>
+              <li><Link to="https://www.naccho.org/" target="_blank">National Association of County and City Health Officials (NACCHO)</Link></li>  
            </ul>
           }
         ]}
