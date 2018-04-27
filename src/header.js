@@ -61,6 +61,7 @@ class Header extends Component {
           <div className='navbar navbar-expand-lg justify-content-end'>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNav">
               <span className="navbar-toggler-icon"></span>
+              <span className="hidden">toggle</span>
             </button>
             <div className="collapse navbar-collapse justify-content-between" id="toggleNav">
               <div className="nav-links row">

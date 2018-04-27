@@ -138,7 +138,7 @@ class ResourcesDetailPage extends Component {
         <div className='resource-detail container'>
           <span className='back-to-search-results' onClick={(evt) => this.back(evt) }>&#8592;&nbsp; Back to Search Results</span>
           <h1>{resource.title}</h1>
-          <h5>{resource.subtitle}</h5>
+          {(resource.subtitle) ? <h5>resource.subtitle</h5> : null}
           {(resource.external_data_links || []).map((wl, indx) => {
             let split = wl.split("::");
             return <a target="_blank" href={split[1]} rel='noopener noreferrer' key={indx} className='btn btn-primary fa fa-link'> {split[0]} </a>;
