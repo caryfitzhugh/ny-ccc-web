@@ -12,6 +12,17 @@
   margin-bottom: 1em;
   max-width:100%;
 }
+.header-wrap.short-header .navigation {
+  margin-bottom: 0;
+}
+.header-wrap.short-header .logo {
+  position: absolute;
+  left: -30px;
+}
+.header-wrap.short-header .logo img{
+  width: auto;
+  height: 35px;
+}
 
 .header .nav-blocks {
   display: flex;
@@ -88,11 +99,11 @@
   height: 7rem;
 }
 
-.header .logo .logo-text {   
+.header .logo .logo-text {
   font-family: 'Raleway', sans-serif;
-  display:flex;   
-  flex-direction: column;   
-  color:black; 
+  display:flex;
+  flex-direction: column;
+  color:black;
 }
 
 .header .logo .logo-text h1 {

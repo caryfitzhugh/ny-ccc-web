@@ -7,7 +7,7 @@ class DatagrapherPage extends Component {
   render() {
     return (
       <div className='datagrapher-page'>
-        <Header hide_subnav={true}/>
+        <Header short_header={true}/>
         <iframe src="https://datagrapher.nyclimatescience.org/" className="datagrapher"></iframe>
       </div>
     );

@@ -44,46 +44,81 @@ const NavBlocks = (props) =>
     </Link>
     <Link to='/highlights/actions' className={'nav-block col-xs ' + (props.nav_block === 'take_action' ? 'active': null)}>
       <div className='content'>
-        Take <br /> Action 
+        Take <br /> Action
       </div>
     </Link>
-  </div>;  
-class Header extends Component {
-  render() {
-    return <div className='header-wrap'>
-      <div className='container header'>
-        <Logo />
-        <NavBlocks anchors={this.props.anchors} nav_block={this.props.nav_block || {}}/>
-      </div>
-      {this.props.hide_subnav ?  null : (
-      <div className='container-fluid navigation'>
-        <div className='container'>
-          <div className='navbar navbar-expand-lg justify-content-end'>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNav">
-              <span className="navbar-toggler-icon"></span>
-              <span className="hidden">toggle</span>
-            </button>
-            <div className="collapse navbar-collapse justify-content-between" id="toggleNav">
-              <div className="nav-links row">
-                 <div className="col-sm-3">
-                  <ActiveLink to='/highlights/maps'> Maps </ActiveLink>
-                 </div>
-                 <div className="col-sm-3">
-                  <ActiveLink to='/highlights/data_products'>Data</ActiveLink>
-                 </div>
-                 <div className="col-sm-3">
-                  <ActiveLink to='/highlights/documents'>Documents</ActiveLink>
-                 </div>
+  </div>;
+
+const NavigationSub = (props) =>
+    <div className='navbar navbar-expand-lg justify-content-end'>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNav">
+        <span className="navbar-toggler-icon"></span>
+        <span className="hidden">toggle</span>
+      </button>
+      <div className="collapse navbar-collapse justify-content-between" id="toggleNav">
+        <div className="nav-links row">
+          {props.add_logo ?
+              <div className="logo">
+                <div className={'nav-item'}>
+                  <Link to='/' className={'nav-link home'} >
+                    <img className='hidden-xs' src={logo_img} alt="NY CCSC Logo" />
+                  </Link>
+                </div>
               </div>
-              <hr />
-              <SearchBar className='col-sm-4' size='sm'/>
+              : null}
+          <div className="col-sm-3">
+            <ActiveLink to='/highlights/maps'> Maps </ActiveLink>
+          </div>
+          <div className="col-sm-3">
+            <ActiveLink to='/highlights/data_products'>Data</ActiveLink>
+          </div>
+          <div className="col-sm-3">
+            <ActiveLink to='/highlights/documents'>Documents</ActiveLink>
           </div>
         </div>
+        <hr />
+        <SearchBar className='col-sm-4' size='sm'/>
+      </div>
+  </div>;
+
+
+class ShortHeader extends Component {
+  render() {
+      return <div className='header-wrap short-header'>
+        <div className='container-fluid navigation'>
+          <div className='container'>
+            <NavigationSub add_logo={true} {...this.props} />
+          </div>
         </div>
-      </div>)}
-    </div>
+      </div>;
+  }
+};
+
+class FullHeader extends Component {
+  render() {
+      return <div className='header-wrap'>
+        <div className='container header'>
+          <Logo />
+          <NavBlocks anchors={this.props.anchors} nav_block={this.props.nav_block || {}}/>
+        </div>
+        {this.props.hide_subnav ?  null : (
+        <div className='container-fluid navigation'>
+          <div className='container'>
+            <NavigationSub {...this.props} />
+          </div>
+        </div>)}
+      </div>
+    }
+};
+
+class Header extends Component {
+  render() {
+    if (this.props.short_header) {
+      return <ShortHeader {...this.props}/>;
+    } else {
+      return <FullHeader {...this.props}/>;
+    }
   }
 }
-
 
 export default Header;

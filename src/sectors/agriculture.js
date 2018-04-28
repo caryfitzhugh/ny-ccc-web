@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import SectorDetailLayout from './layout';
-import {Link} from 'react-router-dom';
 import SearchLink from '../utils/search_link';
-import EffectLink from '../layouts/effect_link';
 import agriculture_image from '../images/sectors/agriculture.jpg';
 
 const ActionLink = (props) => {
