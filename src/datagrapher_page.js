@@ -8,7 +8,7 @@ class DatagrapherPage extends Component {
     return (
       <div className='datagrapher-page'>
         <Header />
-            <iframe src="http://i0.kym-cdn.com/photos/images/original/000/969/743/037.jpg" className="datagrapher"></iframe>
+        <iframe src="https://datagrapher.nyclimatescience.org/" className="datagrapher"></iframe>
       </div>
     );
   }
