@@ -1,27 +1,26 @@
 import React, { Component } from 'react';
 import Header from './header';
-import ImageCarousel from './home_page/image_carousel';
 import { Link } from 'react-router-dom';
 //import SearchBar from './search_bar';
 import ResourceBlocks from './home_page/resource_blocks';
 import Sectors from './home_page/sectors';
-import SectionHeader from './home_page/section_header';
+import Tiles from './home_page/tiles';
+import Solutions from './home_page/solutions';
+import Actions from './home_page/actions';
 import Footer from './footer';
+import SearchBar from './search_bar';
 import SectorsAll from './sectors/all';
 import './home_page.css';
 
-import climate_change_data_img from './images/home_page/carousel/climate_change_data.png';
-import carousel2 from './images/home_page/carousel/2.jpg';
-import carousel3 from './images/home_page/carousel/3.jpg';
-import carousel4 from './images/home_page/carousel/4.jpg';
 import maps_block_img from './images/home_page/blocks/maps.png';
+import coastal_zones_img from './images/home_page/coastal_zones.jpg';
 import data_block_img from './images/home_page/blocks/data.png';
 import documents_block_img from './images/home_page/blocks/documents.png';
+import heat_wave_img from './images/home_page/heatwave.jpg';
+import downpour_img from './images/home_page/downpours.jpg';
+import extreme_weather_img from './images/home_page/extreme_weather.jpg';
+import primary_story_img from './images/home_page/primary_story.jpg';
 
-import rising_temperatures_img from './images/home_page/carousel/rising_temperatures.jpg';
-import precipitation_changes_img from './images/home_page/carousel/precipitation_changes.jpg';
-import extreme_weather_img from './images/home_page/carousel/extreme_weather.jpg';
-import sea_level_rise_img from './images/home_page/carousel/sea_level_rise.jpg';
 
 import planning_img from './images/home_page/blocks/planning.jpg';
 import outreach_img from './images/home_page/blocks/outreach.png';
@@ -29,123 +28,121 @@ import take_action_implementation_img from './images/home_page/blocks/take_actio
 
 class Homepage extends Component {
   render() {
-    let slides = [
-      {   src: climate_change_data_img,
-          className: 'climate-change-data-slide',
-          label: "Climate Change Data",
-          text: "Using the best science to understand the scope and scale of how the climate is projected to change is the foundation for allowing Massachusetts to plan and adapt for the future.",
-          href: "/data/data"},
-      {   src: carousel2,
-          image_credit: "MA Division of Ecological Restoration",
-          className: 'take-action-slide',
-          label: "Take Action",
-          text: " Temperatures are climbing, precipitation patterns are changing, sea level is rising, and extreme weather events are becoming more frequent. The Commonwealth is working across state government and with our cities and towns to reduce climate change causing emissions, understand local climate change impacts, and build resilient communities. ",
-          href: "/actions"},
-      {   src: carousel3,
-          //image_credit: "National Wildlife Federation",
-          label: "Climate Planning",
-          text: "Massachusetts has long recognized the importance of planning to reduce emissions, tracking the success of policies and programs, and adapting to the ongoing impacts of climate change, while continuing to develop new strategies, policies, and partnerships that can help us achieve our goals",
-          href: "/actions/planning"},
-      {   src: carousel4,
-          className: 'mvp-slide',
-          label: "Municipal Vulnerability Preparedness",
-          text: "Our cities and towns are on the front lines of climate change but through the MVP program the state is working with our local partners to address many climate-related risks, reduce negative impacts, and take advantage of possible opportunities that may arise from the changing climate through targeted planning and action.",
-          href: "http://www.mass.gov/eea/air-water-climate-change/climate-change/massachusetts-global-warming-solutions-act/municipal-vulnerability-preparedness-program.html"},
-    ];
 
     let blocks = [
        {title: 'Maps',
         id: 'maps',
-        text: 'Use maps to identify climate change impacts and assess vulnerabilities in Massachusetts. ',
+        text: ' Use maps to identify climate change impacts and assess vulnerabilities in New York State. ',
+        imageText: ' Climate Change Maps ',
         image: maps_block_img,
-        image_credit:"National Weather Service",
-        href: "/data/maps",
+        href: "/highlights/maps",
         },
        {title: 'Data',
-        text: 'Explore Massachusetts climate science and data through interactive charts. ',
+        text: ' Explore New York State climate information through interactive charts and find a broad range of datasets and data products. ',
+        imageText: ' Climate Information Charts ',
         id: "data",
         image: data_block_img,
-        href: "/data/data",
+        href: "/highlights/data_products",
         },
        {title: 'Documents',
-        text: 'Discover reports, articles, plans, and other climate-related resources relevant to Massachusetts.',
+        text: ' Discover reports, articles, plans, and other climate-related resources. ',
+        imageText: ' Climate Change Documents ',
         id: 'documents',
         image: documents_block_img,
-        href: `/data/documents`
+        href: `/highlights/documents`
+       }
+     ];
+
+     let tiles = [
+       {title: 'Coastal Flooding',
+        id: 'coastal',
+        text: ' due to sea level risk and storm surge will increasingly put lives and property at risk. Health, water quality, energy, infrastructure, and coastal ecosystems are all affected.  ',
+        alt: ' Urban Flooding ',
+        image: coastal_zones_img,
+        href: "/highlights/problems#flooding",
+        image_credit: "Photo: Metropolitan Transportation Authority / Patrick Cashin"
+        },
+       {title: 'Heat Waves',
+        text: '  will become more frequent and intense, increasing heat-related illness and death and posing new challenges to the energy system, air quality, and agriculture.  ',
+        alt: ' Heat Wave Over City ',
+        id: "heatwaves",
+        image: heat_wave_img,
+        href: "/highlights/problems#heatWaves",
+        image_credit: "Photo: Tom Kaminski / WCBS 880"
+        },
+       {title: 'Heavy Downpours',
+        text: ' are increasing and are projected to increase further. These can lead to flooding and related impacts on water quality, infrastructure, and agriculture. ',
+        alt: ' Heavy Rain ',
+        id: 'downpours',
+        image: downpour_img,
+        href: "/highlights/problems#downpours",
+        image_credit: ""
+       }
+       ,
+       {title: 'Extreme Weather',
+        text: ' can have a big impact in a short time. Climate models predict significant changes in the frequency and intensity of some extreme weather events over the coming decades.  ',
+        alt: ' Snow Bank ',
+        id: 'weather',
+        image: extreme_weather_img,
+        href: "/highlights/problems#weather",
+        image_credit: "Photo: Melinda Stoldt"
        }
      ];
 
      let sectors = SectorsAll.sorted;
 
-     let changes= [
-      {src: rising_temperatures_img,
-        image_credit: "James Byrum",
-          label: "Rising Temperatures",
-          text: "Rising temperatures will lead to more frequent heat waves, and increases in heat-related illness and mortality. Other challenges include impacts to energy systems, infrastructure and air quality. Warmer winters and changes in the timing of seasons will impact agriculture and wildlife, as well as the tourism industry. ",
-          href: "/changes/rising-temperatures"},
-
-      {src: precipitation_changes_img,
-        image_credit: "MassDOT",
-          label: "Changes in Precipitation",
-          text: "More frequent heavy downpours juxtaposed with extended drought periods are projected to increase into the future while shifting patterns of winter precipitation will lead to more rain and ice in place of snow.",
-          href: "/changes/changes-in-precipitation"},
-
-      {src: extreme_weather_img,
-        image_credit: "MA State Police",
-          label: "Extreme Weather",
-          text: "Climate models predict changes in the frequency and intensity of some extreme weather events, such as nor’easters over the coming decades.",
-          href: "/changes/extreme-weather"},
-
-      {src: sea_level_rise_img,
-        image_credit: "MA Office of Coastal Zone Management",
-          label: "Sea Level Rise",
-          className: "slr-image",
-          text: "Coastal flooding due to sea level rise and storm surge will increasingly put lives and property at risk.  Health, water quality, energy, infrastructure, recreation and tourism, and coastal ecosystems will all be affected by rising seas.",
-          href: "/changes/sea-level-rise"},
-    ];
-
-     let take_actions = [
-       { title: 'Planning',
-         text: 'Understand the issue, set goals, identify areas of risk and vulnerability, and develop strategies.',
-         image: planning_img,
-         image_credit: "National Wildlife Federation",
-         href: '/actions/planning',
-        },
-       {title: 'Implementation',
-        text: 'Put your plan into place, establish benchmarks, and track progress. Revise at regular intervals as necessary. ',
-         image: take_action_implementation_img,
-         image_credit: "MA Division of Ecological Restoration",
-         href: '/actions/implementation',
-        },
-        {title: 'Outreach / Education',
-         text: 'Understanding how to communicate about climate change with stakeholders can help build and maintain public support for climate action.',
-         image:outreach_img,
-         image_credit: "MA Division of Ecological Restoration",
-         href: '/actions/outreach-education',
-        }
-     ];
+     let squares = [
+        { squareLink: "/highlights/actions#rain",
+          squareText: "Preparing for heavy downpours: Save the Rain"
+         },
+         { squareLink: "/highlights/actions#renewable",
+          squareText: "Promoting renewable energy: Solar Tompkins"
+         },
+         { squareLink: "/highlights/actions#stormwater",
+          squareText: "Managing stormwater along the coast: the Staten Island Bluebelt"
+         },
+         { squareLink: "/highlights/actions#resilience",
+          squareText: "Building for resilience along New York City's coast"
+         }
+      ];
 
     return (
       <div className="home-page">
-        <Header hide_subnav={false} anchors={true}/>
+        <Header hide_subnav={true} anchors={true}/>
+        <div className='header-search'>
         <div className='tag-line'>
-         <span>Providing the most up-to- date climate change science and decision- support tools for the Commonwealth.
-             <Link to='/about'> More <span className='fa fa-angle-double-right'></span> </Link>
-             </span>
+         <div className='container'>
+          <p>Providing climate change data and information relevant to New York State to support scientifically sound decision making.
+            <Link to='/about' className="font-weight-bold about">About <span className='text-underline fa fa-angle-double-right'></span> </Link>
+          </p>
+         </div>
         </div>
-        <ImageCarousel className='welcome-carousel' slides={slides}/>
+        <span className="credit">
+          <a href="https://www.flickr.com/photos/brbirke/8136033826/in/photostream/" className="font-weight-bold" title="" target="_blank" data-original-title="Cropped from original">Photo: Brian Birke</a>, 
+          <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC</a> 
+        </span>
+        <div className="search-container container">
+        
+          <div className="search-form">
+            <p className="text-right">
+              <a href="/catalog">Browse Resources</a>
+            </p>
+            <SearchBar className='hide-subnav' size='sm'/>
+          </div>
 
-        <ResourceBlocks blocks={blocks}/>
+        </div>
+        </div>
+        <div className="container-fluid">
+          <ResourceBlocks blocks={blocks}/>
 
-        <SectionHeader href="/sectors" anchor_id='explore_sectors' text="Explore Sectors" />
-        <Sectors sectors={sectors} />
+          <Sectors sectors={sectors} />
 
-        <SectionHeader href="/changes" anchor_id='identify_changes' text="Identify Changes" />
-        <ImageCarousel slides={changes} />
+          <Tiles tiles={tiles} />
 
-        <SectionHeader href="/actions" anchor_id='take_action' text="Take Action" />
-        <ResourceBlocks className='take-actions' blocks={take_actions} />
+          <Solutions />
 
+          <Actions squares={squares} primaryStory={primary_story_img} />
+        </div>
         <Footer />
       </div>
     );

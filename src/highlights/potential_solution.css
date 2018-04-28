@@ -1,0 +1,23 @@
+.potentialSolution .item {
+   display: inline-block;
+   background: #fff;
+   padding: 10px 15px;
+	margin:30px 0 auto;
+   	width: 100%;
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-shadow: 1px 1px 3px 0 #ccc;
+}
+
+.potentialSolution .item h3 {
+	font-size:16px;
+}
+
+.potentialSolution .item h3 span {
+	margin-right:5px;
+}
+
+.potentialSolution .btn {
+	width:100%;
+}

@@ -66,11 +66,9 @@ class ChangesPage extends Component {
         <img alt='sectors example' src={page_image} className='col-12 col-md-5 float-right'/>
 
         <p>
-          Temperatures are increasing, precipitation patterns are changing, sea level is rising, and extreme weather events are becoming more frequent. Climate change is already affecting the people and resources of the Commonwealth, and these impacts are projected to increase. At the same time, communities have the ability to address many climate-related risks, by reducing greenhouse gas emissions and planning for and adapting to the impacts of changing climate.
+            The awesome, seven-foot-tall Dark Lord of the Sith makes his way into the blinding light of the main passageway. This is Darth Vader, right hand of the Emperor.
         </p>
-        <p>
-          Climate change mitigation involves assessing current emission levels and implementing policies and strategies that reduce these emissions.  On the adaptation side, a first step in becoming climate-resilient is to identify the climate changes you will be exposed to, the impacts and risks associated with these changes, and the underlying vulnerabilities of the resource.
-        </p>
+
 
         {subsections.map((subsection, indx) => {
           return <Subsection key={indx} {...subsection}

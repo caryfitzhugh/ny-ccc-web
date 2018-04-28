@@ -25,7 +25,7 @@ const Image = (props) => {
 const Subsection = (props) =>
   <div className='subsection'>
 
-    <label><a id={props.id} href={props.href}>{props.name}</a></label>
+    <span><a id={props.id} href={props.href}>{props.name}</a></span>
 
     <div className='content row'>
       {props.image ?

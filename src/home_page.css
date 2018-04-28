@@ -1,18 +1,8 @@
-.home-page .image-carousel  {
-  width: 100%;
-}
-.home-page .image-carousel  {
-  margin: 2em 0;
-}
-.home-page .resource-blocks {
-  margin-top: 4em;
-}
 .home-page .sectors {
   margin-top: 2em;
   margin-bottom: 4em;
-}
-.home-page .image-carousel:last-child  {
-  margin: 4em 0;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .home-page .resource-blocks.take-actions h1 {
@@ -21,17 +11,81 @@
 }
 
 .home-page .tag-line {
-  text-align: center;
   display: block;
   width: 100%;
-  margin-bottom: -1em;
   font-weight: 500;
+  color:white;
+  background:rgba(65,76,84,0.65);
 }
 
 .home-page .tag-line a {
-  font-weight: 700;
+  font-size:14px;
+  color:#f8a55f;
+  text-shadow: 0 1px 0 #414c54;
+}
+
+.home-page .tag-line p {
+  margin:0;
+  padding:15px 0;
+  font-size:17px;
 }
 
 .home-page .slide.slr-image .image {
   background-position-y: top;
+}
+
+.home-page .header-search {
+  background: url(./images/home_page/flooding.jpg) 20%;
+  height:320px;
+}
+
+@media (max-width:480px) {
+  .home-page .header-search {
+    margin-bottom:30px;
+  }
+}
+
+.home-page .search-form {
+    position: absolute;
+    right: 0;
+    top: 4em;
+    width: 55%;
+    background: rgba(65,76,84,0.65);
+    color: #fff;
+    padding:20px;
+}
+
+.home-page .search-form a{
+    color:#f8a55f;
+    text-shadow: 0 1px 0 #414c54;
+}
+
+
+@media (max-width: 767px) {
+  .home-page .search-form {
+    width: 100%;
+    top: 1em;
+  }
+}
+
+.home-page .search-container {
+  position:relative;
+}
+
+.home-page .credit {
+  display: inline-block;
+  font-size: 10px;
+  padding: 0 10px;
+}
+
+.home-page .credit a {
+  color: #f8a55f;
+}
+
+.home-page section {
+    padding: 40px 0;
+}
+
+.home-page .about {
+  text-decoration: underline;
 }

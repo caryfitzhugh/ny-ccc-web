@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Layout from './layout';
 import BannerData from './banner_data';
 import FeaturedData from './featured_data';
-import map_image from '../images/data/mass_ccc_map.png';
+import map_image from '../images/data/ny_ccsc_map.png';
 
 class MapsPage extends Component {
   render() {
@@ -11,11 +11,11 @@ class MapsPage extends Component {
       banner={<BannerData
                 image={map_image}
                 href='/map'
-                title='MA CCC Map'
+                title='NY CCC Map'
                 content={
                  <div>
                   <p>
-                      An interactive map of climate change and related data for Massachusetts. Users can select data layers to display from a menu, filter layers by sector, vary parameters within certain layers, and select from a variety of base layers and regional boundaries.  For each layer, links are available to metadata and the original source.
+                      If this is a consular ship... were is the Ambassador?
                   </p>
                   <p>
                       A video tutorial on how to use the Interactive Map and GIS Viewer can be found <a href='https://www.youtube.com/watch?v=jL_YgWO9_1w&list=PL0gskXQ6tF18Mpd9BTuMZrtPM-GdZFjP2&index=3' rel="noopener noreferrer" target='_blank'>here</a>
@@ -24,15 +24,15 @@ class MapsPage extends Component {
                 /> }
       featured_data={<FeaturedData
         collections={[
-          ["All", 'MA/data/maps/featured/all'],
-          ["Agriculture", 'MA/data/maps/featured/agriculture'],
-          ["Coastal", 'MA/data/maps/featured/coastal'],
-          ["Energy", 'MA/data/maps/featured/energy'],
-          ["Natural Resources", 'MA/data/maps/featured/natural-resources'],
-          ["Public Health", 'MA/data/maps/featured/public-health'],
-          ["Precipitation", 'MA/data/maps/featured/precipitation'],
-          ["Temperature", 'MA/data/maps/featured/temperature'],
-          ["Flooding", 'MA/data/maps/featured/flooding']
+          ["All", 'NY/data/maps/featured/all'],
+          ["Agriculture", 'NY/data/maps/featured/agriculture'],
+          ["Coastal", 'NY/data/maps/featured/coastal'],
+          ["Energy", 'NY/data/maps/featured/energy'],
+          ["Natural Resources", 'NY/data/maps/featured/natural-resources'],
+          ["Public Health", 'NY/data/maps/featured/public-health'],
+          ["Precipitation", 'NY/data/maps/featured/precipitation'],
+          ["Temperature", 'NY/data/maps/featured/temperature'],
+          ["Flooding", 'NY/data/maps/featured/flooding']
         ]}
         />}
       >

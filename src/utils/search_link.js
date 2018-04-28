@@ -9,7 +9,7 @@ class SearchLink extends Component {
     let query = simpleParamsToQString(params);
     let path = `/search?${query}`;
 
-    return ( <Link className={this.props.className}
+    return ( <Link aria-label="Find more information" className={this.props.className}
                 to={path}>{this.props.children}</Link> );
   }
 }

@@ -8,104 +8,100 @@ class AboutPage extends Component {
       <div className='about-page'>
         <Header />
           <div className='container'>
-            <h1>About this Website</h1>
-            <p>The Massachusetts Climate Change Clearinghouse (MACCC) is a gateway for policymakers, local planners, and the
-              public to identify and access climate data, maps, websites, tools, and documents relevant to climate
-              change adaptation and mitigation across Massachusetts. The goal of the website is to support
-              scientifically sound and cost-effective decision-making and to enable users to plan and prepare for
-              climate change impacts. The vision is a dynamic site where users can find information in multiple
-              ways, including through interactive tools that use data from different sources.</p>
+            <h1>THREEPIO</h1>
+            <p>I feel for you, Luke, you're going to have to learn what seems to be 
+            important or what really is important. What good is all your uncle's work 
+            if it's taken over by the Empire?... You know they're starting to 
+            nationalize commerce in the central systems... it won't be long before 
+            your uncle is merely a tenant, slaving for the greater glory of the Empire.</p>
 
-            <h2>What is a clearinghouse?</h2>
-            <p>A clearinghouse collects and offers information from a variety of sources on a given topic. The MACCC provides access to
-            resources relevant to mitigation of, adaptation to, and building resiliency for climate change in
-            Massachusetts. This includes information about greenhouse gas emissions and atmospheric
-            concentrations, projected temperature and precipitation changes, climate effects such as sea level
-            rise and extreme weather events, and more.
-            It also catalogs specific vulnerabilities, risks, and strategies for and across industry sectors including – agriculture, forestry,
-            local government, education, energy, recreation, and transportation; and for local governance priorities including – public health,
-              and public safety/emergency management, infrastructure, coastal zones, natural resources/habitats, and water resources. </p>
+            <h2>Things always change.</h2>
+            <p>The gargantuan rock formations are shrouded in a strange 
+            foreboding mist and the onimous sounds of unearthly creatures 
+            fill the air. Artoo moves cautiously through the creepy rock 
+            canyon, inadvertently making a loud clicking noise as he 
+            goes. He hears a distant, hard, metallic sound and stops for 
+            a moment. Convinced he is alone, he continues on his way.</p>
 
-            <h2>How is the MACCC different from other climate sites?</h2>
-            <p>The MACCC offers a curated clearinghouse with a comprehensive search feature, a customizable data
-            grapher, and an interactive map and GIS viewer.</p>
+            <h2> EXT. TATOOINE - ROCK CANYON - SUNSET</h2>
+            <p>In the distance, a pebble tumbles down the steep canyon wall 
+            and a small dark figure darts into the shadows. A little 
+            further up the canyon a slight flicker of light reveals a 
+            pair of eyes in the dark recesses only a few feet from the 
+            narrow path.</p>
 
-            <h4>Curated Clearinghouse</h4>
-            <p>MACCC’s curator prioritizes resources to include based on their credibility and
-            relevance to the users. The curator also makes choices about the resources included on the site
-            based on the CCSC Business Rules (described below). </p>
+            <h4>INT. SANDCRAWLER - HOLD AREA</h4>
+            <p>It is dim inside the hold area of the Sandcrawler. Artoo 
+            switches on a small floodlight on his forehead and stumbles 
+            around the scrap heap. The narrow beam swings across rusty 
+            metal rocket parts and an array of grotesquely twisted and 
+            maimed astro-robots. </p>
 
-            <h4>Search feature</h4>
-            <p>The MACCC search feature allows users to search by keyword and to filter searches by sector, resource type, climate changes,
-            strategies, and actions. Users may also sort resources by location in Massachusetts. </p>
+            <h4>THREEPIO</h4>
+            <p> The enormous Sandcrawler lumbers off toward the magnificent 
+            twin suns, which are slowly setting over a distant mountain 
+            ridge. </p>
 
-            <h4>Interactive Map and GIS Viewer</h4>
-            <p>The MACCC interactive map of climate change and related data allows users to select map layers to display from a menu, find layers by a sector or zoom in to
-            analyze changes in their area. Within the map layers, users can vary parameters within certain
-            layers, and select from a variety of base layers and regional boundaries. For each map layer, links
-            are available to metadata and the original source. Users can export and download their custom
-            maps or create a unique URL to share the maps they develop.</p>
+            <h4>EXT. TATOOINE - DUNES</h4>
+            <p>Suddenly the shaking and bouncing of the Sandcrawler stops, 
+             creating quite a commotion among the mechanical men.  
+             Threepio's fist bangs the head of Artoo whose computer lights 
+             pop on as he begins beeping. At the far end of the long 
+             chamber a hatch opens, filling the chamber with blinding 
+             white light. a dozen or so Jawas make their way through the 
+             odd assortment of robots.</p>
 
-            <h4>Customizable Climate Data Grapher</h4>
-            <p>The MACCC climate data grapher is an interactive tool to
-            generate time-series graphs for climate changes with historical data and future projections. Users
-            can export and download the charts for use in their own materials.</p>
+            <h4>THREEPIO</h4>
+            <p>The Jawas scurry around fussing over the robots, straightening 
+            them up or brushing some dust from a dented metallic elbow. 
+            The shrouded little creatures smell horribly, attracting 
+            small insects to the dark areas when their mouths and nostrils 
+            should be.</p>
 
-            <h2>Intended audience</h2>
-            <p>The MACCC welcomes policymakers, analysts, scientists, planners, businesses, and the general public
-            to the site; however, the primary intended audiences are local planners and decision-makers and
-            those who support their work, as well as state agency staff. The MACCC streamlines the decision-
-            making process by helping to identify problems, investigate solutions, and take action. A decision-
-            maker can use the MACCC to identify vulnerable infrastructure, residential areas, and ecosystems;
-            evaluate the risks posed by climate change; and develop strategies and implementation plans for
-            their town or city.</p>
+            <h2>THREEPIO</h2>
+            <p> Out of the shadows of a dingy side-building limps Owen Lars, 
+               a large burly man in his mid-fifties. His reddish eyes are 
+               sunken in a dust-covered face. As the farmer carefully 
+               inspects each robot, he is closely followed by his slump- 
+               shouldered nephew, Luke Skywalker. One of the vile little 
+               Jawas walks ahead of the farmer spouting an animated sales 
+               pitch in a queer, unintelligible language.</p>
 
-            <h2>Populating the MACCC</h2>
+            <h2>EXT. TATOOINE - DESERT - LARS HOMESTEAD - AFTERNOON</h2>
 
-            <h4>What Is Included on the Site</h4>
-            <p>The MACCC contains resources, data, and information that support
-            decision-makers and planners in their work to address climate change. This content includes
-            information on greenhouse gas emissions and atmospheric concentrations, climate changes, effects,
-            strategies for mitigating, adapting to, and building resiliency for climate change, and tools for
-            implementing these strategies. The MACCC is committed to including only information with scientific merit
-            from credible sources. Where applicable, the MACCC chooses data and information that Massachusetts
-            used for statewide and local climate planning.</p>
-
-            <h4>Business Rules for the Site</h4>
-            <p>The MACCC Business Rules define what resources are included on the MACCC,
-            with what priority, and in what form. The Business Rules were developed in collaboration
-            with a group of sector experts to understand how the experts evaluate the resources that they use in
-            their own work. The Business Rules address the scope, source, and format of resources considered
-            for inclusion on the site.
-            </p>
+     
+            <h4>THREEPIO</h4>
+            <p>Out of the shadows of a dingy side-building limps Owen Lars, 
+            a large burly man in his mid-fifties. His reddish eyes are 
+            sunken in a dust-covered face. As the farmer carefully 
+            inspects each robot, he is closely followed by his slump- 
+            shouldered nephew, Luke Skywalker. One of the vile little 
+            Jawas walks ahead of the farmer spouting an animated sales 
+            pitch in a queer, unintelligible language.</p>
 
             <h2>About us</h2>
 
-            <h4>Project background</h4>
-            <p>State and local planners that are addressing climate change consistently reported that data and information
-            is plentiful, but the task of locating and sorting through information about vulnerabilities, as well as developing,
-            researching, and assessing mitigation and adaptation strategies, was often difficult and time
-            consuming.</p>
+            <h4>LUKE</h4>
+            <p> The Jawa goes into a loud spiel. Meanwhile, Artoo has sneaked 
+            out of line and is moving up and down trying to attract 
+            attention. He lets out with a low whistle. Threepio taps 
+            Luke on the shoulder.</p>
             <p>
-            Offering curated documents, data, websites, tools, and maps in an online repository lessens the
-            burden on individual municipalities and businesses, helps people make decisions about what
-            information is credible, and promotes joint planning and information sharing. The customizable data
-            and map products are meant to ease the job of the local planner in analyzing information, making
-            and implementing plans, and educating the public.</p>
+            Uh, I'm quite sure you'll be very 
+            pleased with that one, sir. He really 
+            is in first-class condition. I've 
+            worked with him before. Here he comes.</p>
 
-            <h4>About the contributors</h4>
+            <h4>INT. LARS HOMESTEAD - GARAGE AREA - LATE AFTERNOON</h4>
             <p>
-              The development of the MACCC was supported by the Massachusetts Executive Office of Energy and Environmental Affairs and the Department of Energy Resources (EEA).
-              Original development of the website was initiated and supported by the New
-              York State Energy Research and Development Authority (NYSERDA). The project team
-              includes Northeast States for Coordinated Air Use Management (NESCAUM), Cornell University’,
-              the Northeast Regional Climate Center (NRCC), the State University of New York Environmental
-              Sciences and Forestry’s (SUNY ESF) Department of Forest and Natural Resource Management,
-              and the Northeastern Regional Climate Services Director of the National Oceanic and Atmospheric
-              Administration (NOAA).
+              The garage is cluttered and worn, but a friendly peaceful 
+              atmosphere permeates the low grey chamber. Threepio lowers 
+              himself into a large tub filled with warm oil. Near the 
+              battered Landspeeder little Artoo rests on a large battery 
+              with a cord to his face.
             </p>
 
-            <h4> Creative Commons attribution</h4>
+            <h4>  EXT. TATOOINE - LARS HOMESTEAD</h4>
 
             <p> This site uses icons from the Noun Project.  They are licensed under the <a href='https://creativecommons.org/licenses/by/3.0/legalcode'>creative commons license</a>.
               <ul>

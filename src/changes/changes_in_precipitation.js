@@ -22,149 +22,150 @@ class ChangesInPrecipitationChangesPage extends Component {
     // collection_name: "MA/agriculture/highlighted_resources",
 
     return (<ChangesLayout
-        title="Changes in Precipitation"
+        title=" EXT. MASSASSI OUTPOST - JUNGLE"
         active_layers="ma_historical_precipitation,ma_historical_consecutive_dry_days"
         image={precipitation_changes_img}
         showcased_resources={showcased_resources}
         datagrapher_file='Temp/state/pcpn/ANN/MA/'
         footnotes={[
-          <span>2011 Report</span>,
-          <span>Horton, R., G. Yohe, W. Easterling, R. Kates, M. Ruth, E. Sussman, A. Whelchel, D. Wolfe, and F. Lipschultz, 2014: Ch. 16: Northeast. Climate Change Impacts in the United States: The Third National Climate Assessment, J. M. Melillo, Terese (T.C.) Richmond, and G. W. Yohe, Eds., U.S. Global Change Research Program, 16-1-nn.</span>
+          <span>BEN'S VOICE</span>,
+          <span>Luke, the Force will be with you.</span>
         ]}
 
         sections={[
-          {title: "Historic and Projected Changes in Massachusetts",
+          {title: "  EXT. MASSASSI OUTPOST - JUNGLE",
            id: "historic_and_projected_changes",
            content: <div>
-           <p>Scientists can use records of rainfall amounts collected at gauges around Massachusetts to see how precipitation has changed in recent decades. Future precipitation patterns are more challenging to project than rising temperatures, but scientists are finding better methods to provide communities with information on the range of future conditions to expect, both annually and within the seasons.</p>
+           <p>  All that can be seen of the fortress is a lone guard standing on a small pedestal jutting out above the dense jungle. The muted gruesome crying sounds that naturally permeate this eerie purgatory are overwhelmed by the thundering din of ion rockets as four silver starships catapult from the fol in a tight formation and disappears into the morning cloud cover.</p>
 
-           <h6>Changes in precipitation variables by the middle and end of century under a medium-high emissions scenario.</h6>
+           <h6> Stand-by alert. Death Star approaching. Estimated time to firing range, fifteen minutes.</h6>
            <table className='table chart t-c' style={{textAlign: "center"}}>
               <thead>
                 <tr className='blue'>
-                  <th colSpan='2'> <h5>Climate Indicator</h5> </th>
-                  <th> <h4>Observed Value</h4>1971-2000 Average</th>
-                  <th> <h4>Mid-Century</h4> Projected Change in 2050s</th>
-                  <th> <h4>End of Century</h4>Projected Change in 2090s</th>
+                  <th colSpan='2'> <h5>EXT. SPACE</h5> </th>
+                  <th> <h4>The Death Star slowly</h4>moves behind the massive yellow surface</th>
+                  <th> <h4>of Yavin in the foreground</h4> as many X-wing fighters flying</th>
+                  <th> <h4> in formation zoom toward</h4>us and out of the frame.</th>
                 </tr>
               </thead>
               <tbody>
+     
                 <tr>
-                  <td rowSpan="3" className='grey vert-align' > <strong>Days with Precipitation Over 1"</strong></td>
-                  <td>Annual</td>
-                  <td> 7 days </td>
-                  <td> Increase by 10-42%<br/>8-10 more days per year</td>
-                  <td> Increase by 15-55%<br/>8-11 more days per year</td>
+                  <td rowSpan="3" className='grey vert-align' > <strong>EXT. SPACE - ANOTHER ANGLE</strong></td>
+                  <td>Light </td>
+                  <td> from a distant sun</td>
+                  <td> creates an eerie atmospheric glow<br/>around a huge planet,</td>
+                  <td> avin. Rebel fighters flying in<br/>formation settle ominously</td>
                 </tr>
                 <tr>
-                  <td>Winter</td>
-                  <td> 2 days </td>
-                  <td> Increase by 10-69%<br/>2-3 more days per year</td>
-                  <td> Increase by 25-109%<br/>2-3 more days per year</td>
+                  <td>in the foreground</td>
+                  <td>and very slowly pull away. </td>
+                  <td> INT. RED LEADER STARSHIP - COCKPIT<br/> Red Leader lowers his visor</td>
+                  <td> and adjusts his gun sights, <br/>looking to each side at his wing men.</td>
                 </tr>
                 <tr>
-                  <td>Spring</td>
-                  <td> 2 days </td>
-                  <td> Increase by 2-46%<br/>2 more days per year</td>
-                  <td> Increase by 11-82%<br/>2-3 more days per year</td>
-                </tr>
-
-                <tr>
-                  <td rowSpan='2' className='vert-align grey'><strong>Total Precipitation</strong></td>
-                  <td>Annual</td>
-                  <td>47 inches</td>
-                  <td>Increase by 2-13% <br/>Increase of 1 to 6 inches</td>
-                  <td>Increase by 3-16% <br/>Increase of 1.2 to 7.3 inches</td>
-                </tr>
-                <tr>
-                  <td>Winter</td>
-                  <td>11.2 inches</td>
-                  <td>Increase by 1-21% <br/> Increase of 0.1 to 2.4 inches</td>
-                  <td>Increase by 4-35% <br/> Increase of 0.4 to 3.9 inches</td>
+                  <td> RED LEADER</td>
+                  <td> All wings report in. </td>
+                  <td> INT. ANOTHER COCKPIT<br/> One of the Rebel fighters</td>
+                  <td>checks in through his mike.<br/> RED TEN</td>
                 </tr>
 
                 <tr>
-                  <td rowSpan='2' className='vert-align grey'><strong>Consecutive Dry Days</strong></td>
-                  <td>Summer</td>
-                  <td>12 days</td>
-                  <td>Variable (-1 to +2 days)</td>
-                  <td>Variable (-1 to +3 days)</td>
+                  <td rowSpan='2' className='vert-align grey'><strong>Red Ten standing by.</strong></td>
+                  <td> INT. BIGGS' COCKPIT</td>
+                  <td> Biggs checks his fighter's controls</td>
+                  <td> alert and ready for combat.<br/> RED SEVEN</td>
+                  <td>over Biggs' headset) <br/> Red Seven standing by.</td>
                 </tr>
                 <tr>
-                  <td>Fall</td>
-                  <td>12 days</td>
-                  <td>Increase by 0 to 3 days</td>
-                  <td>Increase by 0 to 3 days</td>
+                  <td>BIGGS</td>
+                  <td>Red Three standing by.</td>
+                  <td>INT. PORKINS' COCKPIT <br/> PORKINS</td>
+                  <td> Red Six standing by. <br/>  RED NINE</td>
+                </tr>
+
+                <tr>
+                  <td rowSpan='2' className='vert-align grey'><strong>  (over headset)</strong></td>
+                  <td>Red Nine standing by.</td>
+                  <td>  INT. WEDGE'S FIGHTER - COCKPIT</td>
+                  <td>WEDGE</td>
+                  <td>Red Two standing by.</td>
+                </tr>
+                <tr>
+                  <td>INT. LUKE'S X-WING FIGHTER - COCKPIT</td>
+                  <td>RED ELEVEN</td>
+                  <td>(over headset)</td>
+                  <td>Red Eleven standing by.</td>
                 </tr>
               </tbody>
            </table>
           </div>,
           subsections: []
           },
-          {title: <SearchLink params={{query:'annual precipitation'}}>More Rainfall</SearchLink>,
+          {title: <SearchLink params={{query:'annual precipitation'}}>LUKE</SearchLink>,
            id: "more_rainfall",
            content: <div>
-            <p>Total average annual precipitation across the Northeastern states has increased by approximately 10 percent<Footnote num='1'/> in the last fifty years.</p>
+            <p>Red Five standing by.</p>
 
-            <p>An analysis completed by the Massachusetts Water Resources Authority shows that except in the Cape Cod region, the most recent 30-year normal precipitation for Massachusetts is the highest it has been since scientists began collecting records.</p>
+            <p>EXT. LUKE'S X-WING FIGHTER</p>
 
-            <p>More total rainfall can have an impact on the frequency of minor but disruptive flooding events, especially in areas where stormwater infrastructure has not been adequately sized to accommodate higher levels.  Rainfall is expected to increase in spring and winter months in particular, with increasing consecutive dry days in summer and fall.  Increased total rainfall will also affect agriculture, forestry and natural ecosystems.</p>
+            <p> Artoo-Detoo, in position outside of the fighter, turns his head from side to side and makes beeping sounds.</p>
             </div>,
             subsections: []
           },
-          {title: <SearchLink params={{query:'heavy precipitation events microbursts'}}>More Intense and More Frequent Downpours</SearchLink>,
+          {title: <SearchLink params={{query:'heavy precipitation events microbursts'}}>INT. RED LEADER'S FIGHTER - COCKPIT</SearchLink>,
            id: "more_frequent_downpours",
            content: <div>
-              <p>Of all the regions in the United States, the Northeast has seen the most dramatic increase in the intensity of rainfall events. The U.S. National Climate Assessment<Footnote num='2'/> reports that between 1958 and 2010, the Northeast saw more than a 70% increase in the amount of precipitation falling in very heavy events (defined as the heaviest 1% of all daily events).</p>
-              <p>More intense downpours often lead to inland flooding as soils become saturated and stop absorbing more water, river flows rise, and urban stormwater systems become overwhelmed.  Flooding may occur as a result of heavy rainfall, snowmelt or coastal flooding associated with high wind and wave action, but precipitation is the strongest driver of flooding in Massachusetts.  Winter flooding is also common in the state, particularly when the ground is frozen.</p>
-              <p>The Commonwealth has experienced 22 flood-related disaster declaration occurrences from 1954 to 2017 with many of these falling in winter or early spring or during recent hurricanes.</p>
-              <p>Climate projections for Massachusetts, developed by the University of Massachusetts, suggest that the frequency of high-intensity rainfall events will trend upward, and the result will be an increased risk of flooding.</p>
-              <p>Specifically, the annual frequency of downpours releasing more than two inches of rain per day in Massachusetts may climb from less than 1 day per year to approximately 0.9-1.5 days by 2100.  Events which release over one inch during a day could climb to as high as 8-11 days per year by 2100.  A single intense downpour can cause flooding and widespread damage to property and critical infrastructure.  The coast will experience the greatest increase in high-intensity rainfall days, but some level of increase will occur in every area of Massachusetts.</p>
+              <p>RED LEADER</p>
+              <p>Lock S-foils in attack position.</p>
+              <p> EXT. SPACE</p>
+              <p>The group of X-wing fighters move in formation toward the Death Star, unfolding the wings and locking them in the "X" position.</p>
+              <p>INT. BIGGS' COCKPIT</p>
             </div>,
             subsections: []
           },
-          {title: <SearchLink params={{query:'snowfall snow cover'}}>Less Winter Snow</SearchLink>,
+          {title: <SearchLink params={{query:'snowfall snow cover'}}>READ LEADER</SearchLink>,
            id: "less_winter_snow",
            content: <div>
-             <p>Climate projections for Massachusetts indicate that in future decades, winter precipitation could increase annually by as much as 0.4-3.9 inches (an increase of 4-35%), but by the end of the century most of this precipitation is likely to fall as rain instead of snow.  There are many human and environmental impacts that could result from this change including reduced snow cover for winter recreation and tourism, less spring snow melt to replenish aquifers and lower spring river flows for aquatic ecosystems.</p>
+             <p>(over headset) We're passing through their magnetic field.</p>
             </div>,
             subsections: []
           },
-          {title: "More Impacts from Changing Precipitation",
+          {title: "  INT. RED LEADER'S COCKPIT",
            id: "more_impacts",
            content: <div>
             </div>,
             subsections: [
-              { name: <SearchLink params={{query:'drought'}}>Episodic Droughts</SearchLink>,
-                id:"more_impacts_epsiodic_droughts",
+              { name: <SearchLink params={{query:'drought'}}>  Hold tight!</SearchLink>,
+                id:"INT. LUKE'S X-WING FIGHTER - COCKPIT",
                 content: <div>
-                  <p>A small projected decrease in average summer precipitation in Massachusetts could combine with higher temperatures to increase the frequency of episodic droughts, like the one experienced across the Commonwealth in the summer of 2016.  </p>
-                  <p>Droughts will create challenges for local water supply by reducing surface water storage and the recharge of groundwater supplies, including private wells.  More frequent droughts could also exacerbate the impacts of flood events by damaging vegetation that could otherwise help mitigate flooding impacts.  Droughts may also weaken tree root systems, making them more susceptible to toppling during high wind events.</p>
+                  <p> Luke adjusts his controls as he concentrates on the approaching Death Star.</p>
+                  <p>The ship begins to be buffeted slightly.</p>
                 </div>
               },
-              { name: <SearchLink params={{query:'natural resources annual precipitation'}}>Impacts on flora and fauna</SearchLink>,
-                id:"more_impacts_flora_n_fauna",
+              { name: <SearchLink params={{query:'natural resources annual precipitation'}}> Switch your deflectors on.</SearchLink>,
+                id:"Double front!",
                 content: <div>
-                  <p>Changes in precipitation and temperature combine to create new stresses for Massachusetts’ unique ecosystems.  For example, intense rainfall in urbanized areas can cause pollutants on roads and parking lots to get washed into nearby rivers and lakes, reducing habitat quality.  As rainfall and snowfall patterns change, certain habitats and species that have specific physiological requirements may be affected.</p>
+                  <p>  The fighters, now X-shaped darts, move in formation. The Death Star now appears to be a small moon growing rapidly in size as the Rebel fighters approach.</p>
                 </div>
               },
-              { name: <SearchLink params={{query:'agriculture tourism precipitation'}}>Agriculture and Tourism</SearchLink>,
-                id:"more_impacts_ag_and_tourism",
+              { name: <SearchLink params={{query:'agriculture tourism precipitation'}}>INT. WEDGE'S COCKPIT</SearchLink>,
+                id:"Wedge is amazed and slightly frightened at the awesome spectacle.",
                 content: <div>
-                  <p>Farmers in the Northeast are already experiencing consequences from changing precipitation.   In addition to direct crop damage from intense rainfall, wetter springs can delay planting for corn and vegetables or reduce yields.  </p>
+                  <p>Complex patterns on the metallic surface begin to become visible. A large dish antenna is built into the surface on one side.</p>
                 </div>
               },
               ]
           }
         ]} >
 
-        <p> Changes in the amount, frequency, and timing of precipitation—including both rainfall and snowfall—are occurring across the globe as temperatures rise, and other climate patterns shift in response. </p>
+        <p> As the fighters move closer to the Death Star, the awesome size of the gargantuan Imperial fortress is revealed. </p>
 
-        <p>The Commonwealth receives approximately 48 inches of rain per year on average, with average monthly rainfall between 3 and 4 inches for all regions of the state.  These precipitation patterns are changing and the changes are likely to become more pronounced in the years ahead.  </p>
+        <p>Half of the deadly space station is in shadow and this area sparkles with thousands of small lights running in thin lines and occasionally grouped in large clusters; somewhat like a city at night as seen from a weather satellite. </p>
 
-        <p>We can expect to see more intense spring downpours, drier summers and more intermittent droughts, increased inland and coastal flooding, diminishing snowfall and higher precipitation in winter and spring months.  Preparing now for these changes will help reduce a wide range of risks to Massachusetts cities and towns such as the risk of flood damage, or declining winter tourism.</p>
+        <p>Red Leader looks around at his wingmen; the Death Star looming in from behind.</p>
 
-        <p>Precipitation changes will vary from one part of the state to another due to factors like topography and proximity to the coast.  The <MapLink>Clearinghouse Map</MapLink>  and <DatagrapherLink>Data Grapher</DatagrapherLink> can help local governments examine precipitation trends in their area, and identify actions to build their long-term resilience to the changes ahead.</p>
+        <p>Two Y-wing fighters bob back and forth in the background. He moves his computer targeting device into position.</p>
 
 
 

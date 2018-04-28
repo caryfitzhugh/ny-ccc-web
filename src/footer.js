@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import nescaum_logo from './images/nescaum_logo.png';
-import eea_logo from './images/eea_logo.png';
 import esf_logo from './images/esf_logo.png';
 import cornell_logo from './images/cornell_logo.png';
-import ma_logo from './images/ma_seal.png';
+import nyserda_logo from './images/nyserda_logo.png';
 import './footer.css';
 
 class Footer extends Component {
@@ -17,43 +16,62 @@ class Footer extends Component {
     return <div className='container-fluid footer'>
       <div className='footer-content container'>
         <div className='row'>
-          <div className='logos col-md-6'>
-            <a href='http://www.mass.gov/eea' rel="noopener noreferrer" target="_blank">
-              <img className='primary-logo' alt='MA EEA seal'  src={eea_logo} />
-            </a>
-            <a href='http://www.mass.gov' rel="noopener noreferrer" target="_blank">
-              <img className='primary-logo' alt='MA govt seal'  src={ma_logo} />
-            </a>
-
-            <hr/>
-
-            <a href='http://www.esf.edu' rel="noopener noreferrer" target="_blank">
-              <img alt='SUNY ESF Logo'  src={esf_logo} />
-            </a>
-            <a href='http://www.cornell.edu' rel="noopener noreferrer" target="_blank">
-              <img alt='Cornell Seal'  src={cornell_logo} />
-            </a>
-            <a href='http://www.nescaum.org' rel="noopener noreferrer" target="_blank">
-              <img alt='NESCAUM logo'  src={nescaum_logo} />
-            </a>
+          <div className='col-md-4 col-sm-4 col-xs-12'>
+            <div className="col-sm-12 col-xs-8">
+              <a href='http://www.nyserda.ny.gov/' rel="noopener noreferrer" target="_blank">
+                <img className="img-responsive logo" alt='New York State Energy Research and Development Authority (NYSERDA)'  src={nyserda_logo} />
+              </a>
+            </div>
+            <div className="col-sm-12 col-xs-8">
+              <a href='' rel="noopener noreferrer" target="_blank">
+                <img className="img-responsive logo" alt='SUNY College of Environmental Science and Forestry (ESF)'  src={esf_logo} />
+              </a>
+            </div>
+            <div className="col-sm-12">
+              <div className="row">
+                <div className="col-sm-5 col-12 logos">
+                  <a href='' rel="noopener noreferrer" target="_blank">
+                    <img className="img-responsive logo" alt='Cornell University'  src={cornell_logo} />
+                  </a>
+                </div>
+                <div className="col-sm-7 col-12">
+                  <a href='' rel="noopener noreferrer" target="_blank">
+                    <img className="img-responsive logo" alt='Northeast States for Coordinated Air Use Management (NESCAUM)'  src={nescaum_logo} />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className='content col-md-6'>
-            <Link to='/about#about_macc'> About MACCC</Link>
+          <div className='content col-md-4 col-xs-12'>
+            <h3>About NYCCSC</h3>
             <p className='hidden-md-down'>
-              The Massachussetts Climate Change Clearinghouse (MACCC) is a gateway to data and information relevant to climate change adaptation and mitigation across the state. It provides the most up-to-date climate change science and decision support tools for the Commonwealth to support scientifically sound and cost-effective decision making for policy-makers, practitioners, and the public.
-              <Link to='/about#about_macc'> More ... </Link>
+              The New York Climate Change Science Clearinghouse (NYCCSC) is a regional gateway to data and information relevant to climate change adaptation and mitigation across New York State. It provides climate science data and literature and other resources for policy-makers, practitioners, and the public, to support scientifically sound and cost-effective decision making.
+              <Link to='/about' className="font-weight-bold"> For More Information <i className="fa fa-angle-double-right"></i> </Link>
             </p>
-            <label> Email <Link to='mailto:EEA-DL-MassClimateChange@MassMail.State.MA.US'> EEA-DL-MassClimateChange@MassMail.State.MA.US </Link> </label>
-            <Link className='btn btn-sm btn-primary' to='/suggestions'>Content Suggestions</Link>
+           <h3>Content Suggestions</h3>
+            <p className='hidden-md-down'>
+              We want to hear from you!  If you have ideas for datasets, data products, GIS layers, websites, documents, or other resources that would add value to the New York Climate Change Science Clearinghouse, please submit them. Content proposals are moderated, and submission of an idea is not a guarantee of inclusion in the Clearinghouse.
+            </p>
+            <Link className='btn btn-primary btn-sm pull-right' to="/suggestions">
+            Propose Content
+            </Link>
+          </div>
+          <div className='content col-md-2 col-xs-12'>
+            <h3>Contact</h3>
+            <p>
+            Email: <a href='mailto:info@nyclimatescience.org' className="font-weight-bold">info@nyclimatescience.org</a>
+            <p>Phone: 607.273.6623 ext 22</p>
+            </p>
             <Link className='btn btn-sm btn-primary' to='/comments'>Provide Feedback</Link>
+            <p>
+             <a href="http://www.nyserda.ny.gov/" className="font-weight-bold" title="New York State Energy Research &amp; Development Agency">NYSERDA</a>  © 2018
+            </p>
           </div>
         </div>
-      </div>
-      <div className='row copyright'>
-        &copy; 2017 <Link to='www.mass.gov/eea'>MA EEA</Link>
       </div>
     </div>;
   }
 }
 
 export default Footer;
+ 

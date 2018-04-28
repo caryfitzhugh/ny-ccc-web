@@ -2,7 +2,6 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  min-width: 480px;
 }
 .image-credit {
   font-size: 0.7rem;
@@ -14,6 +13,20 @@ body {
 a {
   cursor: pointer;
   color: #113f83;
+  font-weight: 400;
+}
+
+hr {
+  margin:40px 0;
+}
+
+img {
+  width:100%;
+}
+
+small {
+  font-size:65%;
+  color: #647282;
 }
 
 .btn {
@@ -21,11 +34,15 @@ a {
 }
 
 .btn-primary {
-  background: #f27421 !important;
-  border-color: #f27421 !important;
-  color: white !important;
-
+  background: #F9AB6C;
+  border-color: #F9AB6C;
+  color: #434d55 !important;
 }
+.btn-primary:hover {
+  background-color: #e76f0a;
+  border-color: #dd6a0a;
+}
+
 .app {
   padding: 0em;
 }
@@ -36,10 +53,10 @@ a {
 .gray-text { color: rgb(94,94,94); }
 .gray-bg { background: rgb(94,94,94); }
 
-.slate-text { color: #113f83; }
+.slate-text { color: #3670aa; }
 .slate-bg { background: #113f83; }
 
-.light-slate-bg { background: #3f69a7; }
+.light-slate-bg { background: #3670aa; }
 
 .animation-spin {
   animation: spin infinite 2s linear;
@@ -73,4 +90,15 @@ ol.footnotes :target {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+}
+
+@media (max-width: 767px) {
+ .hidden-xs {
+  display:none !important
+ }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+ .hidden-sm {
+  display:none !important
+ }
 }

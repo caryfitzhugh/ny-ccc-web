@@ -1,0 +1,25 @@
+.tiles-region .tile {
+	font-family: 'Raleway', sans-serif;
+}
+
+.tiles-region .tile img {
+	max-width:100%;
+}
+
+.tiles-region .image-credit {
+	color: #414c54;
+	font-size: 10px;
+}
+
+.tiles-region .no-credit {
+	margin-bottom:15px;
+}
+
+.tiles-region .tile a {
+	color:#113f83;
+}
+
+.tiles-region .more-link {
+	font-size:14px;
+	color:#3670aa;
+}

@@ -137,14 +137,14 @@ class ResourcesDetailPage extends Component {
       return (
         <div className='resource-detail container'>
           <span className='back-to-search-results' onClick={(evt) => this.back(evt) }>&#8592;&nbsp; Back to Search Results</span>
-          <span className='publication'>{ResourcePublishDate(resource)}</span>
-          <ContentTypes content_types={resource.content_types} />
           <h1>{resource.title}</h1>
-          <h5>{resource.subtitle}</h5>
+          {(resource.subtitle) ? <h5>resource.subtitle</h5> : null}
           {(resource.external_data_links || []).map((wl, indx) => {
             let split = wl.split("::");
-            return <a target="_blank" href={split[1]} rel='noopener noreferrer' key={indx} className='badge badge-primary'> {split[0]} </a>;
+            return <a target="_blank" href={split[1]} rel='noopener noreferrer' key={indx} className='btn btn-primary fa fa-link'> {split[0]} </a>;
           })}
+          <span className='publication'>{ResourcePublishDate(resource)}</span>
+          <ContentTypes content_types={resource.content_types} />
           <hr/>
           <Authors authors={resource.authors}/>
 

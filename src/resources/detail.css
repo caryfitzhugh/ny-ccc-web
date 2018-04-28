@@ -51,8 +51,11 @@
 }
 
 .resource-detail .subsection label {
+  padding: 10px 5px;
+  background: #e6e9eb;
+  width: 100%;
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 

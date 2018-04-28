@@ -4,8 +4,36 @@
 }
 .collections-resource img {
   float: left;
-  max-width: 15%;
   height: auto;
   margin: 0 1em 1em 0;
   box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+.collections {
+	padding:0;margin:0;
+}
+
+.collections span {
+	color:#3670aa;
+	font-size:14px;
+}
+
+.collections li {
+	margin-bottom: 5px;
+}
+
+.collections .with-image a {
+  box-shadow: 1px 1px 3px 0 #ccc;
+  height: 100%;
+  background:white;
+  padding:15px;
+}
+
+.collections .with-image {
+  margin-bottom:20px;
+}
+
+.collections .with-image span {
+  text-align: center;
+  display:block;
 }

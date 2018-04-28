@@ -9,15 +9,22 @@ class Sectors extends Component {
     this.state = {current_index: 0};
   }
   render() {
-    return <div className='container-fluid sectors no-select '>
+    return <div className='sectors no-select '>
       <div className='container'>
+        <div className='row'>
+        <div className='col-sm-2 browse-by'>
+          <div className="sector-tile">
+            <h2>Browse by Sector</h2>
+          </div>
+        </div>
         {(this.props.sectors || []).map ( (sector, indx) => {
-          return (<Link to={sector.href || "#"} key={indx} className='sector col-6 col-md-3 col-lg-2 '>
+          return (<Link to={sector.href || "#"} key={indx} aria-label={sector.name} className='sector col-sm-2 '>
             <div className='icon'>{sector.icon}</div>
-            <label> {sector.name}</label>
+            <p> {sector.name}</p>
           </Link>);
         })}
       </div>
+        </div>
     </div>
   }
 }

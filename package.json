@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel": "^6.23.0",
     "core-js": "^2.5.1",
     "geojson-bounds": "^1.0.1",
     "isomorphic-fetch": "^2.2.1",
     "leaflet": "^1.2.0",
     "lodash": "^4.17.4",
     "marked": "^0.3.6",
+    "npm": "^6.0.0",
     "object-path-immutable": "^0.5.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
@@ -26,7 +28,7 @@
     "moment": "^2.18.1",
     "query-string": "^5.0.0",
     "react-inlinesvg": "^0.6.2",
-    "react-scripts": "1.0.10",
+    "react-scripts": "^1.0.10",
     "strip": "^3.0.0",
     "url-loader": "^0.5.9"
   },

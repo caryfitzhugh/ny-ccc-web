@@ -14,50 +14,40 @@ const ActiveLink = (props) => {
 
 const Logo = (props) =>
   <Link to='/' className='logo'>
-    <img className='hidden-sm-down' src={logo_img} alt="logo" />
+    <img className='hidden-xs' src={logo_img} alt="NY CCSC Logo" />
     <div className='logo-text slate-text'>
       <h1>
-        <em className='slate-text'> MA </em>
-        <span className='gray-text'>CCC</span>
+        <em className='slate-text'> NY </em>
+        <span className='gray-text'>CCSC</span>
       </h1>
-      <small className='orange-text'>
-        <strong>Massachusetts</strong>
-        Climate Change Clearinghouse
+      <small>
+        New York&nbsp;
+        <small className='orange-text'>
+         Climate Change
+        </small>
+        &nbsp;Science Clearinghouse
       </small>
     </div>
   </Link>;
 
 const NavBlocks = (props) =>
-  <div className='no-select nav-blocks hidden-md-down'>
-    <Link to={props.anchors ? '/#explore_sectors' : '/sectors'} className={'nav-block col-xs ' + (props.nav_block === 'explore_sectors' ? 'active': null)}>
+  <div className='no-select nav-blocks hidden-md-down hidden-xs hidden-sm'>
+    <Link to="/highlights/problems" className={'nav-block col-xs ' + (props.nav_block === 'explore_sectors' ? 'active': null)}>
       <div className='content'>
-        Explore Sectors
+        Identify Problems
       </div>
     </Link>
-    <Link to={props.anchors ? '/#identify_changes': '/changes'} className={'nav-block col-xs ' + (props.nav_block === 'identify_changes' ? 'active': null)}>
+    <Link to='/highlights/solutions' className={'nav-block col-xs ' + (props.nav_block === 'identify_changes' ? 'active': null)}>
       <div className='content'>
-          Identify Changes
+        Investigate Solutions
       </div>
     </Link>
-    <Link to={props.anchors ? '/#take_action' : "/actions"} className={'nav-block col-xs ' + (props.nav_block === 'take_action' ? 'active': null)}>
+    <Link to='/highlights/actions' className={'nav-block col-xs ' + (props.nav_block === 'take_action' ? 'active': null)}>
       <div className='content'>
-        Take Action
+        Take <br /> Action 
       </div>
     </Link>
-  </div>;
-/*
-import eea_bg from './images/eea_bg.png';
-const EEABanner = () => {
- return <div className='eea-banner container-fluid' style={{'backgroundImage': `url(${eea_bg})`}}>
-        <h1>
-          <a href='http://eea.mass.gov'>
-            <span className='eea-icons eea-icons-stateseal' ></span>
-            <span className='hidden-sm-down'> Energy and Environmental Affairs </span>
-            <span className='hidden-md-up'> EEA </span>
-          </a>
-        </h1>
-      </div>
-};*/
+  </div>;  
 class Header extends Component {
   render() {
     return <div className='header-wrap'>
@@ -66,18 +56,34 @@ class Header extends Component {
         <NavBlocks anchors={this.props.anchors} nav_block={this.props.nav_block || {}}/>
       </div>
       {this.props.hide_subnav ?  null : (
-      <div className='container-fluid subnav'>
+      <div className='container-fluid navigation'>
         <div className='container'>
-          <div className='nav'>
-            <ActiveLink to={this.props.anchors ? '/#maps' : '/data/maps'}> Maps </ActiveLink>
-            <ActiveLink to={this.props.anchors ? '/#data' : '/data/data'}>Data</ActiveLink>
-            <ActiveLink to={this.props.anchors ? '/#documents' : `/data/documents`}>Documents</ActiveLink>
+          <div className='navbar navbar-expand-lg justify-content-end'>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNav">
+              <span className="navbar-toggler-icon"></span>
+              <span className="hidden">toggle</span>
+            </button>
+            <div className="collapse navbar-collapse justify-content-between" id="toggleNav">
+              <div className="nav-links row">
+                 <div className="col-sm-3">
+                  <ActiveLink to='/highlights/maps'> Maps </ActiveLink>
+                 </div>
+                 <div className="col-sm-3">
+                  <ActiveLink to='/highlights/data_products'>Data</ActiveLink>
+                 </div>
+                 <div className="col-sm-3">
+                  <ActiveLink to='/highlights/documents'>Documents</ActiveLink>
+                 </div>
+              </div>
+              <hr />
+              <SearchBar className='col-sm-4' size='sm'/>
           </div>
-          <SearchBar className='' size='sm'/>
+        </div>
         </div>
       </div>)}
     </div>
   }
 }
+
 
 export default Header;

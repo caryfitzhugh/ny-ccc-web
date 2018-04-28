@@ -1,0 +1,25 @@
+.sidebar {
+	font-family: 'Raleway', sans-serif;
+	color: #414c54;
+}
+
+.sidebar a {
+	color: #cd3900;
+}
+
+.sidebar li {
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+
+.sidebar li > ul {
+	margin-top: 10px;
+}
+
+.sidebar hr {
+	margin: 40px 0;
+}
+
+.sidebar > div {
+	margin-left:20px;
+}

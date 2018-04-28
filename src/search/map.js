@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router'
+import { withRouter } from 'react-router-dom'
 import Facets from './facets';
 import MapListToggle from './maplist_toggle';
 import GeofocusMap from '../geofocus_map';

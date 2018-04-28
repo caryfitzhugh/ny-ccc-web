@@ -73,7 +73,7 @@ class GeofocusMap extends Component {
     let bounds = this.props.bounds || (
         bbox[0] ?
         new LatLngBounds([[bbox[1],bbox[0]],[bbox[3], bbox[2]]]) :
-        new LatLngBounds([[42.886778,-73.50821],  [41.187053, -69.858861]])
+        new LatLngBounds([[45.015865,-79.76259],  [40.477399, -71.777491]])
     );
 
     return bounds;

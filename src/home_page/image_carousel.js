@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 
 import './image_carousel.css';
 
+{/* this component is no long being used on the home page */}
+
 const Slide = (props) =>
   <div className={'slide ' + (props.slide.className || "")} >
     <div className='image' style={ {backgroundImage: `url("${props.slide.src}")`}}/>
