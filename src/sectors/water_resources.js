@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
 import SectorDetailLayout from './layout';
-import sector_image from '../images/sectors/water_resources.jpg';
 import SearchLink from '../utils/search_link';
 import { Link } from 'react-router-dom';
 
 class WaterResourcesSectorPage extends Component {
  render() {
+    let showcased_resources = {
+      title: "Highlighted Resources",
+      collection_name: "NY/water_resources/highlighted_resources",
+    };
+
 
     return (
       <SectorDetailLayout
         title="Water Resources"
-        children={<p>The Water Resources sector encompasses four major themes: flooding in non-coastal regions, drinking water supply, water availability for non-potable uses (primarily agriculture and hydropower), and water quality.<br /><br />
-Potential climate change vulnerabilities for water resources and related infrastructure include flooding, an increase in duration and/or frequency of dry periods affecting drinking water supplies, changes in demand for commercial and agricultural water, and declines in water quality due to higher water temperatures and decreased stream flows in summer.  Climate change may bring New York State opportunities as a potentially water-rich area under future climate conditions.<br /><br />
-Water resource adaptation strategies include phased withdrawal of infrastructure from high-risk, floodprone areas, implementation of an automatic gauging and reporting network to provide improved early-warning systems for supply shortages, mechanisms for better coordination of water use in shared water bodies, and establishment of minimum flow requirements for water withdrawals.</p>}
+        showcased_resources={showcased_resources}
         sections={ [
           {title: "Impacts",
             id: 'impacts',
@@ -108,8 +110,16 @@ Water resource adaptation strategies include phased withdrawal of infrastructure
           }
         ]}
         >
+          <p>The Water Resources sector encompasses four major themes: flooding in non-coastal regions, drinking water supply, water availability for non-potable uses (primarily agriculture and hydropower), and water quality.
+          </p>
+          <p>
+            Potential climate change vulnerabilities for water resources and related infrastructure include flooding, an increase in duration and/or frequency of dry periods affecting drinking water supplies, changes in demand for commercial and agricultural water, and declines in water quality due to higher water temperatures and decreased stream flows in summer.  Climate change may bring New York State opportunities as a potentially water-rich area under future climate conditions.
+          </p>
+          <p>
+            Water resource adaptation strategies include phased withdrawal of infrastructure from high-risk, floodprone areas, implementation of an automatic gauging and reporting network to provide improved early-warning systems for supply shortages, mechanisms for better coordination of water use in shared water bodies, and establishment of minimum flow requirements for water withdrawals.
+          </p>
         </SectorDetailLayout>
-    ); 
+    );
   }
 }
 

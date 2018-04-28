@@ -59,9 +59,9 @@ class Footer extends Component {
           <div className='content col-md-2 col-xs-12'>
             <h3>Contact</h3>
             <p>
-            Email: <a href='mailto:info@nyclimatescience.org' className="font-weight-bold">info@nyclimatescience.org</a>
-            <p>Phone: 607.273.6623 ext 22</p>
+              Email: <a href='mailto:info@nyclimatescience.org' className="font-weight-bold">info@nyclimatescience.org</a>
             </p>
+            <p>Phone: 607.273.6623 ext 22</p>
             <Link className='btn btn-sm btn-primary' to='/comments'>Provide Feedback</Link>
             <p>
              <a href="http://www.nyserda.ny.gov/" className="font-weight-bold" title="New York State Energy Research &amp; Development Agency">NYSERDA</a>  © 2018
@@ -74,4 +74,3 @@ class Footer extends Component {
 }
 
 export default Footer;
- 

@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import SectorDetailLayout from './layout';
 import { Link } from 'react-router-dom';
-import sector_image from '../images/sectors/forestry.jpg';
+import sector_image from '../images/sectors/ecosystems.jpg';
 import SearchLink from '../utils/search_link';
-import {Footnote} from '../utils/footnotes';
 
 class EcosystemsSectorPage extends Component {
   render() {
     let showcased_resources = {
       title: "Higlighted Resources",
-      collection_name: "MA/forestry/highlighted_resources",
+      collection_name: "MA/ecosystems/highlighted_resources",
     };
 
     return (
@@ -17,12 +16,11 @@ class EcosystemsSectorPage extends Component {
         title="Ecosystems"
         image={sector_image}
         image_credit=""
+        showcased_resources={showcased_resources}
         sections={[
           {title: "Headline",
            id: "impacts",
-           content: <p>
-           A line of stormtroopers march toward the pirateship in readiness to board it, while other troopers stand with weapons ready to fire.
-           </p>,
+           content: <p></p>,
            subsections: [
             {name: 'Temperature Changes',
              id:"impacts_rising_temps",

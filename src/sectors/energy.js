@@ -2,17 +2,8 @@ import React, { Component } from 'react';
 import SectorDetailLayout from './layout';
 import energy_image from '../images/sectors/energy.jpg';
 import SearchLink from '../utils/search_link';
-import {Footnote} from '../utils/footnotes';
 
 import { Link } from 'react-router-dom';
-
-const ActionLink = (props) => {
-  return <li>
-    <SearchLink params={{facets:{sectors: ["ny::energy"]}, query: props.q}}>
-      {props.children}
-    </SearchLink>
-  </li>
-}
 
 class EnergySectorPage extends Component {
   render() {
@@ -23,6 +14,7 @@ class EnergySectorPage extends Component {
 
     return (
       <SectorDetailLayout
+        showcased_resources={showcased_resources}
         title="Energy"
         image={energy_image}
         image_credit="FEMA/Jocelyn Augustino"
@@ -42,7 +34,7 @@ class EnergySectorPage extends Component {
                   Energy adaptation strategies include using transformers and wiring that function efficiently at higher temperatures, prioritizing demand-side management, which encourages consumers to use energy more efficiently, and installing saltwater-resistant transformers to protect against sea level rise and saltwater intrusion.</li>
                   <li>Extreme heat may trigger power outages that disrupt the economy and put the elderly and the ill at greater risk</li>
                   <SearchLink params={{facets: {climate_changes: ["ny::temperature"]}, query: "energy"}}>> Find more information</SearchLink>
-                  </ul>  
+                  </ul>
               },
               { name: "Precipitation Changes",
                 id: 'impacts_precipitation_changes',
@@ -73,7 +65,7 @@ class EnergySectorPage extends Component {
             ]},
           {title: "Preparing for Climate Change",
             id: 'preparing_for_climate_change',
-     
+
             subsections: [
               { name:"Planning",
                 id: "actions_planning",
@@ -123,7 +115,7 @@ class EnergySectorPage extends Component {
                 content: <ul>
                 <li>Monitor correlations of energy demand with emerging weather trends</li>
                 <li>Encourage research and development of renewable energy and energy storage systems</li>
-                <SearchLink params={{query: 'energy research monitoring '}}>> Find more information</SearchLink>        
+                <SearchLink params={{query: 'energy research monitoring '}}>> Find more information</SearchLink>
                 </ul>
               },
             ]},

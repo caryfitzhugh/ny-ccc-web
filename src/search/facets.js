@@ -79,13 +79,16 @@ class Facets extends Component {
     let params = this.props.params || {};
     let params_facets = params.facets || {};
     let search_results = this.props.search_results;
-    let facets = [['sectors','Sectors', true] ,
-      ['strategies', "Strategies"],
-      ['actions', 'Actions', true],
+    let facets = [
+      ['sectors','Sectors', true] ,
       ['climate_changes', "Climate Changes", true],
+      ['strategies', "Strategies"],
       ['effects', "Effects", true],
-      //['authors', "Authors"],
+      ['actions', 'Actions', true],
       ['content_types',"Types"],
+      ['authors', "Authors"],
+
+
       //['keywords', "Keywords"],
       //['publishers', "Publishers"]
       ];

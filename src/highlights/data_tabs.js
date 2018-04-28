@@ -18,7 +18,7 @@ const DataTabs = (props) => (
       {(props.tabs).map((tab, index) => {
         return (
           <li>
-            <a key={index} className={(index == 0) ? "active" : null} href="tab" data-toggle="tab" href={"#" + tab.id}>{tab.title}</a>
+            <a key={index} className={(index === 0) ? "active" : null} data-toggle="tab" href={"#" + tab.id}>{tab.title}</a>
           </li>
         )
       })}
@@ -39,5 +39,5 @@ const DataTabs = (props) => (
     </div>
   </div>
 )
- 
+
 export default DataTabs;

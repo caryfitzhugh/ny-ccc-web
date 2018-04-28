@@ -3,14 +3,6 @@ import SectorDetailLayout from './layout';
 import SearchLink from '../utils/search_link';
 import agriculture_image from '../images/sectors/agriculture.jpg';
 
-const ActionLink = (props) => {
-  return <li>
-    <SearchLink params={{facets: {sectors: ["ma::agriculture"]}, query: props.q}}>
-      {props.children}
-    </SearchLink>
-  </li>
-}
-
 class AgricultureSectorPage extends Component {
   render() {
     let showcased_resources = {
@@ -22,6 +14,7 @@ class AgricultureSectorPage extends Component {
       <SectorDetailLayout
       image={agriculture_image}
         title="Agriculture"
+        showcased_resources={showcased_resources}
         sections={[
           {title: "Impacts",
            id: "impacts",

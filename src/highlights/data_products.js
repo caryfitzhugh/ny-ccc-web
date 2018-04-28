@@ -7,10 +7,6 @@ import datagrapher_img from '../images/highlights/datagrapher.jpg';
 
 import './data_products.css';
 
-const toggleStyle = {
-	height: '300px'
-}
-
 let dataTabs = [
   {
     title: "All Featured",
@@ -83,11 +79,11 @@ class DataProductPage extends Component {
 			             	<DatagrapherLink file="Temp/state/maxt/ANN/NY/" className="btn btn-sm btn-primary">Interactive Chart</DatagrapherLink>
 			                <br/><br/>
 			            	<p>
-			            		User-generated time series graphs of climate data, both observed and projected (future and historical.)  
+			            		User-generated time series graphs of climate data, both observed and projected (future and historical.)
 								A video tutorial on how to use the Climate Data Grapher can be found here.
-								Observed data: The user can select data from New York State stations in the U.S. Historical Climatology Network or from PRISM data spatially aggregated by New York counties and river basins or by state (for states neighboring New York.) Points are observed data values; the solid line shows the 5-year running mean. For the station data the length of the data records vary by station, with the oldest data going back to 1900.  The spatially aggregated data cover the time period from 1981 to the present. 
+								Observed data: The user can select data from New York State stations in the U.S. Historical Climatology Network or from PRISM data spatially aggregated by New York counties and river basins or by state (for states neighboring New York.) Points are observed data values; the solid line shows the 5-year running mean. For the station data the length of the data records vary by station, with the oldest data going back to 1900.  The spatially aggregated data cover the time period from 1981 to the present.
 			            	</p>
-			            	{(this.state.showMore) ? 
+			            	{(this.state.showMore) ?
 				            <div className="toggle">
 					            <p>Projected data: Global climate model projections from the North American Regional Climate Change Assessment Program (NARCCAP) for state, county and river basin areas. The NARCCAP dataset provides daily values of maximum and minimum temperature and precipitation on a 50 km grid. All future projections cover the period 2041-2070 and are based on the relatively high SRES A2 emissions scenario. Simulations are also generated for the 1971-2000 historical period.  Future and historical simulations are based on four regional climate models (RCMs) nested within at least one of three atmosphere-ocean general circulation models (AOGCMs), yielding a set of seven RCM-AOGCM combinations.</p>
 				              	<p>Simulations from these model combinations form the red-blue shaded areas on each graph for the historical and future period.  The top of the red area corresponds to the highest of the seven combinations.  The bottom of the blue area corresponds to the lowest of the seven combinations. The mean of the seven combinations is reflected by the boundary between the blue and red areas.  As with the observed data, a 5-year running mean is used.</p>
@@ -154,7 +150,7 @@ class DataProductPage extends Component {
 			  </section>
 		)
 	}
-  
+
 }
 
 

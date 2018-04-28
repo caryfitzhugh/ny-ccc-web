@@ -1,6 +1,5 @@
 import React from 'react';
 import HeadlineArrow from '../home_page/headline_arrow';
-import Collection from '../layouts/collection';
 import ArticleBlocks from './article_blocks';
 import ArticleList from './article_list';
 import Sidebar from './sidebar';
@@ -111,7 +110,7 @@ let articleList = [
         source: " Ithaca Week",
         abstract: <div>
             <p>
-                In 2014, Solar Tompkins hosted a very successful county-wide community solar program that far exceeded its goal of doubling the total amount of residential solar photovoltaics installed to date in Tompkins County, and left the market with a permanently increased annual rate of solar power adoption. 
+                In 2014, Solar Tompkins hosted a very successful county-wide community solar program that far exceeded its goal of doubling the total amount of residential solar photovoltaics installed to date in Tompkins County, and left the market with a permanently increased annual rate of solar power adoption.
             </p>
         </div>,
         collection: "NY/highlights/actions/renewable_energy"
@@ -159,11 +158,11 @@ const Actions = (props) => (
                 <h3 id="successStories">Success Stories</h3>
 
                 <ArticleList list={articleList} />
-                
+
             </div>
 
             <Sidebar anchors={anchors} resourcesCollection="NY/highlights/stakeholder_resources" mapsCollection="NY/highlights/highlights_maps" />
-       
+
         </div>
     </div>
 </section>

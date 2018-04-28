@@ -1,6 +1,5 @@
 import React from 'react';
 import HeadlineArrow from '../home_page/headline_arrow';
-import Collection from '../layouts/collection';
 import Sidebar from './sidebar';
 import Assessments from './assessments';
 import ArticleList from './article_list';
@@ -22,7 +21,7 @@ let assessments = [
         id: "impacts",
         description: "The impacts and risks of climate change affect the human health, built environment, ecosystems, and economy in your region.",
         source: "Definitions from ClimAID Annex II, Climate Adaptation Guidebook for New York State:",
-        definitions: [ 
+        definitions: [
             {
                 title: "Impact",
                 definition: " is the effect a change in climate could have on natural or human systems. For example, an increase in heavy downpours can lead to more road flooding, culvert washouts, and stream bank erosion."
@@ -40,7 +39,7 @@ let assessments = [
         id: "vulnerability",
         description: "Vulnerability assessment focuses on identifying, inventorying, and prioritizing people, places, resources, and infrastructure that may be impacted by climate change.",
         source: "Definitions from ClimAID Annex II, Climate Adaptation Guidebook for New York State:",
-        definitions: [ 
+        definitions: [
             {
                 title: "Vulnerability",
                 definition: " is the degree to which natural and human systems are susceptible to, and unable to cope with, adverse impacts of climate change. For example, aging culverts designed to older standards and with pre-existing erosion are more vulnerable to damage and failure than newer culverts at a similar location."
@@ -134,7 +133,7 @@ let hazards = [
         collection: "NY/highlights/problems/extreme_weather"
     },
 ]
- 
+
 let anchors = [
     {
         title: "Impacts & Risks",
@@ -202,7 +201,7 @@ const Problems = (props) => (
 
                 <h3 id="hazards">Key Hazards</h3>
                 <ArticleList list={hazards}/>
-            </div>         
+            </div>
 
             <Sidebar anchors={anchors} resourcesCollection="NY/highlights/stakeholder_resources" mapsCollection="NY/highlights/highlights_maps" />
 

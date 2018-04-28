@@ -11,7 +11,7 @@ const Actions = (props) => (
       <div className="col-sm-7">
         <div className="primary-story">
           <img class="img-responsive" alt="Climate Smart Community certification" src={props.primaryStory} />
-          <a href="#" >
+          <a>
             <p className="story-caption" >
               Success Story: Reducing greenhouse gas emissions and preparing for climate change:  Climate Smart Communities
             </p>

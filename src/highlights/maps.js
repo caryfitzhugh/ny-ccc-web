@@ -1,5 +1,4 @@
 import React from 'react';
-import Collection from '../layouts/collection';
 import DataTabs from './data_tabs';
 import MapLink from '../utils/map_link';
 
@@ -85,5 +84,5 @@ const Maps = (props) => (
     </div>
   </section>
 )
- 
+
 export default Maps;

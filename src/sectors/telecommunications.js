@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import SectorDetailLayout from './layout';
-import energy_image from '../images/sectors/energy.jpg';
 import SearchLink from '../utils/search_link';
-import {Footnote} from '../utils/footnotes';
 import { Link } from 'react-router-dom';
 
 class TelecommunicationSectorPage extends Component {
   render() {
 
+    let showcased_resources = {
+      title: "Highlighted Resources",
+      collection_name: "NY/telecommunications/highlighted_resources",
+    };
     return (
       <SectorDetailLayout
         title="Telecommunications"
-        children={<p>The Telecommunications sector involves infrastructure systems and the technological sophistication, availability, accessibility, interconnectivity, broadband capacity, redundancy, security, and reliability of services for users in the private and public sectors.<br /><br />
-Potential climate change vulnerabilities include reduced service due to extreme-heat-related power outages, increased emergency communications and reduction in cable-provided services due to storm-damaged utility lines, and flooding of central offices during extreme storms, resulting in reduced or disrupted service.<br /><br />
-Telecommunications adaptation strategies include placing communication cables underground where technically and economically feasible, relocating central offices that house communications infrastructure out of future floodplains, and minimizing the effects of power outages on communications services by providing backup power at cell towers, such as with generators, solar-powered battery banks, and “cells on wheels” that can replace disabled towers.</p>}
+        showcased_resources={showcased_resources}
         sections={ [
           {title: "Impacts",
             id: 'impacts',
@@ -102,8 +102,15 @@ Telecommunications adaptation strategies include placing communication cables un
           }
         ]}
         >
+        <p>
+          The Telecommunications sector involves infrastructure systems and the technological sophistication, availability, accessibility, interconnectivity, broadband capacity, redundancy, security, and reliability of services for users in the private and public sectors.
+        </p>
+        <p>
+          Potential climate change vulnerabilities include reduced service due to extreme-heat-related power outages, increased emergency communications and reduction in cable-provided services due to storm-damaged utility lines, and flooding of central offices during extreme storms, resulting in reduced or disrupted service.<br /><br />
+Telecommunications adaptation strategies include placing communication cables underground where technically and economically feasible, relocating central offices that house communications infrastructure out of future floodplains, and minimizing the effects of power outages on communications services by providing backup power at cell towers, such as with generators, solar-powered battery banks, and “cells on wheels” that can replace disabled towers.
+        </p>
         </SectorDetailLayout>
-    ); 
+    );
   }
 }
 

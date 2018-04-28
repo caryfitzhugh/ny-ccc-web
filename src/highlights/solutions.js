@@ -36,7 +36,7 @@ let potentialSolutions = [
         title: "Water Resources",
         collection: "NY/highlights/investigate_solutions/water_resources",
         icon: "tint",
-        query: "ny::water resources" 
+        query: "ny::water resources"
     },
     {
         title: "Agriculture",
@@ -87,7 +87,7 @@ let potentialSolutions = [
         query: "ny::transportation"
     }
 ]
- 
+
 let anchors = [
     {
         title: "Adaptation & Mitigation",
@@ -128,7 +128,7 @@ const Solutions = (props) => (
 
             <div className="evaluate row" id="evaluate">
                 <div className="col-sm-6">
-                    <img src={solutions_img} alt="Photo: Evaluate Solutions"/>
+                    <img src={solutions_img} alt="Evaluate Solutions"/>
                     <h3 className="identify">Evaluate & Prioritize Solutions</h3>
 
                     <p>Consider lessons learned from responses to past climate hazards; think about using new technologies and reusing existing technologies in new ways; consider different types of strategies and different timelines.</p>
@@ -143,7 +143,7 @@ const Solutions = (props) => (
                     <Collection collection_name="NY/highlights/investigate_solutions/evaluate" />
                 </div>
             </div>
-            
+
             </div>
 
             <Sidebar anchors={anchors} resourcesCollection="NY/highlights/stakeholder_resources" mapsCollection="NY/highlights/highlights_maps" />

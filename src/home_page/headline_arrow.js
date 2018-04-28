@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 
 import './headline_arrow.css';
 
 const HeadlineArrow = (props) => (
 	<div className="headline-arrow">
-	    <h2 className="home arrow">{props.title}&nbsp;  
+	    <h2 className="home arrow">{props.title}&nbsp;
 	     {props.showMore ?
-	      <small> 
+	      <small>
 	        <Link className="font-weight-bold" to={props.href} aria-label={"Click for more information on " + props.title}>
-	          More 
+	          More
 	          <i className="fa fa-angle-double-right"></i>
 	        </Link>
 	      </small> :
@@ -20,5 +20,3 @@ const HeadlineArrow = (props) => (
 )
 
 export default HeadlineArrow;
-
-

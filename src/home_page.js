@@ -21,11 +21,6 @@ import downpour_img from './images/home_page/downpours.jpg';
 import extreme_weather_img from './images/home_page/extreme_weather.jpg';
 import primary_story_img from './images/home_page/primary_story.jpg';
 
-
-import planning_img from './images/home_page/blocks/planning.jpg';
-import outreach_img from './images/home_page/blocks/outreach.png';
-import take_action_implementation_img from './images/home_page/blocks/take_action_implementation.png';
-
 class Homepage extends Component {
   render() {
 
@@ -118,11 +113,12 @@ class Homepage extends Component {
          </div>
         </div>
         <span className="credit">
-          <a href="https://www.flickr.com/photos/brbirke/8136033826/in/photostream/" className="font-weight-bold" title="" target="_blank" data-original-title="Cropped from original">Photo: Brian Birke</a>, 
-          <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC</a> 
+          <a href="https://www.flickr.com/photos/brbirke/8136033826/in/photostream/" className="font-weight-bold" title="" rel="noopener noreferrer"
+             target="_blank" data-original-title="Cropped from original">Photo: Brian Birke</a>,
+          <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by/2.0/">CC</a>
         </span>
         <div className="search-container container">
-        
+
           <div className="search-form">
             <p className="text-right">
               <a href="/catalog">Browse Resources</a>

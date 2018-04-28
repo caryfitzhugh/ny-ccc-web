@@ -7,10 +7,15 @@ import { Link } from 'react-router-dom';
 
 class BuildingsSectorPage extends Component {
   render() {
+    let showcased_resources = {
+      title: "Highlighted Resources",
+      collection_name: "NY/buildings/highlighted_resources",
+    };
 
     return (
       <SectorDetailLayout
         title="Buildings"
+        showcased_resources={showcased_resources}
         children={<p>The Buildings sector encompasses residential, commercial, and government buildings.<br /><br />
 Potential climate change vulnerabilities include structural damage from coastal flooding and intense storms, mold growth in buildings from receding floodwaters, and increased energy demand for cooling during extreme heat events.<br /><br />
 Building adaptation strategies include improving building codes to promote storm-resistant structures, siting new developments outside of future floodplains, and investments in structural adaptations to reduce building cooling demands, including tree planting, green roofs, and high-reflectivity building materials</p>}
@@ -104,7 +109,7 @@ Building adaptation strategies include improving building codes to promote sto
         ]}
         >
         </SectorDetailLayout>
-    ); 
+    );
   }
 }
 

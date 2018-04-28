@@ -30,6 +30,7 @@ class SearchMapPage extends Component {
       return old;
     });
   }
+
   onEachFeature(feature, layer) {
     // Want to find all resources which match?A
     let resources = (this.props.search_results || {}).resources;
@@ -53,11 +54,16 @@ class SearchMapPage extends Component {
     let geofocus_ids = uniq(flatten(((this.props.search_results || {}).resources || []).map((resource) => {
       return resource.geofocuses;
     })));
+
     let highlighted = (this.state || {}).highlighted || [];
 
     let search_results = this.props.search_results || {};
 
     let bbox = (this.props.params || {}).bounds;
+
+    geofocus_ids = [];
+    // We need a way to limit these in size / complexity (dumb down any polygon geofocus which is too large... USA?)
+    // geofocus_ids.slice(0, );
 
     return (
       <div className='search-map'>

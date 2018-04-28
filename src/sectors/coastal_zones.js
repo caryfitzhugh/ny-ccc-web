@@ -1,17 +1,7 @@
 import React, { Component } from 'react';
 import SectorDetailLayout from './layout';
 import coastal_zones_image from '../images/sectors/coastal_zones.jpg';
-import {Footnote} from '../utils/footnotes';
 import SearchLink from "../utils/search_link";
-
-const ActionLink = (props) => {
-  return <li>
-    <SearchLink params={{facets: {sectors: ["ma::coastal zones"]}, query: props.q}}>
-      {props.children}
-    </SearchLink>
-  </li>
-}
-
 
 class CoastalZonesSectorPage extends Component {
   render() {
@@ -25,6 +15,7 @@ class CoastalZonesSectorPage extends Component {
         title="Coastal Zones"
         image={coastal_zones_image}
         image_credit=""
+        showcased_resources={showcased_resources}
         sections={[
           {title: "Impacts",
            id: 'impacts',
