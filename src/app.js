@@ -12,11 +12,35 @@ import AboutPage  from "./about_page";
 import CommentsPage  from "./comments";
 import SuggestionsPage  from "./suggestions";
 import ResourcesPage  from "./resources_page";
+import createBrowserHistory from 'history/createBrowserHistory'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './app.css';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-118150811-1');
+
+const history = createBrowserHistory();
+let track_location = (location) => {
+  let path = location.pathname;
+  if (location.query) {
+    path += "#" + location.query;
+  }
+  ReactGA.pageview(path);
+};
+
+history.listen((location, action) => {
+  if (action == "PUSH") {
+    track_location(location);
+  }
+});
+
+
 class App extends Component {
+  componentWillMount() {
+    track_location(window.location);
+  }
+
   render() {
     return (
       <BrowserRouter>
