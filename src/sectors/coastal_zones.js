@@ -116,7 +116,7 @@ class CoastalZonesSectorPage extends Component {
                   <li>Conduct sediment transport studies to inform shoreline management </li>
                   <li>Monitor the response of different types of wetlands to rising sea levels and/or proactive management techniques </li>
                   <li>Use remote sensing to monitor annual changes in land cover and land usef </li>
-                  <SearchLink params={{query: "coastal research / monitoring"}}>> Find more information</SearchLink>
+                  <SearchLink params={{query: "coastal research monitoring"}}>> Find more information</SearchLink>
                 </ul>
               }
             ]},

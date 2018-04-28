@@ -4,7 +4,7 @@ import HeadlineArrow from './headline_arrow';
 import './actions.css';
 
 const Actions = (props) => (
-<section>
+<section aria-label="Actions">
   <div className="container actions">
     <HeadlineArrow title="Take Action" href="/highlights/actions" showMore={true}/>
     <div className="row">

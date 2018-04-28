@@ -79,9 +79,13 @@
 }
 
 .home-page .credit a {
-  color: #414c54;
+  color: #f8a55f;
 }
 
 .home-page section {
     padding: 40px 0;
+}
+
+.home-page .about {
+  text-decoration: underline;
 }

@@ -98,7 +98,7 @@ class EnergySectorPage extends Component {
                 id: "actions_outreach",
                 content: <ul>
                 <li>Educate energy asset owners and consumers about vulnerabilities, incentives for investing in clean and distributed resources, and renewable energy options</li>
-                <SearchLink params={{query: 'energy outreach OR education '}}>> Find more information</SearchLink>
+                <SearchLink params={{query: 'energy outreach education '}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Technology",
@@ -115,7 +115,7 @@ class EnergySectorPage extends Component {
                 id: "actions_policies_laws",
                 content: <ul>
                 <li>Consider policies and incentives for encouraging energy conservation and efficiency and growth in distributed energy resources</li>
-                <SearchLink params={{query: 'energy and policy OR law '}}>> Find more information</SearchLink>
+                <SearchLink params={{query: 'energy and policy law '}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Research / Monitoring",
@@ -123,7 +123,7 @@ class EnergySectorPage extends Component {
                 content: <ul>
                 <li>Monitor correlations of energy demand with emerging weather trends</li>
                 <li>Encourage research and development of renewable energy and energy storage systems</li>
-                <SearchLink params={{query: 'energy research OR monitoring '}}>> Find more information</SearchLink>        
+                <SearchLink params={{query: 'energy research monitoring '}}>> Find more information</SearchLink>        
                 </ul>
               },
             ]},

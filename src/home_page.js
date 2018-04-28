@@ -91,27 +91,6 @@ class Homepage extends Component {
 
      let sectors = SectorsAll.sorted;
 
-     let take_actions = [
-       { title: 'Planning',
-         text: 'Leia is marched away down the hallway and into the smoldering hole blasted in the side of the ship. An Imperial Commander turns to Vader.',
-         image: planning_img,
-         image_credit: "",
-         href: '/actions/planning',
-        },
-       {title: 'Implementation',
-        text: 'I don\'t know what you\'re talking about. I\'m a member of the Imperial Senate on a diplomatic mission to Alderaan... ',
-         image: take_action_implementation_img,
-         image_credit: "MA Division of Ecological Restoration",
-         href: '/actions/implementation',
-        },
-        {title: 'Outreach / Education',
-         text: 'Luke agrees, although it\'s obvious he isn\'t sure why. The group stumbles back into the power station, grumbling about Luke\'s ineptitude.',
-         image:outreach_img,
-         image_credit: "",
-         href: '/actions/outreach-education',
-        }
-     ];
-
      let squares = [
         { squareLink: "/highlights/actions#rain",
           squareText: "Preparing for heavy downpours: Save the Rain"
@@ -134,12 +113,12 @@ class Homepage extends Component {
         <div className='tag-line'>
          <div className='container'>
           <p>Providing climate change data and information relevant to New York State to support scientifically sound decision making.
-             <Link to='/about'> About <span className='fa fa-angle-double-right'></span> </Link>
+            <Link to='/about' className="font-weight-bold about">About <span className='text-underline fa fa-angle-double-right'></span> </Link>
           </p>
          </div>
         </div>
         <span className="credit">
-          <a href="https://www.flickr.com/photos/brbirke/8136033826/in/photostream/" class="tip" title="" target="_blank" data-original-title="Cropped from original">Photo: Brian Birke</a>, 
+          <a href="https://www.flickr.com/photos/brbirke/8136033826/in/photostream/" className="font-weight-bold" title="" target="_blank" data-original-title="Cropped from original">Photo: Brian Birke</a>, 
           <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC</a> 
         </span>
         <div className="search-container container">

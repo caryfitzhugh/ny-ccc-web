@@ -29,7 +29,7 @@
   font-size: 14px;
   display: block;
   margin-right: 2em;
-  background: #5690ca;
+  background: #3670aa;
   color: white;
   position: relative;
   text-align: center;
@@ -56,16 +56,16 @@
   width: 0;
   pointer-events: none;
   border: solid transparent;
-  border-left-color: #5690ca;
+  border-left-color: #3670aa;
   border-width: 1.5em;
   margin-top: -1.5em;
 }
 
 .header .nav-blocks .nav-block:hover:after{
-  border-left-color: #3f69a7;
+  border-left-color: #3670aa;
 }
 .header .nav-blocks .nav-block:hover {
-  background: #3f69a7;
+  background: #3670aa;
   text-decoration: none;
 }
 
@@ -118,7 +118,7 @@
 }
 
 .header-wrap .navigation {
-  background: #5690ca;
+  background: #3670aa;
   color: white;
   margin-bottom:40px;
 }
@@ -136,7 +136,7 @@
 }
 
 .header-wrap .navbar-toggler {
-  background:#5690ca;
+  background:#3670aa;
   border-color:#326aa1;
 }
 
@@ -210,6 +210,14 @@
 
 .header-wrap hr {
   margin:10px;
+}
+
+.header-wrap small {
+  color: #566570;
+}
+
+.header-wrap small > small {
+  color: #f27421;
 }
 
 @font-face{

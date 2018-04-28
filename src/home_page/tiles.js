@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import './tiles.css';
 
 const Tiles = (props) => (
-<section>
+<section aria-label="Identify Problems">
   <div className="tiles-region container">
     <HeadlineArrow title="Identify Problems" href="/highlights/problems" showMore={true}/>
     <div className='row'>
@@ -14,10 +14,10 @@ const Tiles = (props) => (
           <img className="img-responsive" src={tile.image} alt={tile.alt}/>
           {tile.image_credit ? <div className='image-credit'>{tile.image_credit}</div> : <div className="no-credit" />}
           <p className='hidden-sm-down'>
-            <b>{tile.title}</b>
+            <span className="font-weight-bold">{tile.title}</span>
             {tile.text} 
-          <Link id={tile.id} to={tile.href}>
-            <p className=" more-link text-right">
+          <Link className="font-weight-bold" id={tile.id} to={tile.href}>
+            <p className="more-link text-right">
               More on {tile.title}<i className="fa fa-angle-double-right"></i>
             </p>
           </Link>

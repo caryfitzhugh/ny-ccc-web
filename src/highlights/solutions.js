@@ -104,7 +104,7 @@ let anchors = [
 ]
 
 const Solutions = (props) => (
-<section>
+<section aria-label="Investigate Solutions">
     <div className="container">
         <div className="row">
             <div className="col-sm-9 col-12 content-area">

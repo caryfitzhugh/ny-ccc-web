@@ -120,7 +120,7 @@ class EcosystemsSectorPage extends Component {
                 <li>Consider policies that maintain healthy forests, including local zoning regulations </li>
                 <li>Consider policies to ensure sustainable management of renewable wood products on appropriate sites </li>
                 <li>Promote the buying of local forest products  </li>
-                <SearchLink params={{query: "ecosystems policies / laws"}}>> Find more information</SearchLink>
+                <SearchLink params={{query: "ecosystems policies laws"}}>> Find more information</SearchLink>
              </ul>
             },
             {name: 'Research/Monitoring',
@@ -132,7 +132,7 @@ class EcosystemsSectorPage extends Component {
                 <li>Identify opportunities to reconnect cold water fish habitats by removing in-stream barriers and re-establishing instream flows  </li>
                 <li>Expand adaptive research of forest management practices and their effectiveness in a changing climate </li>
                 <li>Support long-term ecological monitoring programs such as the DCR‘s Continuous Forest Inventory </li>
-                <SearchLink params={{query: "ecosystems research / monitoring"}}>> Find more information</SearchLink>
+                <SearchLink params={{query: "ecosystems research monitoring"}}>> Find more information</SearchLink>
              </ul>
             }
            ]

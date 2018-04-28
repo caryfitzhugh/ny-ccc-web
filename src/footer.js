@@ -18,7 +18,7 @@ class Footer extends Component {
         <div className='row'>
           <div className='col-md-4 col-sm-4 col-xs-12'>
             <div className="col-sm-12 col-xs-8">
-              <a href='' rel="noopener noreferrer" target="_blank">
+              <a href='http://www.nyserda.ny.gov/' rel="noopener noreferrer" target="_blank">
                 <img className="img-responsive logo" alt='New York State Energy Research and Development Authority (NYSERDA)'  src={nyserda_logo} />
               </a>
             </div>
@@ -46,7 +46,7 @@ class Footer extends Component {
             <h3>About NYCCSC</h3>
             <p className='hidden-md-down'>
               The New York Climate Change Science Clearinghouse (NYCCSC) is a regional gateway to data and information relevant to climate change adaptation and mitigation across New York State. It provides climate science data and literature and other resources for policy-makers, practitioners, and the public, to support scientifically sound and cost-effective decision making.
-              <Link to='/about'> For More Information <i className="fa fa-angle-double-right"></i> </Link>
+              <Link to='/about' className="font-weight-bold"> For More Information <i className="fa fa-angle-double-right"></i> </Link>
             </p>
            <h3>Content Suggestions</h3>
             <p className='hidden-md-down'>
@@ -59,12 +59,12 @@ class Footer extends Component {
           <div className='content col-md-2 col-xs-12'>
             <h3>Contact</h3>
             <p>
-            Email: <a href='mailto:info@nyclimatescience.org'>info@nyclimatescience.org</a>
+            Email: <a href='mailto:info@nyclimatescience.org' className="font-weight-bold">info@nyclimatescience.org</a>
             <p>Phone: 607.273.6623 ext 22</p>
             </p>
             <Link className='btn btn-sm btn-primary' to='/comments'>Provide Feedback</Link>
             <p>
-             <a href="http://www.nyserda.ny.gov/" title="New York State Energy Research &amp; Development Agency">NYSERDA</a>  © 2018
+             <a href="http://www.nyserda.ny.gov/" className="font-weight-bold" title="New York State Energy Research &amp; Development Agency">NYSERDA</a>  © 2018
             </p>
           </div>
         </div>

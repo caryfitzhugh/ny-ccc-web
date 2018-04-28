@@ -105,7 +105,7 @@ class AgricultureSectorPage extends Component {
                 content: <ul>
                   <li>Examine policies and incentives to help farms reduce their flood risks and protect water quality</li>
                   <li>Consider policies that encourage conservation of floodplain agricultural lands to slow floodwaters and protect downstream development</li>
-                  <SearchLink params={{query: "agriculture policies / laws"}}>> Find more information</SearchLink>
+                  <SearchLink params={{query: "agriculture policies laws"}}>> Find more information</SearchLink>
                </ul>
               },
               { name: "Research / Monitoring",
@@ -115,7 +115,7 @@ class AgricultureSectorPage extends Component {
                   <li>Track use and occurrence of pesticides as weather patterns change</li>
                   <li>Track food-borne illnesses to determine if new patterns or agents are emerging</li>
                   <li>Educate vulnerable agricultural workers and their employers about health and safety precautions for any increased pesticide use</li>
-                  <SearchLink params={{query: "agriculture research / monitoring"}}>> Find more information</SearchLink>
+                  <SearchLink params={{query: "agriculture research monitoring"}}>> Find more information</SearchLink>
                 </ul>
               }
             ]

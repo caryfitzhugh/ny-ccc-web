@@ -56,7 +56,7 @@ let mapsTabs = [
 ]
 
 const Maps = (props) => (
-  <section>
+  <section aria-label="Maps">
     <div className="container maps">
       <div className="row">
         <div className="col-12">

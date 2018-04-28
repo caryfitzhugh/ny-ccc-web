@@ -2,7 +2,6 @@
 	font-family: 'Raleway', sans-serif;
 }
 
-
 .tiles-region .tile img {
 	max-width:100%;
 }
@@ -17,10 +16,10 @@
 }
 
 .tiles-region .tile a {
-	color:#5690ca;
+	color:#113f83;
 }
 
 .tiles-region .more-link {
 	font-size:14px;
-	color:#5690ca;
+	color:#3670aa;
 }

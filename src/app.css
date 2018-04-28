@@ -53,10 +53,10 @@ small {
 .gray-text { color: rgb(94,94,94); }
 .gray-bg { background: rgb(94,94,94); }
 
-.slate-text { color: #5690ca; }
+.slate-text { color: #3670aa; }
 .slate-bg { background: #113f83; }
 
-.light-slate-bg { background: #3f69a7; }
+.light-slate-bg { background: #3670aa; }
 
 .animation-spin {
   animation: spin infinite 2s linear;

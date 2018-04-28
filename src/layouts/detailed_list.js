@@ -43,7 +43,7 @@ class DetailedList extends Component {
             <div className="resource">
               <div className="row">
                 <div className="col-3">
-                  <Link to={`/resources/${resource.docid}`}><img src={resource.image} className="img-responsive" alt={resource.subtitle}/></Link>
+                  <Link to={`/resources/${resource.docid}`}><img src={resource.image} className="img-responsive" alt={resource.title}/></Link>
                 </div>
                 <div className="col-9">
                   <div className="limit-list-display">
