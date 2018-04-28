@@ -55,7 +55,7 @@ class Homepage extends Component {
         alt: ' Urban Flooding ',
         image: coastal_zones_img,
         href: "/highlights/problems#flooding",
-        image_credit: "Photo: Metropolitan Transportation Authority / Patrick Cashin"
+        image_credit: "Metropolitan Transportation Authority / Patrick Cashin"
         },
        {title: 'Heat Waves',
         text: '  will become more frequent and intense, increasing heat-related illness and death and posing new challenges to the energy system, air quality, and agriculture.  ',
@@ -63,7 +63,7 @@ class Homepage extends Component {
         id: "heatwaves",
         image: heat_wave_img,
         href: "/highlights/problems#heatWaves",
-        image_credit: "Photo: Tom Kaminski / WCBS 880"
+        image_credit: "Tom Kaminski / WCBS 880"
         },
        {title: 'Heavy Downpours',
         text: ' are increasing and are projected to increase further. These can lead to flooding and related impacts on water quality, infrastructure, and agriculture. ',
@@ -80,7 +80,7 @@ class Homepage extends Component {
         id: 'weather',
         image: extreme_weather_img,
         href: "/highlights/problems#weather",
-        image_credit: "Photo: Melinda Stoldt"
+        image_credit: "Melinda Stoldt"
        }
      ];
 
@@ -121,7 +121,7 @@ class Homepage extends Component {
 
           <div className="search-form">
             <p className="text-right">
-              <a href="/catalog">Browse Resources</a>
+              <a href="/search">Browse Resources</a>
             </p>
             <SearchBar className='hide-subnav' size='sm'/>
           </div>

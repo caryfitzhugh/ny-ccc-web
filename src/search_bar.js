@@ -60,7 +60,7 @@ class SearchBar extends Component {
       <div className={'search-bar ' + this.props.className}>
         <div className="row no-gutters">
           <div className="search-related-links hidden-xs">
-            <a href="/advanced">Advanced Search</a>
+            <a href="/search/advanced">Advanced Search</a>
           </div>
         </div>
         <div className="row no-gutters">

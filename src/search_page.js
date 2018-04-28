@@ -5,6 +5,7 @@ import {NotFound} from './not_found';
 import Footer from './footer';
 import SearchMapPage from './search/map';
 import SearchListPage from './search/list';
+import AdvancedSearchPage from './search/advanced';
 import {reduce, isEmpty} from 'lodash';
 import immutable from 'object-path-immutable';
 import {API_HOST} from './utils/fetch';
@@ -174,6 +175,7 @@ class SearchPage extends Component {
             <Switch>
               <PropsRoute exact path='/search/map' component={SearchMapPage} {... props} />
               <PropsRoute exact path='/search'   component={SearchListPage}  {... props} />
+              <PropsRoute exact path='/search/advanced'   component={AdvancedSearchPage}  {... props} />
               <Route path='*' component={NotFound} />
             </Switch>
           </div>
