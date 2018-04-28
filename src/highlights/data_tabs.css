@@ -1,5 +1,5 @@
 .data-tabs .nav-tabs .active {
-	color:#a6b2bb;
+	color:#cd3900;
 	background:#fff;
 	border:1px solid #ddd;
 	border-bottom-color:transparent;
@@ -22,7 +22,7 @@
 	padding:10px 15px;
 	border-radius:4px 4px 0 0;
 	border: 1px solid transparent;
-	color: #5690ca;
+	color: #3670aa;
 	font-size:14px;
 	display:block;
 }

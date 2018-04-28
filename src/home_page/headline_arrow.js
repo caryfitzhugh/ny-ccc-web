@@ -8,10 +8,10 @@ const HeadlineArrow = (props) => (
 	    <h2 className="home arrow">{props.title}&nbsp;  
 	     {props.showMore ?
 	      <small> 
-	        <a className="font-weight-bold" href={props.href} aria-label={"Click for more information on " + props.title}>
+	        <Link className="font-weight-bold" to={props.href} aria-label={"Click for more information on " + props.title}>
 	          More 
 	          <i className="fa fa-angle-double-right"></i>
-	        </a>
+	        </Link>
 	      </small> :
 	      null
 	  	  }

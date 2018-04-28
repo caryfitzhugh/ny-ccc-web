@@ -22,7 +22,6 @@
   text-transform: none;
 }
 .resource-blocks .block {
-  background: white;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -38,7 +37,7 @@
   background: #3670aa;
   font-weight: 300;
   padding: 0.5em;
-  border-bottom: 8px solid #3670aa;
+  border-bottom: 8px solid #518FCC;
   color: white;
   margin-bottom: 0;
 }

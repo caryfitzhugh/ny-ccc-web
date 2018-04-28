@@ -26,7 +26,7 @@ img {
 
 small {
   font-size:65%;
-  color: #a6b2bb;
+  color: #647282;
 }
 
 .btn {
@@ -34,9 +34,9 @@ small {
 }
 
 .btn-primary {
-  background: #f6892e;
-  border-color: #f6892e;
-  color: white !important;
+  background: #F9AB6C;
+  border-color: #F9AB6C;
+  color: #434d55 !important;
 }
 .btn-primary:hover {
   background-color: #e76f0a;
