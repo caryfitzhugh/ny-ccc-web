@@ -7,7 +7,7 @@ class MapPage extends Component {
   render() {
     return (
       <div className='map-page'>
-        <Header />
+        <Header hide_subnav={true}/>
             <iframe src="https://map.nyclimatescience.org/" className="map"></iframe>
       </div>
     );
