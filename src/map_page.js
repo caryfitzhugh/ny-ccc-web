@@ -8,7 +8,7 @@ class MapPage extends Component {
     return (
       <div className='map-page'>
         <Header short_header={true}/>
-            <iframe title='MA CCC Map' src="https://map.nyclimatescience.org/" className="map"></iframe>
+            <iframe title='MA CCC Map' src="https://d2a5wybk98jh3k.cloudfront.net/" className="map"></iframe>
       </div>
     );
   }
