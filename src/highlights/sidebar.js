@@ -8,17 +8,17 @@ const Sidebar = (props) => (
   <div className="col-sm-3 sidebar hidden-xs">
     <div>
       <ul>
-       { (props.anchors).map(anchor => {
+       { (props.anchors).map((anchor, i) => {
           return (
-            <li>
+            <li key={'sidebar-' + i}>
               <a href={anchor.href}>
                 {anchor.title}
               </a>
               {(anchor.ul) ?
                 <ul>
-                  {(anchor.ul).map(subAnchor => {
+                  {(anchor.ul).map((subAnchor,i) => {
                     return (
-                      <li>
+                      <li key={'subanch-' + i}>
                         <a href={"#" + subAnchor.href}>
                           {subAnchor.title}
                         </a>
@@ -46,5 +46,5 @@ const Sidebar = (props) => (
     </div>
   </div>
 )
- 
+
 export default Sidebar;

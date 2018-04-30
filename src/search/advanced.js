@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import SearchLink from '../utils/search_link';
 import {without} from 'lodash';
 import titleize from '../utils/titleize';
-import ShowcaseResources from '../layouts/showcase_resources';
 import {should_display} from '../resources/utils';
 import {API_HOST} from '../utils/fetch';
 import './advanced.css';
@@ -93,7 +92,6 @@ class AdvancedSearchPage extends Component {
                 }
               });
             });
-            console.log(search_facets);
             sthis.setState({facets: search_facets, requesting: false});
           })
           .catch((e) => {
@@ -129,19 +127,9 @@ class AdvancedSearchPage extends Component {
     this.setState({search: evt.target.value});
   }
 
-  perform_search() {
-
-  }
   render() {
     let facet_section_props = { is_checked: this.is_checked.bind(this),
                                 toggle: this.toggle.bind(this)};
-    let showcased_resources = {
-      title: "",
-      collection_name: 'MA/data/documents/highlighted_resources'
-    };
-
-    debugger;
-
     return (
       <div className={'default-layout container data-layout'}>
         <div className='row'>
@@ -178,7 +166,7 @@ class AdvancedSearchPage extends Component {
 
               <div className='form-group row submit-row'>
                 <SearchLink params={Object.assign({},
-                                                  this.state.selected,
+                                                  {facets: this.state.selected},
                                                   {query: this.state.search})}
                   className='btn btn-primary'>
 

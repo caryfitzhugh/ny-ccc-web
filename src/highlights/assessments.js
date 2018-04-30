@@ -6,15 +6,15 @@ import './assessments.css';
 
 const Assessments = (props) => (
   <div className="assessment">
-    {(props.assessments).map(assessment => {
+    {(props.assessments).map((assessment, i) => {
         return (
-          <div className="col-sm-12">
+          <div key={'assessment-' + i} className="col-sm-12">
             <h3 className="title" id={assessment.id}>{assessment.title}</h3>
               <p>{assessment.description}</p>
               <p className="source">{assessment.source}</p>
-              {(assessment.definitions).map(definition => {
+              {(assessment.definitions).map((definition, i) => {
                   return(
-                    <p>
+                    <p key={'assessment-def-' + i}>
                       <strong>{definition.title}</strong>
                       {definition.definition}
                     </p>
@@ -35,5 +35,5 @@ const Assessments = (props) => (
     }
   </div>
 )
- 
+
 export default Assessments;
