@@ -55,6 +55,9 @@
 .footer .content a {
   color: #f9b47d;
 }
+.footer .content a.btn {
+  color: white;
+}
 
 .footer hr {
   width: 100%;
