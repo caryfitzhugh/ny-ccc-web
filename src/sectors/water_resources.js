@@ -28,7 +28,7 @@ class WaterResourcesSectorPage extends Component {
                   <li>Spikes in air conditioning demand may trigger power outages that disrupt water and wastewater treatment</li>
                   <li>Warmer temperatures and more winter rain may cause stream flows to peak and decline earlier with many impacts on wildlife </li>
                   <li>Lower summer flows may affect aquatic life, habitat health, and drinking water supplies</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::temperature"]}, query: "water resources"}}>> Find more information</SearchLink>
+                  <SearchLink params={{query: "water resources extreme weather"}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Precipitation Changes",
@@ -38,7 +38,7 @@ class WaterResourcesSectorPage extends Component {
                   <li>Storm water from larger storms may overwhelm culverts sized to accommodate smaller events</li>
                   <li>More frequent summer droughts may strain municipal drinking water supplies</li>
                   <li>Water quality may decline as wetter storms wash nutrients and pollutants into surface waters</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::precipitation"]}, query: "water resources"}}>> Find more information</SearchLink>
+                  <SearchLink params={{query: "water resources extreme weather"}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Extreme Weather",
@@ -46,7 +46,7 @@ class WaterResourcesSectorPage extends Component {
                 content: <ul>
                   <li>Flood risks may increase for the many gravity-fed water and wastewater systems located in low lying areas near rivers, reservoirs, and the shore</li>
                   <li>• Combined sewer overflows may increase, degrading water quality and creating public health risks</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::oceans sea level rise"]}, query: "water resources"}}>> Find more information</SearchLink>
+                  <SearchLink params={{query: "water resources extreme weather"}}>> Find more information</SearchLink>
                 </ul>
               }
             ]},

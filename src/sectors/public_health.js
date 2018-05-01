@@ -9,7 +9,7 @@ class PublicHealthSectorPage extends Component {
  render() {
     let showcased_resources = {
       title: "Showcased Resources",
-      collection_name: "MA/public_health/highlighted_resources"
+      collection_name: "NY/public_health/highlighted_resources"
     };
 
 
@@ -34,7 +34,7 @@ Public health adaptation strategies include implementing urban heat warning and 
                   <li>Increases in allergenic pollen production may exacerbate allergies, asthma and other respiratory illnesses</li>
                   <li>Warmer winters could contribute to an increase in incidence of vector-borne diseases, such as Lyme disease, Eastern Equine Encephalitis, and West Nile Virus </li>
                   <li>The risk of industrial accidents, chemical releases and explosions could increase when temperature thresholds for safe storage are surpassed</li>
-                  <SearchLink params={{query: 'public health rising temperatures'}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::sea level rise"], sectors: ["ny::public health"]}}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Precipitation Changes",
@@ -43,7 +43,7 @@ Public health adaptation strategies include implementing urban heat warning and 
                   <li>Pathogens, nutrients, and pesticides carried to local waterways by stormwater from large storm events may elevate risks for swimming, fishing, or drinking water quality</li>
                   <li>Flooding of industrial facilities may increase the risk for explosions or chemical releases, threatening drinking water safety</li>
                   <li>Extensive flooding could increase the potential for water-borne disease outbreaks</li>
-                  <SearchLink params={{query: 'public health changes in precipitation'}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::sea level rise"], sectors: ["ny::public health"]}}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Extreme Weather",
@@ -52,7 +52,7 @@ Public health adaptation strategies include implementing urban heat warning and 
                   <li>Extreme storms may disrupt sanitary, energy, and health care services, and impair access to safe drinking water and nutritious food</li>
                   <li>Severe flooding may damage or obstruct roadways, making evacuation and emergency transport more difficult</li>
                   <li>Coping with extreme weather may increase mental and physical health stress</li>
-                  <SearchLink params={{query: 'public health extreme weather'}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::sea level rise"], sectors: ["ny::public health"]}}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Sea Level Rise",
@@ -60,7 +60,7 @@ Public health adaptation strategies include implementing urban heat warning and 
                 content: <ul>
                   <li>Coastal storm surges may become more dangerous, forcing emergency evacuations</li>
                   <li>Flood damage to coastal infrastructure like power plants, drinking water pipes and wastewater treatment plants could increase public health risks, especially for vulnerable populations</li>
-                  <SearchLink params={{query: 'public health changes in precipitation'}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::sea level rise"], sectors: ["ny::public health"]}}}>> Find more information</SearchLink>
                 </ul>
               }
             ]},
