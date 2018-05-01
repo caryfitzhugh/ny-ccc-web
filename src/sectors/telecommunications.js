@@ -25,15 +25,15 @@ class TelecommunicationSectorPage extends Component {
                 id: "impacts_temps",
                 content: <ul>
                   <li>Power outages due to increased energy demand during heat waves, leading to reduced telecommunications service</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::temperature"]}, query: "telecommunications"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::annual precipitation", "ny::drought", "ny::seasonal precipitation", "ny::heavy precipitation events"], sectors: ["ny::telecommunications"]}}}>> Find more information</SearchLink>
                 </ul>
               },
-              { name: "Changes in Precipitation",
+              { name: "Changes in Precipitation",  
                 id: 'impacts_precipitation',
                 content: <ul>
                   <li>Damage to telecommunication lines and other infrastructure from increased heavy precipitation events resulting in floods or icing during freezing rain</li>
                   <li>Strain on trees and utility lines from wet snow</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::precipitation"]}, query: "telecommunications"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::annual precipitation", "ny::drought", "ny::seasonal precipitation", "ny::heavy precipitation events"], sectors: ["ny::telecommunications"]}}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Extreme Weather",
@@ -92,7 +92,7 @@ class TelecommunicationSectorPage extends Component {
                   <li>Develop databases that readily show the location and elevations of installed telecommunication facilities and lifelines and their operational capacity, for use in extreme weather events to make rapid damage, loss, and consequence assessments in potential hazard and damage zones</li>
                   <li>Develop standardized easy access to information for the public on service outages and expected restoration times</li>
                   <SearchLink params={{query: 'telecommunications research monitoring'}}>> Find more information</SearchLink>
-                </ul>
+                </ul> 
               }
             ]},
           {title: "Looking for help?",

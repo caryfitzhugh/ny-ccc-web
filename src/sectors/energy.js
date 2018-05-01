@@ -32,7 +32,7 @@ class EnergySectorPage extends Component {
                   Potential climate change vulnerabilities include reduced thermal efficiency of power generation in thermoelectric power plants, flooding damage to coastal power plants, and increased heat-related sagging of power lines, leading to more frequent power outages.
                   Energy adaptation strategies include using transformers and wiring that function efficiently at higher temperatures, prioritizing demand-side management, which encourages consumers to use energy more efficiently, and installing saltwater-resistant transformers to protect against sea level rise and saltwater intrusion.</li>
                   <li>Extreme heat may trigger power outages that disrupt the economy and put the elderly and the ill at greater risk</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::temperature"]}, query: "energy"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::sea level rise"], sectors: ["ny::energy"]}}}>> Find more information</SearchLink>
                   </ul>
               },
               { name: "Precipitation Changes",
@@ -40,7 +40,7 @@ class EnergySectorPage extends Component {
                 content: <ul>
                   <li>Wet snow may increase storm damage to power lines due to downed trees, and flooding from heavy precipitation may impact facilities and equipment</li>
                   <li>Drought may limit availability of water for hydropower production and power plant cooling</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::precipitation"]}, query: "energy"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::sea level rise"], sectors: ["ny::energy"]}}}>> Find more information</SearchLink>
                   </ul>
               },
               { name: "Extreme Weather",
@@ -58,7 +58,7 @@ class EnergySectorPage extends Component {
                   <li>Rising seas may increase the frequency of flood damage at key energy facilities and service interruptions affecting telecommunications, waste treatment and other key systems</li>
                   <li>Saltwater intrusion may cause corrosion of equipment and instruments at power stations</li>
                   <li>As sea level rise progresses, energy facilities and power lines may require costly relocations</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::oceans sea level rise"]}, query: "energy"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::sea level rise"], sectors: ["ny::energy"]}}}>> Find more information</SearchLink>
                 </ul>
               }
             ]},
