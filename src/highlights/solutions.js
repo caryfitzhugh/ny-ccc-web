@@ -19,7 +19,7 @@ let strategies = [
     source: "NYC Department of Environmental Protection, 2008",
     abstract: "Adaptation is action taken to prepare for climate change, helping to reduce adverse impacts or take advantage of beneficial ones. Adaptation can be thought of as better planning, incorporating the most current information about climate into a variety of decisions.",
     collection: "NY/highlights/investigate_solutions/adaptation",
-    query: "ny::adaptation"
+    query: "adaptation"
   },
   {
     image: windmill_img,
@@ -27,7 +27,7 @@ let strategies = [
     source: "Iberdrola Renewables, Inc., NREL 15232",
     abstract: "Mitigation is action taken to reduce the severity of climate change, by reducing greenhouse gas emissions. Early mitigation will make it easier to adapt to climate change later on.",
     collection: "NY/highlights/investigate_solutions/mitigation",
-    query: "ny::mitigation"
+    query: "mitigation"
   }
 ]
 
