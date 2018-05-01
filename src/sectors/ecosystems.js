@@ -32,7 +32,7 @@ class EcosystemsSectorPage extends Component {
                 <li>Hardwoods may recede to higher elevations </li>
                 <li>The composition and role of forest species including plants and animals, fungi, and bacteria will change as forests change</li>
                 <li>Forest pests such as the hemlock woolly adelgid and southern pine beetle could cause widespread tree mortality and ecosystem impacts  as their range extends northward </li>
-                <SearchLink params={{facets: {climate_changes: ["ny::temperatures"]}, query: "ecosystems"}}>> Find more information</SearchLink>
+                <SearchLink params={{facets: {climate_changes: ["ny::annual temperature", "ny::extreme cold events", "ny::extreme heat events", "ny::seasonal temperature", "ny::ecosystems"]}}}>> Find more information</SearchLink>
              </ul>
             },
             {name: 'Precipitation Changes',
@@ -43,7 +43,8 @@ class EcosystemsSectorPage extends Component {
                 <li>Flooding of riparian areas and wetlands could export soils and nutrients downstream to lakes and bays, triggering algal blooms</li>
                 <li>Changes in the water cycle could alter habitats of native species and increase the negative impacts from invasive species</li>
                 <li>More frequent droughts could exacerbate wildfire risks, especially when coupled with increases in overall biomass growth due to warmer temperatures </li>
-                <SearchLink params={{facets: {climate_changes: ["ny::precipitation"]}, query: "ecosystems"}}>> Find more information</SearchLink>
+                <SearchLink params={{facets: {climate_changes: ["ny::annual precipitation", "ny::heavy precipitation events", "ny::seasonal precipitation", "ny::ecosystems"]}}}>> Find more information</SearchLink>
+
              </ul>
             },
             {name: 'Extreme Weather',
@@ -63,7 +64,7 @@ class EcosystemsSectorPage extends Component {
                 <li>Salt water inundation may alter the health and size of salt marshes and wetlands or cause them to die off, while some may migrate inland </li>
                 <li>Erosion may increase in many habitats including dunes and estuarine inlets </li>
                 <li>Barrier beaches may undergo physical changes in shape, as well as changes in species composition and diversity  </li>
-                <SearchLink params={{facets: {oceans: ["ny::sea level rise"]}, query: "ecosystems"}}>> Find more information</SearchLink>
+                <SearchLink params={{facets: {climate_changes: ["ny::sea level rise"]}}}>> Find more information</SearchLink>
              </ul>
             }
             ]
@@ -80,7 +81,7 @@ class EcosystemsSectorPage extends Component {
                 <li>Develop strategic priorities for protecting and conserving wetlands, floodplains, salt marshes and other natural areas that buffer flooding and support healthy wildlife populations </li>
                 <li>Identify opportunities to conserve habitat corridors (both aquatic and terrestrial) that support connectivity and migration </li>
                 <li>Incorporate information on forest climate impacts and resilient forest management strategies in town, open space, and hazard mitigation plans </li>
-                <SearchLink params={{query: "ecosystems actions"}}>> Find more information</SearchLink>
+                <SearchLink params={{query: "ecosystems plan"}}>> Find more information</SearchLink>
              </ul>
             },
             {name: 'Management Practices',
