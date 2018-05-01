@@ -15,10 +15,10 @@ class EcosystemsSectorPage extends Component {
       <SectorDetailLayout
         title="Ecosystems"
         image={sector_image}
-        image_credit=""
+        image_credit="Todd Harless"
         showcased_resources={showcased_resources}
         sections={[
-          {title: "Headline",
+          {title: "Impacts",
            id: "impacts",
            content: <p></p>,
            subsections: [

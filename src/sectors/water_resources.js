@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SectorDetailLayout from './layout';
 import SearchLink from '../utils/search_link';
+import sector_image from '../images/sectors/water_resources.jpg';
 import { Link } from 'react-router-dom';
 
 class WaterResourcesSectorPage extends Component {
@@ -14,6 +15,8 @@ class WaterResourcesSectorPage extends Component {
     return (
       <SectorDetailLayout
         title="Water Resources"
+        image={sector_image}
+        image_credit={"Lourdes Hospital, D. Lupardo"}
         showcased_resources={showcased_resources}
         sections={ [
           {title: "Impacts",

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SectorDetailLayout from './layout';
 import SearchLink from '../utils/search_link';
+import buildings_image from "../images/sectors/buildings.jpg";
 import { Link } from 'react-router-dom';
 
 
@@ -16,9 +17,8 @@ class BuildingsSectorPage extends Component {
       <SectorDetailLayout
         title="Buildings"
         showcased_resources={showcased_resources}
-        children={<p>The Buildings sector encompasses residential, commercial, and government buildings.<br /><br />
-Potential climate change vulnerabilities include structural damage from coastal flooding and intense storms, mold growth in buildings from receding floodwaters, and increased energy demand for cooling during extreme heat events.<br /><br />
-Building adaptation strategies include improving building codes to promote storm-resistant structures, siting new developments outside of future floodplains, and investments in structural adaptations to reduce building cooling demands, including tree planting, green roofs, and high-reflectivity building materials</p>}
+        image={buildings_image}
+        image_credit={"Siddam"}
         sections={ [
           {title: "Impacts",
             id: 'impacts',
@@ -106,8 +106,16 @@ Building adaptation strategies include improving building codes to promote sto
               <li><Link to="https://www1.nyc.gov/site/planning/index.page" target="_blank">New York City Department of City Planning</Link></li>
            </ul>
           }
-        ]}
-        >
+        ]}>
+        <p>
+          The Buildings sector encompasses residential, commercial, and government buildings.
+        </p>
+        <p>
+          Potential climate change vulnerabilities include structural damage from coastal flooding and intense storms, mold growth in buildings from receding floodwaters, and increased energy demand for cooling during extreme heat events.
+        </p>
+        <p>
+          Building adaptation strategies include improving building codes to promote storm-resistant structures, siting new developments outside of future floodplains, and investments in structural adaptations to reduce building cooling demands, including tree planting, green roofs, and high-reflectivity building materials
+        </p>
         </SectorDetailLayout>
     );
   }

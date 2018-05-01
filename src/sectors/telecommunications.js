@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SectorDetailLayout from './layout';
 import SearchLink from '../utils/search_link';
+import sector_image from "../images/sectors/telecommunications.jpg";
 import { Link } from 'react-router-dom';
 
 class TelecommunicationSectorPage extends Component {
@@ -14,6 +15,8 @@ class TelecommunicationSectorPage extends Component {
       <SectorDetailLayout
         title="Telecommunications"
         showcased_resources={showcased_resources}
+        image={sector_image}
+        image_credit={"Julian Colton"}
         sections={ [
           {title: "Impacts",
             id: 'impacts',

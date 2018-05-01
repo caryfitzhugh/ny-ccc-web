@@ -22,9 +22,8 @@ class EnergySectorPage extends Component {
 
         ]}
         sections={ [
-          {title: "Energy",
-            id: 'energy',
-            content: <p>The Energy sector encompasses energy supply, demand, transmission, distribution, fuel sources, and technologies (transport-related energy considerations are in the Transportation sector). Potential climate change vulnerabilities include reduced thermal efficiency of power generation in thermoelectric power plants, flooding damage to coastal power plants, and increased heat-related sagging of power lines, leading to more frequent power outages. Energy adaptation strategies include using transformers and wiring that function efficiently at higher temperatures, prioritizing demand-side management, which encourages consumers to use energy more efficiently, and installing saltwater-resistant transformers to protect against sea level rise and saltwater intrusion.</p>,
+          {title: "Impacts",
+            id: 'impacts',
             subsections: [
               { name:"Temperatures Changes",
                 id: "impacts_temperature_changes",
@@ -129,7 +128,9 @@ class EnergySectorPage extends Component {
           }
         ]}
         >
-
+          <p>
+            The Energy sector encompasses energy supply, demand, transmission, distribution, fuel sources, and technologies (transport-related energy considerations are in the Transportation sector). Potential climate change vulnerabilities include reduced thermal efficiency of power generation in thermoelectric power plants, flooding damage to coastal power plants, and increased heat-related sagging of power lines, leading to more frequent power outages. Energy adaptation strategies include using transformers and wiring that function efficiently at higher temperatures, prioritizing demand-side management, which encourages consumers to use energy more efficiently, and installing saltwater-resistant transformers to protect against sea level rise and saltwater intrusion.
+          </p>
         </SectorDetailLayout>
     );
   }

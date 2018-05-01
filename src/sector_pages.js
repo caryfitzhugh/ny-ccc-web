@@ -11,6 +11,7 @@ import CoastalZonesSectorPage from './sectors/coastal_zones';
 import EnergySectorPage from './sectors/energy';
 import BuildingsSectorPage from './sectors/buildings';
 import WaterResourcesSectorPage from './sectors/water_resources';
+import TransportationSectorPage from './sectors/transportation';
 import TelecommunicationSectorPage from './sectors/telecommunications';
 
 import SectorsPage from './sectors/index';
@@ -30,6 +31,7 @@ class SectorPages extends Component {
               <Route path='/sectors/energy' component={EnergySectorPage} />
               <Route path='/sectors/public-health' component={PublicHealthSectorPage} />
               <Route path='/sectors/telecommunications' component={TelecommunicationSectorPage} />
+              <Route path='/sectors/transportation' component={TransportationSectorPage} />
               <Route path='/sectors/water-resources' component={WaterResourcesSectorPage} />
               <Route path='/' component={NotFound} />
             </Switch>

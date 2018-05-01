@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SectorDetailLayout from './layout';
 import SearchLink from '../utils/search_link';
+import sector_image from "../images/sectors/public_health.jpg";
 import { Link } from 'react-router-dom';
 
 
@@ -16,6 +17,8 @@ class PublicHealthSectorPage extends Component {
       <SectorDetailLayout
         title="Public Health"
         showcased_resources={showcased_resources}
+        image={sector_image}
+        image_credit={"Kevin McGee"}
         children={<p>The Public Health sector includes New York State's and New York City's public health systems, services, and infrastructure; public health funding; emergency preparedness; current health status for climate-sensitive diseases; and economic impact.<br /><br />
 Potential climate change vulnerabilities for water resources and related infrastructure include flooding, an increase in duration and/or frequency of dry periods affecting drinking water supplies, changes in demand for commercial and agricultural water, and declines in water quality due to higher water temperatures and decreased stream flows in summer.  Climate change may bring New York State opportunities as a potentially water-rich area under future climate conditions.<br /><br />
 Public health adaptation strategies include implementing urban heat warning and response systems, planting low-pollen trees in cities to reduce urban heat without increasing allergenic pollen, ensuring access for low-income, vulnerable individuals to functional, high-efficiency air conditioners and cooling centers, and integrating climate forecasts into ongoing planning for air quality.</p>}
