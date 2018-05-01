@@ -2,3 +2,7 @@
 	font-weight:400;
 	font-size:24px;
 }
+
+.primary-story a:hover .story-caption {
+  text-decoration: underline;
+}

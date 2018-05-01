@@ -8,9 +8,9 @@ import './article_blocks.css';
 const ArticleBlocks = (props) => (
   <div className="articleBlock" id={props.id}>
       <div className="row">
-        {(props.articles).map(article => {
+        {(props.articles).map((article, i) => {
           return (
-            <div className="col-sm-6 col-6 article">
+            <div key={'article-block-' + i} className="col-sm-6 col-6 article">
               <img src={article.image} className="img-responsive" alt={"Photo: " + article.type} />
               <p className="caption"><span className="source">{article.source}</span></p>
               <h3 className="title">{article.type}</h3>
@@ -18,10 +18,10 @@ const ArticleBlocks = (props) => (
               <p className="resources"><strong>Highlighted Resources:</strong></p>
 
               <Collection collection_name={article.collection} />
-              {(props.showSearchBtn) ? 
+              {(props.showSearchBtn) ?
               <SearchLink className="btn btn-default btn-wrap-text" params={{facets: {strategies: [article.query]}}}>More {article.type} Resources</SearchLink>
               : null}
-        
+
             </div>
           )
        })}
