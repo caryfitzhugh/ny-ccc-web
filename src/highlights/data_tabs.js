@@ -9,7 +9,7 @@ const DataTabs = (props) => (
   <div className="col-12 data-tabs">
     <h1>
       {props.title}
-      <SearchLink className="btn btn-sm btn-primary" params={{facets: {formats: [props.query]}}}>
+      <SearchLink className="btn btn-sm btn-primary" params={{facets: {content_types: [props.query]}}}>
         <i className="fa fa-search"></i>
         {props.btnTitle}
       </SearchLink>

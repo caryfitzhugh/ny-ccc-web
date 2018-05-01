@@ -79,7 +79,7 @@ const Maps = (props) => (
         </div>
       </div>
       <div className="row">
-        <DataTabs tabs={mapsTabs} query="ny::maps" title="Featured Maps" btnTitle="Search All Maps" />
+        <DataTabs tabs={mapsTabs} query="Maps::" title="Featured Maps" btnTitle="Search All Maps" />
       </div>
     </div>
   </section>

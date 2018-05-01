@@ -144,7 +144,7 @@ class DataProductPage extends Component {
 			        </div>
 			      </div>
 			      <div className="row">
-			        <DataTabs tabs={dataTabs} query="ny::data" title="Featured Data Products" btnTitle="Search All Data Products" />
+			        <DataTabs tabs={dataTabs} query="Data::Data Product" title="Featured Data Products" btnTitle="Search All Data Products" />
 			      </div>
 			    </div>
 			  </section>
