@@ -10,36 +10,38 @@ import './layout.css';
 
 const ViewMapWithSector = (props) =>
   <MapLink className='btn btn-block btn-primary'
-    sector={props.sector_name || props.title}
-    >
+    sector={props.sector_name || props.title} >
     View Map For This Sector
   </MapLink>;
 
 const ViewDatagrapherWithSector = (props) =>
   <DatagrapherLink className='btn btn-block btn-primary'
-    file={props.datagrapher_file}
-    >
+    file={props.datagrapher_file} >
     View Datagrapher
   </DatagrapherLink>;
 
 const SideNav = (props) => {
-  return <ul>
-    {props.showcased_resources ?
-      <li>
-        <Link to="#showcase_resources"> Showcased Resources </Link>
-      </li>
-      : null}
-    {(props.sections || []).map((section, indx) => {
-      return <li key={indx}>
-        <Link to={"#"+section.id}>{section.title}</Link>
-        <ul>
-          {section.subsections.map((subs, subindx) => {
-            return <li key={subindx}><Link to={"#"+subs.id}>{subs.name}</Link></li>;
-          })}
-        </ul>
-      </li>
-    })}
-  </ul>
+  return <div className='side-nav'>
+      <ul>
+        {(props.sections || []).map((section, indx) => {
+          return <li key={indx}>
+            <Link to={"#"+section.id}>{section.title}</Link>
+            <ul>
+              {section.subsections.map((subs, subindx) => {
+                return <li key={subindx}><Link to={"#"+subs.id}>{subs.name}</Link></li>;
+              })}
+            </ul>
+          </li>
+        })}
+      </ul>
+
+      {props.showcased_resources ?
+          <ShowcaseResources
+            id='showcase_resources'
+            {... props.showcased_resources} />
+        : null}
+
+    </div>
 }
 
 class Layout extends Component {
@@ -62,12 +64,6 @@ class Layout extends Component {
           </div>
           {this.props.children}
         </div>
-
-        {this.props.showcased_resources ?
-          <ShowcaseResources
-            id='showcase_resources'
-            {... this.props.showcased_resources} />
-          : null}
 
          {(this.props.sections || []).map((section, indx) => {
             return <Section key={indx} {...section}/>;
