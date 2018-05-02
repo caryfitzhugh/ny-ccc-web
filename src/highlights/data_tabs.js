@@ -27,7 +27,7 @@ const DataTabs = (props) => (
     <div className="tab-content">
       {(props.tabs).map((tab, i) => {
         return (
-          <div className={"tab-pane " + ( i === 0 ? 'active' : null)} id={tab.id}>
+          <div className={"tab-pane " + ( i === 0 ? 'active' : null)} key={'data-tab-' + i} id={tab.id}>
             <div className="highlights-collection grid">
               <Collection collection_name={tab.collection} collections_class="row" show_images={true} />
             </div>

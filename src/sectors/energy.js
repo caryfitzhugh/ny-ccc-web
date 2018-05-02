@@ -17,7 +17,8 @@ class EnergySectorPage extends Component {
         showcased_resources={showcased_resources}
         title="Energy"
         image={energy_image}
-        image_credit="FEMA/Jocelyn Augustino"
+        image_caption={"New York City skyline when half the city was in blackout due to a power failure during Hurricane Sandy."}
+        image_credit="David Shankbone"
         footnotes={[
 
         ]}
