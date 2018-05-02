@@ -81,20 +81,21 @@ class DataProductPage extends Component {
 			            	<p>
 			            		User-generated time series graphs of climate data, both observed and projected (future and historical.)
                     </p>
+                    <h5>Observed data: </h5>
                     <p>
-                      Observed data: The user can select data from New York State stations in the U.S. Historical Climatology Network or from PRISM data spatially aggregated by New York counties and river basins or by state (for states neighboring New York.) Points are observed data values; the solid line shows a running mean. Users can select different time periods for the running mean. For the station data the length of the data records vary by station, with the oldest data going back to 1869. The spatially aggregated data go back to 1950.
+                      The user can select data from New York State stations in the U.S. Historical Climatology Network or from PRISM data spatially aggregated by New York counties and river basins or by state (for states neighboring New York.) Points are observed data values; the solid line shows a running mean. Users can select different time periods for the running mean. For the station data the length of the data records vary by station, with the oldest data going back to 1869. The spatially aggregated data go back to 1950.
 			            	</p>
 
 
 			            	{(this.state.showMore) ?
 				            <div className="toggle">
-                      <label>Projected data:</label>
+                      <h5>Projected data:</h5>
                       <p>Global climate model projections from the North American Regional Climate Change Assessment Program (NARCCAP) for state, county and river basin areas. The NARCCAP dataset provides daily values of maximum and minimum temperature and precipitation on a 50 km grid. All future projections cover the period 2041-2070 and are based on the relatively high SRES A2 emissions scenario. Simulations are also generated for the 1971-2000 historical period. Future and historical simulations are based on four regional climate models (RCMs) nested within at least one of three atmosphere-ocean general circulation models (AOGCMs), yielding a set of seven RCM-AOGCM combinations.</p>
 
                       <p>Simulations from these model combinations form the red-blue shaded areas on each graph for the historical and future period. The top of the red area corresponds to the highest of the seven combinations. The bottom of the blue area corresponds to the lowest of the seven combinations. The mean of the seven combinations is reflected by the boundary between the blue and red areas. A 5-year running mean is used.</p>
 
                       <p>The user can select monthly, seasonal, and annual records of the following variables:</p>
-                      <ol>
+                      <ul>
                         <li>Daily maximum temperature (F)</li>
                         <li>Daily minimum temperature (F)</li>
                         <li>Daily average temperature (F)</li>
@@ -114,8 +115,9 @@ class DataProductPage extends Component {
                         <li>Counts of days with precipitation greater than 4 inches</li>
                         <li>Counts of days with snow depth greater than 1 inch (station data only)</li>
                         <li>Growing season length (station data only)</li>
-                      </ol>
-                      <label>Definitions:</label>
+                      </ul>
+
+                      <h5>Definitions:</h5>
                       <p>Daily average temperature is calculated as Tavg = (Tmax + Tmin)/2 where Tmax and Tmin are the maximum and minimum temperatures in a 24 hour period.</p>
 
                         <p>Growing degree day accumulation is the sum of growing degree days (GDD) over the selected time period (annual, season, or month). A GDD for a day is defined as Tavg – 50.</p>
