@@ -24,23 +24,27 @@ class Footer extends Component {
               </a>
             </div>
             <div className="col-sm-12 col-xs-8">
-              <a href='https://www.esf.edu' rel="noopener noreferrer" target="_blank">
-                <img className="img-responsive logo" alt='SUNY College of Environmental Science and Forestry (ESF)'  src={esf_logo} />
+              <a href='https://nescaum.org' rel="noopener noreferrer" target="_blank">
+                <img className="img-responsive logo nescaum-logo" alt='Northeast States for Coordinated Air Use Management (NESCAUM)'  src={nescaum_logo} />
               </a>
             </div>
             <div className="col-sm-12">
               <div className="row">
-                <div className="col-sm-4 col-12 logos">
+                <div className="col-sm-6 col-12 logos">
                   <a href='https://cornell.edu' rel="noopener noreferrer" target="_blank">
                     <img className="img-responsive logo" alt='Cornell University'  src={cornell_logo} />
                   </a>
                 </div>
-                <div className="col-sm-4 col-12">
-                  <a href='https://nescaum.org' rel="noopener noreferrer" target="_blank">
-                    <img className="img-responsive logo nescaum-logo" alt='Northeast States for Coordinated Air Use Management (NESCAUM)'  src={nescaum_logo} />
+                <div className="col-sm-6 col-12">
+                  <a href='https://www.esf.edu' rel="noopener noreferrer" target="_blank">
+                    <img className="img-responsive logo" alt='SUNY College of Environmental Science and Forestry (ESF)'  src={esf_logo} />
                   </a>
                 </div>
-                <div className="col-sm-4 col-12">
+              </div>
+            </div>
+            <div className="col-sm-12">
+              <div className="row centered">
+                <div className="col-sm-6 col-12">
                   <a href='https://www.priweb.org' rel="noopener noreferrer"  target="_blank">
                     <img className="img-responsive logo pri-logo" alt='Paleontological Research Institution'  src={pri_logo} />
                   </a>

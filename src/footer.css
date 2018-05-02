@@ -15,16 +15,17 @@
   justify-content: center;
 
 }
+.footer .footer-content .row.centered {
+  text-align: center;
+  justify-content: center;
+}
 .footer .pri-logo {
   background: white;
   padding: 10px;
-  position: relative;
-  top: 10px;
 }
 .footer .nescaum-logo {
-  position: relative;
-  top: 10px;
-
+  max-width: 70%;
+  margin-left: 15%;
 }
 .footer p {
   font-size: 10px;
