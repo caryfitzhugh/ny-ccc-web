@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 class BuildingsSectorPage extends Component {
   render() {
     let showcased_resources = {
-      title: "Highlighted Resources",
+      title: "Key Resources",
       collection_name: "NY/buildings/highlighted_resources",
     };
 

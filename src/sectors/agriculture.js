@@ -6,7 +6,7 @@ import agriculture_image from '../images/sectors/agriculture.jpg';
 class AgricultureSectorPage extends Component {
   render() {
     let showcased_resources = {
-      title: "Highlighted Resources",
+      title: "Key Resources",
       collection_name: "NY/agriculture/highlighted_resources",
     };
 

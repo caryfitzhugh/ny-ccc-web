@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 class WaterResourcesSectorPage extends Component {
  render() {
     let showcased_resources = {
-      title: "Highlighted Resources",
+      title: "Key Resources",
       collection_name: "NY/water_resources/highlighted_resources",
     };
 

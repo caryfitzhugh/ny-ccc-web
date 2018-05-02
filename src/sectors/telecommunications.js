@@ -8,7 +8,7 @@ class TelecommunicationSectorPage extends Component {
   render() {
 
     let showcased_resources = {
-      title: "Highlighted Resources",
+      title: "Key Resources",
       collection_name: "NY/telecommunications/highlighted_resources",
     };
     return (
@@ -28,7 +28,7 @@ class TelecommunicationSectorPage extends Component {
                   <SearchLink params={{facets: {climate_changes: ["ny::annual precipitation", "ny::drought", "ny::seasonal precipitation", "ny::heavy precipitation events"], sectors: ["ny::telecommunications"]}}}>> Find more information</SearchLink>
                 </ul>
               },
-              { name: "Changes in Precipitation",  
+              { name: "Changes in Precipitation",
                 id: 'impacts_precipitation',
                 content: <ul>
                   <li>Damage to telecommunication lines and other infrastructure from increased heavy precipitation events resulting in floods or icing during freezing rain</li>
@@ -92,7 +92,7 @@ class TelecommunicationSectorPage extends Component {
                   <li>Develop databases that readily show the location and elevations of installed telecommunication facilities and lifelines and their operational capacity, for use in extreme weather events to make rapid damage, loss, and consequence assessments in potential hazard and damage zones</li>
                   <li>Develop standardized easy access to information for the public on service outages and expected restoration times</li>
                   <SearchLink params={{query: 'telecommunications research monitoring'}}>> Find more information</SearchLink>
-                </ul> 
+                </ul>
               }
             ]},
           {title: "Looking for help?",

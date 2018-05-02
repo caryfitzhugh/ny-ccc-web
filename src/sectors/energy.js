@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 class EnergySectorPage extends Component {
   render() {
     let showcased_resources = {
-      title: "Showcased Resources",
+      title: "Key Resources",
       collection_name: "NY/energy/highlighted_resources"
     };
 

@@ -7,7 +7,7 @@ import SearchLink from '../utils/search_link';
 class EcosystemsSectorPage extends Component {
   render() {
     let showcased_resources = {
-      title: "Higlighted Resources",
+      title: "Key Resources",
       collection_name: "NY/ecosystems/highlighted_resources",
     };
 

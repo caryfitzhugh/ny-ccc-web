@@ -6,7 +6,7 @@ import SearchLink from "../utils/search_link";
 class CoastalZonesSectorPage extends Component {
   render() {
     let showcased_resources = {
-      title: "Showcased Resources",
+      title: "Key Resources",
       collection_name: 'NY/coastal_zones/highlighted_resources'
     };
 
