@@ -11,7 +11,6 @@ class MapLink extends Component {
       path += `active-layers=${this.props.active_layers}&`;
     }
     return ( <Link className={this.props.className}
-                target="_blank"
                 to={path}>{this.props.children}</Link> );
   }
 }
