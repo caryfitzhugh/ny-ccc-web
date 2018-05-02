@@ -4,7 +4,11 @@
   color: black;
   margin-bottom: 0.3em;
 }
-
+.sector-detail .header-and-img:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .sector-detail .lead-image .image-credit  {
   text-align: right;
 }
