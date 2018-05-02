@@ -71,7 +71,6 @@ const Maps = (props) => (
                 <MapLink className="btn btn-sm btn-primary">Interactive Map</MapLink>
                 <br/><br/>
                 <p>An interactive map of climate change and related data for New York State. Users can select data layers to display from a menu, filter layers by sector, vary parameters within certain layers, and select from a variety of base layers and regional boundaries.  For each layer, links are available to metadata and the original source.</p>
-                <p>A video tutorial on how to use the Interactive Map and GIS Viewer can be found here.</p>
               </div>
             </div>
           </div>
