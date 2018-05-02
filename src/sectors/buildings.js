@@ -18,6 +18,7 @@ class BuildingsSectorPage extends Component {
         title="Buildings"
         showcased_resources={showcased_resources}
         image={buildings_image}
+        image_caption={"Skyscraper One 57 in Manhattan, with a partially collapsed construction crane following Hurricane Sandy."}
         image_credit={"Siddam"}
         sections={ [
           {title: "Impacts",

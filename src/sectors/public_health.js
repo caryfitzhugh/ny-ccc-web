@@ -18,6 +18,7 @@ class PublicHealthSectorPage extends Component {
         title="Public Health"
         showcased_resources={showcased_resources}
         image={sector_image}
+        image_caption={"Relief efforts following Hurricane Sandy, Staten Island, NY"}
         image_credit={"Kevin McGee"}
         children={<p>The Public Health sector includes New York State's and New York City's public health systems, services, and infrastructure; public health funding; emergency preparedness; current health status for climate-sensitive diseases; and economic impact.<br /><br />
 Potential climate change vulnerabilities for water resources and related infrastructure include flooding, an increase in duration and/or frequency of dry periods affecting drinking water supplies, changes in demand for commercial and agricultural water, and declines in water quality due to higher water temperatures and decreased stream flows in summer.  Climate change may bring New York State opportunities as a potentially water-rich area under future climate conditions.<br /><br />

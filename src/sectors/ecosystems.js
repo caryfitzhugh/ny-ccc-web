@@ -15,6 +15,7 @@ class EcosystemsSectorPage extends Component {
       <SectorDetailLayout
         title="Ecosystems"
         image={sector_image}
+        image_caption={"Invasive purple loosestrife at the Montezuma National Wildlife Refuge, Seneca Falls, NY."}
         image_credit="Todd Harless"
         showcased_resources={showcased_resources}
         sections={[

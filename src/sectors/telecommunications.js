@@ -16,6 +16,7 @@ class TelecommunicationSectorPage extends Component {
         title="Telecommunications"
         showcased_resources={showcased_resources}
         image={sector_image}
+        image_caption={"Work on cables following a blizzard, Dutchess County, NY"}
         image_credit={"Julian Colton"}
         sections={ [
           {title: "Impacts",

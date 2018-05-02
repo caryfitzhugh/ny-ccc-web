@@ -16,6 +16,7 @@ class TransportationSectorPage extends Component {
         showcased_resources={showcased_resources}
         title="Transportation"
         image={transportation_image}
+        image_caption={"Deep gorge created in Ulster County Route 47 when floods after Hurricane Irene blew out a culvert below the road, Oliverea, NY"}
         image_credit="Daniel Case"
         footnotes={[
 

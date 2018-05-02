@@ -14,7 +14,8 @@ class CoastalZonesSectorPage extends Component {
       <SectorDetailLayout
         title="Coastal Zones"
         image={coastal_zones_image}
-        image_credit=""
+        image_caption={"Severe beach erosion and damage on Long Island's South Shore as the result of a November nor'easter."}
+        image_credit={"Ed Edahl"}
         showcased_resources={showcased_resources}
         sections={[
           {title: "Impacts",

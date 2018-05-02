@@ -16,6 +16,7 @@ class WaterResourcesSectorPage extends Component {
       <SectorDetailLayout
         title="Water Resources"
         image={sector_image}
+        image_caption={"Susquehanna River flood inundating the Endicott sewage treatment plant, Endicott, NY"}
         image_credit={"Lourdes Hospital, D. Lupardo"}
         showcased_resources={showcased_resources}
         sections={ [

@@ -9,6 +9,10 @@
   display: table;
   clear: both;
 }
+.sector-detail .lead-image .image-caption  {
+  font-size: 70%;
+  font-style: italic;
+}
 .sector-detail .lead-image .image-credit  {
   text-align: right;
 }

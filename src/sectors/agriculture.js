@@ -12,7 +12,9 @@ class AgricultureSectorPage extends Component {
 
     return (
       <SectorDetailLayout
-      image={agriculture_image}
+        image={agriculture_image}
+        image_caption={'Flooded fields following Hurricane Irene, Montgomery, NY'}
+        image_credit={'Daniel Case'}
         title="Agriculture"
         showcased_resources={showcased_resources}
         sections={[
