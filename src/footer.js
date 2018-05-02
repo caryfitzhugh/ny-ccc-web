@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import nescaum_logo from './images/nescaum_logo.png';
 import esf_logo from './images/esf_logo.png';
+import pri_logo from './images/pri_logo.png';
 import cornell_logo from './images/cornell_logo.png';
 import nyserda_logo from './images/nyserda_logo.png';
 import './footer.css';
@@ -23,20 +24,25 @@ class Footer extends Component {
               </a>
             </div>
             <div className="col-sm-12 col-xs-8">
-              <a href='' rel="noopener noreferrer" target="_blank">
+              <a href='https://www.esf.edu' rel="noopener noreferrer" target="_blank">
                 <img className="img-responsive logo" alt='SUNY College of Environmental Science and Forestry (ESF)'  src={esf_logo} />
               </a>
             </div>
             <div className="col-sm-12">
               <div className="row">
-                <div className="col-sm-5 col-12 logos">
-                  <a href='' rel="noopener noreferrer" target="_blank">
+                <div className="col-sm-4 col-12 logos">
+                  <a href='https://cornell.edu' rel="noopener noreferrer" target="_blank">
                     <img className="img-responsive logo" alt='Cornell University'  src={cornell_logo} />
                   </a>
                 </div>
-                <div className="col-sm-7 col-12">
-                  <a href='' rel="noopener noreferrer" target="_blank">
-                    <img className="img-responsive logo" alt='Northeast States for Coordinated Air Use Management (NESCAUM)'  src={nescaum_logo} />
+                <div className="col-sm-4 col-12">
+                  <a href='https://nescaum.org' rel="noopener noreferrer" target="_blank">
+                    <img className="img-responsive logo nescaum-logo" alt='Northeast States for Coordinated Air Use Management (NESCAUM)'  src={nescaum_logo} />
+                  </a>
+                </div>
+                <div className="col-sm-4 col-12">
+                  <a href='https://www.priweb.org' rel="noopener noreferrer"  target="_blank">
+                    <img className="img-responsive logo pri-logo" alt='Paleontological Research Institution'  src={pri_logo} />
                   </a>
                 </div>
               </div>

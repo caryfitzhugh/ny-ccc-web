@@ -15,7 +15,17 @@
   justify-content: center;
 
 }
+.footer .pri-logo {
+  background: white;
+  padding: 10px;
+  position: relative;
+  top: 10px;
+}
+.footer .nescaum-logo {
+  position: relative;
+  top: 10px;
 
+}
 .footer p {
   font-size: 10px;
 }

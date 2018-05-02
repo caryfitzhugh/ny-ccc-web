@@ -8,7 +8,7 @@ class EcosystemsSectorPage extends Component {
   render() {
     let showcased_resources = {
       title: "Higlighted Resources",
-      collection_name: "MA/ecosystems/highlighted_resources",
+      collection_name: "NY/ecosystems/highlighted_resources",
     };
 
     return (

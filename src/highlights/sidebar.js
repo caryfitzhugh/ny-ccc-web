@@ -64,7 +64,7 @@ const Sidebar = (props) => (
           { (sidebar_links).map((link, i) => {
               return (
                 <li className='sidebar-link' key={'sidebar-' + i}>
-                  <img src={link.image} />
+                  <img alt={link.title} src={link.image} />
                   <a href={link.href}>
                     {link.title}
                   </a>
