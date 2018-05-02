@@ -8,9 +8,11 @@
 }
 
 .default-layout .subnav .actions {
-  border-bottom: 1px solid black;
+  /*
+   border-bottom: 1px solid black;
+   margin-bottom: 2em;
+  */
   padding-bottom: 2em;
-  margin-bottom: 2em;
 }
 .default-layout .subnav .actions .btn {
   white-space: normal;
