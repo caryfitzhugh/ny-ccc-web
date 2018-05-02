@@ -27,7 +27,7 @@ class AgricultureSectorPage extends Component {
                   <li>Increasing heat stress days (above 90°F) may stress livestock and some crops</li>
                   <li>More pest pressure from insects, diseases, and weeds may harm crops and cause farms to increase pesticide use</li>
                   <li>New crops could become more viable but crop transitions may be costly</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::temperatures"]}, query: "agriculture"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::annual precipitation", "ny::extreme cold events","ny::extreme heat events", "ny::seasonal temperature"], sectors: ["ny::agriculture"]}}}>> Find more information</SearchLink>
                 </ul>,
               },
               { name: "Precipitation Changes",
@@ -36,7 +36,7 @@ class AgricultureSectorPage extends Component {
                   <li>Increased river flooding is likely to cause soil erosion, soil loss, and crop damage</li>
                   <li>Wetter springs may delay planting for crops and reduce yields</li>
                   <li>Drier summers and intermittent droughts may strain irrigation water supplies, stress crops, and delay harvests</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::precipitation"]}, query: "agriculture"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::annual precipitation", "ny::heavy precipitation events","ny::seasonal precipitation"], sectors: ["ny::agriculture"]}}}>> Find more information</SearchLink>
                 </ul>,
               },
               { name: "Extreme Weather",
@@ -53,7 +53,7 @@ class AgricultureSectorPage extends Component {
                 content: <ul>
                   <li>Increasing tidal range and tidal inundation is likely to cause more saltwater intrusion into aquifers in agricultural areas</li>
                   <li>Rising sea levels and extreme storms may accelerate erosion of coastal agricultural land</li>
-                  <SearchLink params={{facets: {oceans: ["ny::sea level rise"]}, query: "agriculture"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::annual precipitation", "ny::heavy precipitation events","ny::seasonal precipitation"], sectors: ["ny::agriculture"]}}}>> Find more information</SearchLink>
                 </ul>
               }
             ]
@@ -67,7 +67,7 @@ class AgricultureSectorPage extends Component {
                 content: <ul>
                   <li>Develop a plan for on-farm emergencies</li>
                   <li>Complete a farm energy audit</li>
-                  <SearchLink params={{facets: {oceans: ["ny::sea level rise"]}, query: "agriculture"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {oceans: ["ny::sea level rise"]}, query: "agriculture plan"}}>> Find more information</SearchLink>
                 </ul>,
               },
               { name: "Management Practices",

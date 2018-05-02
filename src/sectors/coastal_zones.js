@@ -26,7 +26,7 @@ class CoastalZonesSectorPage extends Component {
                 <li>Commercially important fish and shellfish species may migrate north out of the state as waters warm, while other species may migrate in </li>
                 <li>Ocean acidification is likely to affect the health and abundance of shellfish and other marine species </li>
                 <li>Algal blooms may increase in frequency, and could create health risks for swimmers and wildlife </li>
-                <SearchLink params={{facets: {climate_changes: ["ny::temperature"]}, query: "coastal"}}>> Find more information</SearchLink>
+                <SearchLink params={{facets: {climate_changes: ["ny::annual temperature", "ny::extreme cold events","ny::extreme heat events", "ny::seasonal temperature"], sectors: ["ny::coastal zones"]}}}>> Find more information</SearchLink>
               </ul>
             },
             {  name: "Precipitation Changes",
@@ -34,7 +34,7 @@ class CoastalZonesSectorPage extends Component {
                 content: <ul>
                   <li>Large volumes of stormwater may wash pollutants and pathogens into nearby coastal waterways, degrading water quality</li>
                   <li>Changing hydrological cycles may stress sensitive coastal habitats and species</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::precipitation"]}, query: "coastal"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::annual precipitation", "ny::heavy precipitation events","ny::seasonal precipitation"], sectors: ["ny::coastal zones"]}}}>> Find more information</SearchLink>
                  </ul>
             },
             {  name: "Extreme Weather",
