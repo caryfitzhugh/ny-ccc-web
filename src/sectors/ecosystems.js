@@ -143,7 +143,7 @@ class EcosystemsSectorPage extends Component {
            content: <ul>
              <li><a href="https://www.dec.ny.gov/">New York State Department of Environmental Conservation</a></li>
              <li><a href="http://www.acris.nynhp.org/">New York Natural Heritage Program</a></li>
-             <li><Link to={'/resources/resource::2044/the-nature-conservancy-climate-change'}>The Nature Conservancy</Link></li>
+             <li><Link target="_blank" to="https://www.nature.org/ourinitiatives/urgentissues/global-warming-climate-change/index.htm?intc=nature.tnav.ourwork">The Nature Conservancy</Link></li>
              <li><a href="https://www.fs.usda.gov/ccrc/">USDA Forest Service Climate Change Resource Center</a></li>
             </ul>
           }

@@ -103,7 +103,7 @@ class BuildingsSectorPage extends Component {
             id: 'looking_for_help',
             subsections: [],
             content: <ul>
-              <li><Link to="https://www.dec.ny.gov/energy/50845.html" target="_blank">New York Climate Smart Communities</Link></li>
+              <li><Link to="https://climatesmart.ny.gov/" target="_blank">New York Climate Smart Communities</Link></li>
               <li><Link to="https://www1.nyc.gov/site/planning/index.page" target="_blank">New York City Department of City Planning</Link></li>
            </ul>
           }

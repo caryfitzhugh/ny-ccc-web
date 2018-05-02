@@ -120,7 +120,7 @@ Public health adaptation strategies include implementing urban heat warning and 
             id: 'looking_for_help',
             subsections: [],
             content: <ul>
-              <li><Link to="New York State Department of Health" target="_blank">New York State Department of Health</Link></li>
+              <li><Link to="https://www.health.ny.gov/environmental/weather/index.htm" target="_blank">New York State Department of Health</Link></li>
               <li><Link to="https://www.naccho.org/" target="_blank">National Association of County and City Health Officials (NACCHO)</Link></li>
            </ul>
           }

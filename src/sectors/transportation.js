@@ -125,7 +125,7 @@ class TransportationSectorPage extends Component {
                   New York State Department of Transportation
                   </Link></li>
                 <li>
-                  <Link to='https://www.transportation.gov/climate-change-clearinghouse'>
+                  <Link to='https://www.transportation.gov/climate-change-clearinghouse' target="_blank">
                     United States Department of Transportation Transportation and Climate Change Clearinghouse
                   </Link>
                 </li>
