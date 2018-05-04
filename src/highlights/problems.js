@@ -176,8 +176,8 @@ let anchors = [
 ]
 
 const Problems = (props) => (
-<section aria-label="Identify Problems">
-    <div className="container problems">
+<section aria-label="Identify Problems" className="container">
+    <div className="problems">
          <div className="row">
             <div className="col-sm-9 col-12 content-area">
                 <HeadlineArrow title="Identify Problems" href="#"/>
