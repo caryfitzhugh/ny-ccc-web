@@ -142,28 +142,18 @@ let anchors = [
 ]
 
 const Actions = (props) => (
-<section aria-label="Actions">
-    <div className="container">
-        <div className="row">
-            <div className="col-sm-9 col-12 content-area">
-
-                <HeadlineArrow title="Take Action" href="#"/>
-
-                <p>The final step in building resilience is to take action. Put your plan into place, establish benchmarks, and track progress. Revise at regular intervals as necessary. Understanding how to communicate your plan with stakeholders can help build and maintain support.</p>
-                <hr />
-
-                <ArticleBlocks articles={articles} id="action" />
-
-                <hr />
-                <h3 id="successStories">Success Stories</h3>
-
-                <ArticleList list={articleList} />
-
-            </div>
-
-            <Sidebar anchors={anchors} resourcesCollection="NY/highlights/stakeholder_resources" mapsCollection="NY/highlights/highlights_maps" />
-
+<section aria-label="Actions" className="container">>
+    <div className="row">
+        <div className="col-sm-9 col-12 content-area">
+            <HeadlineArrow title="Take Action" href="#"/>
+            <p>The final step in building resilience is to take action. Put your plan into place, establish benchmarks, and track progress. Revise at regular intervals as necessary. Understanding how to communicate your plan with stakeholders can help build and maintain support.</p>
+            <hr />
+            <ArticleBlocks articles={articles} id="action" />
+            <hr />
+            <h3 id="successStories">Success Stories</h3>
+            <ArticleList list={articleList} />
         </div>
+        <Sidebar anchors={anchors} resourcesCollection="NY/highlights/stakeholder_resources" mapsCollection="NY/highlights/highlights_maps" />
     </div>
 </section>
 )

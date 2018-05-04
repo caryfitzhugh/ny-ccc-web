@@ -104,8 +104,7 @@ let anchors = [
 ]
 
 const Solutions = (props) => (
-<section aria-label="Investigate Solutions">
-    <div className="container">
+<section aria-label="Investigate Solutions" className="container">
         <div className="row">
             <div className="col-sm-9 col-12 content-area">
                 <HeadlineArrow title="Investigate Solutions" href="#"/>
@@ -148,7 +147,6 @@ const Solutions = (props) => (
 
             <Sidebar anchors={anchors} resourcesCollection="NY/highlights/stakeholder_resources" mapsCollection="NY/highlights/highlights_maps" />
         </div>
-    </div>
 </section>
 )
 

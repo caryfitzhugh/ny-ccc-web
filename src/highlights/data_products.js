@@ -63,8 +63,8 @@ class DataProductPage extends Component {
 	  }
 	render() {
 		return (
-			<section aria-label="Climate Data Grapher">
-			    <div className="container products">
+			<section aria-label="Climate Data Grapher" className="container">
+			    <div className="products">
 			      <div className="row">
 			        <div className="col-12">
 			          <div className="highlights-collection">
