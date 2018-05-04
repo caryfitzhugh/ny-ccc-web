@@ -3,7 +3,7 @@ import {Link}  from 'react-router-dom';
 
 class DatagrapherLink extends Component {
   render() {
-    let path = `/datagrapher/?c=${encodeURIComponent(this.props.file)}`
+    let path = `/datagrapher/?c=${this.props.file}`
 
     return ( <Link className={this.props.className}
                 to={path}>{this.props.children}</Link> );
