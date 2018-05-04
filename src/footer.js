@@ -30,12 +30,12 @@ class Footer extends Component {
             </div>
             <div className="col-sm-12">
               <div className="row">
-                <div className="col-sm-6 col-12 logos">
+                <div className="col-sm-4 col-12 logos">
                   <a href='https://cornell.edu' rel="noopener noreferrer" target="_blank">
                     <img className="img-responsive logo" alt='Cornell University'  src={cornell_logo} />
                   </a>
                 </div>
-                <div className="col-sm-6 col-12">
+                <div className="col-sm-8 col-12">
                   <a href='https://www.esf.edu' rel="noopener noreferrer" target="_blank">
                     <img className="img-responsive logo" alt='SUNY College of Environmental Science and Forestry (ESF)'  src={esf_logo} />
                   </a>
