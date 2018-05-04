@@ -23,7 +23,9 @@
 .sector-detail .side-nav h2 {
   border-bottom-width: 1px;
 }
-
+.img-link {
+  height:100%;
+}
 .sector-detail .side-nav .resource {
   width: 100%;
   padding: 20px;
