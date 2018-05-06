@@ -77,7 +77,7 @@ class DataProductPage extends Component {
 			              <div className="col-sm-7">
 			             	<h1>Climate Data Grapher</h1>
 			             	<DatagrapherLink file="Temp/state/maxt/ANN/NY/" className="btn btn-sm btn-primary">Interactive Chart</DatagrapherLink>
-			                <br/><br/>
+  	                <br/><br/>
 			            	<p>
 			            		User-generated time series graphs of climate data, both observed and projected (future and historical.)
                     </p>
