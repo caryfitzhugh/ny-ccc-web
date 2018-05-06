@@ -26,8 +26,12 @@
 .img-link {
   height:100%;
 }
+.sector-detail .resource .img-link {
+  flex-shrink: 10;
+}
 .sector-detail .side-nav .resource {
   width: 100%;
+  max-width: 100%;  
   padding: 20px;
   text-align: center;
   background: white;
