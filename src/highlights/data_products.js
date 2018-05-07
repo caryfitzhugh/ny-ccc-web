@@ -3,7 +3,7 @@ import Collection from '../layouts/collection';
 import DataTabs from './data_tabs';
 import DatagrapherLink from '../utils/datagrapher_link';
 
-import datagrapher_img from '../images/highlights/datagrapher.jpg';
+import datagrapher_img from '../images/data/datagrapher.png';
 
 import './data_products.css';
 
