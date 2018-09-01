@@ -184,7 +184,7 @@ class SuggestionsPage extends Component {
                           Submit
                         </Button> :
                         <ReCAPTCHA ref='recaptcha'
-                          sitekey="6LcAoDAUAAAAAMdmxu23wEooASQmVVnLYCz3OwTg"
+                          sitekey="6Lf3wW0UAAAAAN06MlMTxnVLlzmI-sp-g2HlC2Dx"
                           onChange={(evt) => this.notabot(evt)}
                           />}
                     </Col>
