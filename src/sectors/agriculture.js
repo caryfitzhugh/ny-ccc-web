@@ -29,7 +29,7 @@ class AgricultureSectorPage extends Component {
                   <li>Increasing heat stress days (above 90°F) may stress livestock and some crops</li>
                   <li>More pest pressure from insects, diseases, and weeds may harm crops and cause farms to increase pesticide use</li>
                   <li>New crops could become more viable but crop transitions may be costly</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::annual precipitation", "ny::extreme cold events","ny::extreme heat events", "ny::seasonal temperature"], sectors: ["ny::agriculture"]}}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::agriculture", "ny::annual temperature", "ny::drought", "ny::evaporation", "ny::extreme cold events","ny::extreme heat events", "ny::seasonal temperature", "ny::soil moisture"], query: ["agriculture farming"], sectors: ["ny::agriculture"]}}}>> Find more information</SearchLink>
                 </ul>,
               },
               { name: "Precipitation Changes",
@@ -38,7 +38,7 @@ class AgricultureSectorPage extends Component {
                   <li>Increased river flooding is likely to cause soil erosion, soil loss, and crop damage</li>
                   <li>Wetter springs may delay planting for crops and reduce yields</li>
                   <li>Drier summers and intermittent droughts may strain irrigation water supplies, stress crops, and delay harvests</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::annual precipitation", "ny::heavy precipitation events","ny::seasonal precipitation"], sectors: ["ny::agriculture"]}}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::agriculture", "ny::annual precipitation", "ny::drought", "ny::heavy precipitation events", "ny::inland flooding", "ny::snowfall", "ny::soil moisture", "ny::snowpack"], query: ["agriculture farming"], sectors: ["ny::agriculture"]}}}>> Find more information</SearchLink>
                 </ul>,
               },
               { name: "Extreme Weather",
@@ -47,7 +47,7 @@ class AgricultureSectorPage extends Component {
                   <li>Extreme storms may cause catastrophic damage to crops and fields, farm buildings, equipment and drainage systems</li>
                   <li>Floodwaters may spread invasive plants</li>
                   <li>Heavy rainfall is likely to wash away fertile soils and damage water resources</li>
-                  <SearchLink params={{facets: {sectors: ["ny::agriculture"]}, query: "agriculture extreme weather"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::agriculture", "ny::drought", "ny::heavy precipitation events", "ny::extreme cold events", "ny::extreme heat events", "ny::hail storms", "ny::inland flooding", "ny::hurricanes", "ny::ice storms", "ny::intense winter storms", "ny::snow storms"], query: ["agriculture farming"], sectors: ["ny::agriculture"]}}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Sea Level Rise",
@@ -55,7 +55,7 @@ class AgricultureSectorPage extends Component {
                 content: <ul>
                   <li>Increasing tidal range and tidal inundation is likely to cause more saltwater intrusion into aquifers in agricultural areas</li>
                   <li>Rising sea levels and extreme storms may accelerate erosion of coastal agricultural land</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::annual precipitation", "ny::heavy precipitation events","ny::seasonal precipitation"], sectors: ["ny::agriculture"]}}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::agriculture", "ny::sea level rise"], query: ["agriculture farming"], sectors: ["ny::agriculture"]}}}>> Find more information</SearchLink>
                 </ul>
               }
             ]
@@ -69,7 +69,7 @@ class AgricultureSectorPage extends Component {
                 content: <ul>
                   <li>Develop a plan for on-farm emergencies</li>
                   <li>Complete a farm energy audit</li>
-                  <SearchLink params={{facets: {oceans: ["ny::sea level rise"]}, query: "agriculture plan"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {oceans: ["ny::sea level rise"]}, query: "agriculture"}}>> Find more information</SearchLink>
                 </ul>,
               },
               { name: "Management Practices",

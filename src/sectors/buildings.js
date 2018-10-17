@@ -30,7 +30,7 @@ class BuildingsSectorPage extends Component {
                   <li>Thermal stresses on building materials could increase, leading to more wear and tear and reducing useful lifespan</li>
                   <li>Building systems may be disrupted by power outages during heat waves</li>
                   <li>Building stock may increasingly require air conditioning to maintain comfortable temperatures in summer months, contributing to increasing energy use and emissions</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::annual temperature", "ny::extreme cold events","ny::extreme heat events", "ny::heat index", "ny::seasonal temperature"], sectors: ["ny::buildings"]}}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::annual temperature", "ny::extreme cold events","ny::extreme heat events", "ny::heat index", "ny::seasonal temperature"]}, query: "buildings", sectors: ["ny::buildings"]}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Extreme Weather",
