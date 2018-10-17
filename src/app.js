@@ -6,7 +6,6 @@ import HomePage from './home_page';
 import SectorPages from './sector_pages';
 import HighlightsPage from './highlights_page';
 import ActionsPage from './actions_page';
-import DataPage  from "./data_page";
 import SearchPage  from "./search_page";
 import AboutPage  from "./about_page";
 import CommentsPage  from "./comments";
@@ -53,7 +52,6 @@ class App extends Component {
               <Route path="/sectors/" component={SectorPages} />
               <Route path="/highlights/" component={HighlightsPage} />
               <Route path="/actions/" component={ActionsPage} />
-              <Route path="/data/" component={DataPage} />
               <Route path="/search/" component={SearchPage} />
               <Route path="/resources/" component={ResourcesPage} />
               <Route exact path="/about" component={AboutPage} />
