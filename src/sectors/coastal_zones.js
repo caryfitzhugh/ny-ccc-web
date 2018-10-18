@@ -27,7 +27,7 @@ class CoastalZonesSectorPage extends Component {
                 <li>Commercially important fish and shellfish species may migrate north out of the state as waters warm, while other species may migrate in </li>
                 <li>Ocean acidification is likely to affect the health and abundance of shellfish and other marine species </li>
                 <li>Algal blooms may increase in frequency, and could create health risks for swimmers and wildlife </li>
-                <SearchLink params={{facets: {climate_changes: ["ny::annual temperature", "ny::extreme cold events","ny::extreme heat events", "ny::seasonal temperature"], sectors: ["ny::coastal zones"]}}}>> Find more information</SearchLink>
+                <SearchLink params={{facets: {climate_changes: ["ny::annual temperature", "ny::extreme cold events", "ny::extreme heat events", "ny::seasonal temperature", "ny::ocean temperature"], sectors: ["ny::coastal zones"]}, query: ["coastal"]}}>> Find more information</SearchLink>
               </ul>
             },
             {  name: "Precipitation Changes",
@@ -35,7 +35,7 @@ class CoastalZonesSectorPage extends Component {
                 content: <ul>
                   <li>Large volumes of stormwater may wash pollutants and pathogens into nearby coastal waterways, degrading water quality</li>
                   <li>Changing hydrological cycles may stress sensitive coastal habitats and species</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::annual precipitation", "ny::heavy precipitation events","ny::seasonal precipitation"], sectors: ["ny::coastal zones"]}}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::annual precipitation", "ny::coastal flooding", "ny::heavy precipitation events","ny::seasonal precipitation"], sectors: ["ny::coastal zones"]}, query: ["coastal"]}}>> Find more information</SearchLink>
                  </ul>
             },
             {  name: "Extreme Weather",
@@ -43,7 +43,7 @@ class CoastalZonesSectorPage extends Component {
                 content: <ul>
                   <li>More severe storms may threaten public safety and damage property</li>
                   <li>Infrastructure concentrated at the shore – such as power plants, power lines, sea walls, roads and bridges, and waste water plants – may sustain extensive damage from flooding</li>
-                  <SearchLink params={{facets: {sectors: ["ny::coastal zones"]}, query: "coastal extreme weather"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::coastal flooding", "ny::extreme cold events", "ny::extreme heat events", "ny::heavy precipitation events", "ny::hurricanes", "ny::ice storms", "ny::intense winter storms", "ny::noreasters", "ny::snow storms", "ny::storm surge"], sectors: ["ny::coastal zones"]}, query: ["coastal extreme weather"]}}>> Find more information</SearchLink>
                  </ul>
             },
             {  name: "Sea Level Rise",
@@ -54,7 +54,7 @@ class CoastalZonesSectorPage extends Component {
                   <li>Properties may lose beach and other land from erosion </li>
                   <li>Saltwater intrusion could harm agricultural fields and fresh water aquifers and wells </li>
                   <li>The Hudson River salt front will move upstream as sea level rises</li>
-                  <SearchLink params={{facets: {oceans: ["ny::sea level rise"]}, query: "coastal"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::storm surge", "ny::sea level rise"]}, query: "coastal"}}>> Find more information</SearchLink>
                   </ul>
             }
           ]},
@@ -69,7 +69,7 @@ class CoastalZonesSectorPage extends Component {
                   <li>Build adaptation strategies into comprehensive, master and open space plans, and Hazard Mitigation Plans  </li>
                   <li>Develop or enhance early warning systems and community evacuation plans </li>
                   <li>Identify conservation priorities for salt marshes, wetlands, and forests that mitigate flooding, store carbon, and manage stormwater </li>
-                  <SearchLink params={{query: "coastal planning"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {sectors: ["ny::coastal zones"]}, query: "coastal planning"}}>> Find more information</SearchLink>
                 </ul>
               },
               {name: "Management Practices",
@@ -79,7 +79,7 @@ class CoastalZonesSectorPage extends Component {
                   <li>Use early detection and monitoring to prevent introduction of invasive species   </li>
                   <li>Elevate and/or move buildings and infrastructure in current or future coastal flood zones </li>
                   <li>Restore tidally driven rivers, estuarine, and marine habitats. </li>
-                  <SearchLink params={{query: "coastal management"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {sectors: ["ny::coastal zones"]}, query: "coastal management"}}>> Find more information</SearchLink>
               </ul>
               },
               { name: "Technology",
@@ -88,7 +88,7 @@ class CoastalZonesSectorPage extends Component {
                   <li>Encourage nature-based techniques to protect shorelines and stabilize banks such as beach nourishment and soft armoring  </li>
                   <li>Use green infrastructure such as floodable parks and open spaces to manage stormwater and increase storm protection   </li>
                   <li>Replace or remove ineffective tide gates to improve habitat connectivity </li>
-                  <SearchLink params={{query: "coastal technology"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {sectors: ["ny::coastal zones"]}, query: "coastal technology"}}>> Find more information</SearchLink>
                 </ul>
               },
               {name: "Policies/Laws",
@@ -98,7 +98,7 @@ class CoastalZonesSectorPage extends Component {
                   <li>Create or amend local wetland bylaws to allow for beach migration   </li>
                   <li>Examine the concept of local setbacks requiring that new coastal development be a minimum distance from the shore </li>
                   <li>Examine the concept of rolling easements for coastal habitats </li>
-                  <SearchLink params={{query: "coastal policies laws"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {sectors: ["ny::coastal zones"]}, query: "coastal policies laws"}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Research/Monitoring",
@@ -108,7 +108,7 @@ class CoastalZonesSectorPage extends Component {
                   <li>Conduct sediment transport studies to inform shoreline management </li>
                   <li>Monitor the response of different types of wetlands to rising sea levels and/or proactive management techniques </li>
                   <li>Use remote sensing to monitor annual changes in land cover and land usef </li>
-                  <SearchLink params={{query: "coastal research monitoring"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {sectors: ["ny::coastal zones"]}, query: "coastal research monitoring"}}>> Find more information</SearchLink>
                 </ul>
               }
             ]},
