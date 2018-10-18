@@ -86,9 +86,9 @@ class Facets extends Component {
       ['effects', "Effects", true],
       ['actions', 'Actions', true],
       ['content_types',"Types"],
-      ['authors', "Authors"],
 
 
+      //['authors', "Authors"],
       //['keywords', "Keywords"],
       //['publishers', "Publishers"]
       ];
