@@ -43,6 +43,7 @@ class FacetGroup extends Component {
     let shown_facets = checked_facets.concat(unchecked_facets.slice(0,limit - checked_facets.length));
 
     let available_facets = checked_facets.concat(unchecked_facets);
+
     return <div key={'facet-' + this.props.name} className='facet-group'>
       <h3>{this.props.name}</h3>
       {available_facets.length === 0 ?
@@ -111,6 +112,7 @@ class Facets extends Component {
           let prefixed = vals[2];
           let user_selected_facets = state_facets[id] || {};
           let query_selected_facets = params_facets[id] || {};
+
           let all_facets = (search_results.facets || {})[id] || [];
 
           return <FacetGroup key={id}

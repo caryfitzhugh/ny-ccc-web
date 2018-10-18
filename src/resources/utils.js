@@ -1,12 +1,8 @@
 import titleize from '../utils/titleize';
 
 const should_display = (str) => {
-  let parts = str.split("::");
-  if (parts[0].length === 2) {
-    return parts[0] === 'ny';
-  } else {
-    return true;
-  }
+  let parts = str.split("::", 2);
+  return parts[0] === 'ny';
 }
 
 const strip_state = (str) => {
