@@ -33,7 +33,7 @@ class EcosystemsSectorPage extends Component {
                 <li>Hardwoods may recede to higher elevations </li>
                 <li>The composition and role of forest species including plants and animals, fungi, and bacteria will change as forests change</li>
                 <li>Forest pests such as the hemlock woolly adelgid and southern pine beetle could cause widespread tree mortality and ecosystem impacts  as their range extends northward </li>
-                <SearchLink params={{facets: {climate_changes: ["ny::annual temperature", "ny::extreme cold events", "ny::extreme heat events", "ny::seasonal temperature", "ny::ecosystems"]}}}>> Find more information</SearchLink>
+                <SearchLink params={{facets: {climate_changes: ["ny::annual temperature", "ny::extreme cold events", "ny::extreme heat events", "ny::inland water temperature", "ny::ocean temperature", "ny::seasonal temperature"], sectors: ["ny::ecosystems"]}}}>> Find more information</SearchLink>
              </ul>
             },
             {name: 'Precipitation Changes',
@@ -44,8 +44,7 @@ class EcosystemsSectorPage extends Component {
                 <li>Flooding of riparian areas and wetlands could export soils and nutrients downstream to lakes and bays, triggering algal blooms</li>
                 <li>Changes in the water cycle could alter habitats of native species and increase the negative impacts from invasive species</li>
                 <li>More frequent droughts could exacerbate wildfire risks, especially when coupled with increases in overall biomass growth due to warmer temperatures </li>
-                <SearchLink params={{facets: {climate_changes: ["ny::annual precipitation", "ny::heavy precipitation events", "ny::seasonal precipitation", "ny::ecosystems"]}}}>> Find more information</SearchLink>
-
+                <SearchLink params={{facets: {climate_changes: ["ny::annual precipitation", "ny::extreme cold events", "ny::extreme heat events", "ny::inland water temperature", "ny::ocean temperature", "ny::seasonal temperature"], sectors: ["ny::ecosystems"]}}}>> Find more information</SearchLink>
              </ul>
             },
             {name: 'Extreme Weather',
@@ -56,7 +55,7 @@ class EcosystemsSectorPage extends Component {
                 <li>Forest-disturbance events like ice storms, localized or regional wind events like microbursts or hurricanes, and severe thunderstorms may increase in frequency and severity </li>
                 <li>Increased wind and ice damage could seriously harm forest health, especially where trees lack age or structural diversity </li>
                 <li>Gaps in forest cover—caused by storm damage or fragmentation—may open up space for invasive species </li>
-                <SearchLink params={{facets: {sectors: ["ny::ecosystems"]}, query: "ecosystems extreme weather"}}>> Find more information</SearchLink>
+                <SearchLink params={{facets: {climate_changes: ["ny::coastal flooading", "ny::drought", "ny::extreme cold events", "ny::extreme heat events", "ny::heavy precipitation events", "ny::hurricanes", "ny::ice storms", "ny::inland flooding", "ny::intense winter storms", "ny::noreasters", "ny::snow storms", "ny::storm surge"], sectors: ["ny::ecosystems"]}, query: "ecosystems extreme weather"}}>> Find more information</SearchLink>
              </ul>
             },
             {name: 'Sea Level Rise ',
@@ -65,7 +64,7 @@ class EcosystemsSectorPage extends Component {
                 <li>Salt water inundation may alter the health and size of salt marshes and wetlands or cause them to die off, while some may migrate inland </li>
                 <li>Erosion may increase in many habitats including dunes and estuarine inlets </li>
                 <li>Barrier beaches may undergo physical changes in shape, as well as changes in species composition and diversity  </li>
-                <SearchLink params={{facets: {climate_changes: ["ny::sea level rise"]}}}>> Find more information</SearchLink>
+                <SearchLink params={{facets: {climate_changes: ["ny::sea level rise"], sectors: ["ny::ecosystems"]}}}>> Find more information</SearchLink>
              </ul>
             }
             ]
@@ -82,7 +81,7 @@ class EcosystemsSectorPage extends Component {
                 <li>Develop strategic priorities for protecting and conserving wetlands, floodplains, salt marshes and other natural areas that buffer flooding and support healthy wildlife populations </li>
                 <li>Identify opportunities to conserve habitat corridors (both aquatic and terrestrial) that support connectivity and migration </li>
                 <li>Incorporate information on forest climate impacts and resilient forest management strategies in town, open space, and hazard mitigation plans </li>
-                <SearchLink params={{query: "ecosystems plan"}}>> Find more information</SearchLink>
+                <SearchLink params={{facets: {sectors: ["ny::ecosystems"]}, query: "ecosystems plan"}}>> Find more information</SearchLink>
              </ul>
             },
             {name: 'Management Practices',
@@ -98,7 +97,7 @@ class EcosystemsSectorPage extends Component {
                 <li>Expand invasive species management with programs to reach private and public landowners </li>
                 <li>Plant a diversity of urban trees in downtown areas vulnerable to urban heat waves and the heat island effect </li>
                 <li>Permanently conserve the most intact, productive and resilient forest ecosystems </li>
-                <SearchLink params={{query: "ecosystems management"}}>> Find more information</SearchLink>
+                <SearchLink params={{facets: {sectors: ["ny::ecosystems"]}, query: "ecosystems management"}}>> Find more information</SearchLink>
              </ul>
             },
             {name: 'Technology',
@@ -107,7 +106,7 @@ class EcosystemsSectorPage extends Component {
                 <li>Diversify urban forests via planting to increase carbon capture and resilience </li>
                 <li>Identify and promote use of drought-and-heat-adapted trees </li>
                 <li>Encourage use of bioengineering like coir rolls for bank stabilization and erosion control </li>
-                <SearchLink params={{query: "ecosystems technology"}}>> Find more information</SearchLink>
+                <SearchLink params={{facets: {sectors: ["ny::ecosystems"]}, query: "ecosystems technology"}}>> Find more information</SearchLink>
              </ul>
             },
             {name: 'Policies/Laws',
@@ -120,7 +119,7 @@ class EcosystemsSectorPage extends Component {
                 <li>Consider policies that maintain healthy forests, including local zoning regulations </li>
                 <li>Consider policies to ensure sustainable management of renewable wood products on appropriate sites </li>
                 <li>Promote the buying of local forest products  </li>
-                <SearchLink params={{query: "ecosystems policies laws"}}>> Find more information</SearchLink>
+                <SearchLink params={{facets: {sectors: ["ny::ecosystems"]}, query: "ecosystems policies laws"}}>> Find more information</SearchLink>
              </ul>
             },
             {name: 'Research/Monitoring',
@@ -132,7 +131,7 @@ class EcosystemsSectorPage extends Component {
                 <li>Identify opportunities to reconnect cold water fish habitats by removing in-stream barriers and re-establishing instream flows  </li>
                 <li>Expand adaptive research of forest management practices and their effectiveness in a changing climate </li>
                 <li>Support long-term ecological monitoring programs such as the DCR‘s Continuous Forest Inventory </li>
-                <SearchLink params={{query: "ecosystems research monitoring"}}>> Find more information</SearchLink>
+                <SearchLink params={{facets: {sectors: ["ny::ecosystems"]}, query: "ecosystems research monitoring"}}>> Find more information</SearchLink>
              </ul>
             }
            ]

@@ -30,7 +30,16 @@ class BuildingsSectorPage extends Component {
                   <li>Thermal stresses on building materials could increase, leading to more wear and tear and reducing useful lifespan</li>
                   <li>Building systems may be disrupted by power outages during heat waves</li>
                   <li>Building stock may increasingly require air conditioning to maintain comfortable temperatures in summer months, contributing to increasing energy use and emissions</li>
-                  <SearchLink params={{facets: {climate_changes: ["ny::annual temperature", "ny::extreme cold events","ny::extreme heat events", "ny::heat index", "ny::seasonal temperature"]}, query: "buildings", sectors: ["ny::buildings"]}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::annual temperature", "ny::extreme cold events","ny::extreme heat events", "ny::heat index", "ny::seasonal temperature"], sectors: ["ny::buildings"]}, query: "buildings"}}>> Find more information</SearchLink>
+                </ul>
+              },
+              { name:"Precipitation Changes",
+                id: "impacts_precipitation_changes",
+                content: <ul>
+                  <li>Increased river flooding is likely to cause soil erosion, soil loss, and crop damage</li>
+                  <li>Wetter springs may delay planting for crops and reduce yields</li>
+                  <li>Drier summers and intermittent droughts may strain irrigation water supplies, stress crops, and delay harvests</li>
+                  <SearchLink params={{facets: {climate_changes: ["ny::annual precipitation", "ny::coastal flooding","ny::heavy precipitation events", "ny::inland flooding", "ny::seasonal precipitation", "ny::snowfall"], sectors: ["ny::buildings"]}, query: "buildings"}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Extreme Weather",
@@ -61,7 +70,7 @@ class BuildingsSectorPage extends Component {
                   <li>Assess when to flood-proof vulnerable buildings, and when to relocate those structures  </li>
                   <li>Plan micro-grids at critical facilities like schools and hospitals to provide energy for sheltering people during disasters  </li>
                   <li>Strengthen and raise sea walls, and evaluate opportunities to use soft shoreline and bank armoring as an alternative to hard infrastructure where possible  </li>
-                  <SearchLink params={{query: "buildings planning"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {sectors: ["ny::buildings"]}, query: "buildings planning design"}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Management Practices",
@@ -72,7 +81,7 @@ class BuildingsSectorPage extends Component {
                   <li>Install energy efficiency measures and use renewable energy  </li>
                   <li>Consider purchasing appropriately-sized generators and pumps to handle flooding  </li>
                   <li>Educate property owners and businesses about how to safely store chemicals and avoid spills during floods through safe storage  </li>
-                  <SearchLink params={{query: 'buildings management'}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {sectors: ["ny::buildings"]}, query: 'buildings management'}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Technology",
@@ -80,7 +89,7 @@ class BuildingsSectorPage extends Component {
                 content: <ul>
                   <li>Locate critical building systems and any toxics storage on higher stories or rooftops  </li>
                   <li>Use Smart-Grid meters in buildings to manage demand spikes and prevent outages  </li>
-                  <SearchLink params={{query: 'buildings technology'}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {sectors: ["ny::buildings"]}, query: 'buildings technology'}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Policies / Laws",
@@ -88,14 +97,14 @@ class BuildingsSectorPage extends Component {
                 content: <ul>
                   <li>Examine policies and regulations such as the <a href="https://www.dec.ny.gov/energy/102559.html">Community Risk and Resilience Act</a> to encourage climate-considered siting and design for buildings and infrastructure. </li>
                   <li>Adjust local zoning regulations to incorporate flood protection for buildings  </li>
-                  <SearchLink params={{query: 'buildings policy law'}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {sectors: ["ny::buildings"]}, query: 'buildings policy law'}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Research / Monitoring",
                 id: "actions_research",
                 content: <ul>
                   <li>Test and evaluate the effectiveness of green infrastructure like green roofs for cooling buildings and reducing runoff, and permeable pavement for infiltrating stormwater </li>
-                  <SearchLink params={{query: 'buildings research monitoring'}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {sectors: ["ny::buildings"]}, query: 'buildings research monitoring'}}>> Find more information</SearchLink>
                 </ul>
               }
             ]},

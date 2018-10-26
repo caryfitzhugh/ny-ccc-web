@@ -31,7 +31,7 @@ class TransportationSectorPage extends Component {
                     <li>Extreme heat may cause heat stress in materials like asphalt and increase the frequency of repairs and replacements</li>
                     <li>Peaks in power demand during hotter summer days could cause outages that affect electrified public transit</li>
                     <li>High temperatures and dense air conditions could increase runway length requirements for aircraft due to diminished performance in such conditions</li>
-                  <SearchLink params={{query: "transportation changes in percipitation"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::annual temperature", "ny::extreme cold events", "ny::extreme heat events", "ny::seasonal temperature"], sectors: ["ny::transportation"]}, query: "transportation"}}>> Find more information</SearchLink>
                   </ul>
               },
               { name: "Precipitation Changes",
@@ -40,7 +40,7 @@ class TransportationSectorPage extends Component {
                   <li>Flooding caused by heavier downpours may damage roads and stormwater infrastructure like undersized culverts</li>
                   <li>More nuisance ponding on roads may slow commutes and commerce</li>
                   <li>Rapid freeze thaw cycles may cause damage to road surfaces</li>
-                  <SearchLink params={{query: "transportation changes in percipitation"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::annual precipitation", "ny::coastal flooding", "ny::heavy precipitation events", "ny::inland flooding", "ny::seasonal precipitation", "ny::snowfall"], sectors: ["ny::transportation"]}, query: "transportation"}}>> Find more information</SearchLink>
                   </ul>
               },
               { name: "Extreme Weather",
@@ -50,8 +50,7 @@ class TransportationSectorPage extends Component {
                   <li>Extensive flood damage to roads and bridges could dramatically affect commerce and public health and safety especially where alternative routes aren’t available</li>
                   <li>High winds could down power lines and poles adjacent to roads</li>
                   <li>Communities and critical facilities could be cut off after storms</li>
-
-                  <SearchLink params={{query: "transporation extreme weather"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::coastal flooding", "ny::drought", "ny::extreme cold events", "ny::extreme heat events", "ny::hail storms", "ny::heavy precipitation events", "ny::hurricanes", "ny::inland flooding", "ny::intense winter storms", "ny::noreasters", "ny::peak winds", "ny::snow storms", "ny::storm surge"], sectors: ["ny::transportation"]}, query: "transportation"}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Sea Level Rise",
@@ -59,7 +58,7 @@ class TransportationSectorPage extends Component {
                 content: <ul>
                   <li>Coastal storm surges may become larger, extending flood hazard areas into areas where critical infrastructure is located</li>
                   <li>As sea level rise progresses, roadways, subway and highway tunnels, airports and other critical elements in our transportation network could be inundated</li>
-                  <SearchLink params={{query: "transportation sea level rise"}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {climate_changes: ["ny::sea level rise"], sectors: ["ny::transportation"]},  query: "transportation"}}>> Find more information</SearchLink>
                 </ul>
               }
             ]},
@@ -77,7 +76,7 @@ class TransportationSectorPage extends Component {
                   <li>Plan for expansion of complete streets that accommodate biking, walking and public transit</li>
                   <li>Inventory bridges and culverts that should be upsized to accommodate future expected stream flows</li>
 
-                <SearchLink params={{query: 'transportation planning'}}>> Find more information</SearchLink>
+                <SearchLink params={{facets: {sectors: ["ny::transportation"]}, query: 'transportation planning'}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Management Practices",
@@ -89,7 +88,7 @@ class TransportationSectorPage extends Component {
                   <li>Enhance water-based transit options as a long-range transport alternative and interim back-up </li>
                   <li>Encourage use of innovative technologies that keep infrastructure functioning during extreme weather, for example, new airport navigation aids and airfield lighting systems</li>
 
-                <SearchLink params={{query: 'transportation management '}}>> Find more information</SearchLink>
+                <SearchLink params={{facets: {sectors: ["ny::transportation"]}, query: 'transportation management '}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Technology",
@@ -97,7 +96,7 @@ class TransportationSectorPage extends Component {
                 content: <ul>
                   <li>Expand use of green infrastructure such as rain gardens, swales, and porous pavement for stormwater control</li>
                   <li>Stock up on replacement parts for vehicles and equipment needed for emergency weather</li>
-                  <SearchLink params={{query: 'transportation technology'}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {sectors: ["ny::transportation"]}, query: 'transportation technology'}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Policies / Laws",
@@ -105,7 +104,7 @@ class TransportationSectorPage extends Component {
                 content: <ul>
                   <li>Coordinate across municipal, state, regional agencies to address the vulnerability of regional infrastructure like rail networks</li>
                   <li>Consider adopting design standards that account for climate change, and provide trainings</li>
-                  <SearchLink params={{query: 'transportation and policy law '}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {sectors: ["ny::transportation"]}, query: 'transportation and policy law '}}>> Find more information</SearchLink>
                 </ul>
               },
               { name: "Research / Monitoring",
@@ -113,7 +112,7 @@ class TransportationSectorPage extends Component {
                 content: <ul>
                   <li>Research and conduct pilots using resilient materials (e.g. materials that can withstand high heat) for building roads and other infrastructure</li>
                   <li>Update hydrologic and hydraulic analyses, including engineering methods used in the calculation of peak flood flow rates</li>
-                  <SearchLink params={{query: 'transportation research monitoring '}}>> Find more information</SearchLink>
+                  <SearchLink params={{facets: {sectors: ["ny::transportation"]}, query: 'transportation research monitoring '}}>> Find more information</SearchLink>
                 </ul>
               },
             ]},
