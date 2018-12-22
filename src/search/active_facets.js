@@ -32,6 +32,7 @@ class ActiveFacets extends Component {
         let type = afacet[0];
         let name = afacet[1];
         let parts = strip_state(name).split("::");
+
         if (parts[parts.length - 1] === '') {
           parts.pop();
         }
