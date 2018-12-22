@@ -34,6 +34,7 @@ class SearchListPage extends Component {
             return <SearchResult history={this.props.history} key={res.docid} {... res} />
             })}
         </div>
+        <SearchPagination {... this.props} />
       </div>
     </div>
     );
