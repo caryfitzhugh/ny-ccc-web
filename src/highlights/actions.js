@@ -40,7 +40,7 @@ let articleList = [
         source: " Mid-Hudson Climate Smart Communities",
         abstract: <div>
             <p>
-                Learn how communities in the mid-Hudson region of New York State have achieved Climate Smart Community certification.
+              Learn how communities can achieve Climate Smart Community certification.
             </p>
         </div>,
         collection: "NY/highlights/actions/greenhouse_gas"
