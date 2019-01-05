@@ -43,7 +43,7 @@ class FacetTree extends Component {
 
     return <ul>
         {primaries.map((primary, indx) => {
-          let inputid = `input-${parent}-${indx}`;
+          let inputid = `input-${primary}-${parent}-${indx}`.replace(/\W/g, '-');
           let children = buckets[primary].children;
           let facet = buckets[primary].parent;
           let display = titleize(primary);

@@ -1,13 +1,18 @@
 import titleize from '../utils/titleize';
 
 const should_display = (str) => {
+  let res = false;
   let parts = str.split("::", 2);
-  if (parts.length > 1 && parts[0].length == 2) {
-    return parts[0] === 'ny';
+  if (parts[0] === 'old_ny') {
+      res = false;
+  } else if (parts.length > 1 && parts[0].length === 2) {
+    res = (parts[0] === 'ny');
   } else {
     // It's not a state prefix, so... always show
-    return true;
+    res = true;
   }
+
+  return res;
 }
 
 const strip_state = (str) => {
