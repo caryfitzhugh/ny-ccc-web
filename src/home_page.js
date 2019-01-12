@@ -10,6 +10,7 @@ import Actions from './home_page/actions';
 import Footer from './footer';
 import SearchBar from './search_bar';
 import SectorsAll from './sectors/all';
+import MailchimpSignupForm from './mailchimp_signup_form';
 import './home_page.css';
 
 import maps_block_img from './images/home_page/blocks/maps.png';
@@ -117,8 +118,8 @@ class Homepage extends Component {
              target="_blank" data-original-title="Cropped from original">Photo: Brian Birke</a>,
           <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by/2.0/">CC</a>
         </span>
+        <MailchimpSignupForm backgrounded={true}/>
         <div className="search-container container">
-
           <div className="search-form">
             <p className="text-right">
               <a href="/search">Browse Resources</a>

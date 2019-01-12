@@ -102,3 +102,28 @@ ol.footnotes :target {
   display:none !important
  }
 }
+
+.mailchimp-signup-form {
+  margin-bottom: -50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.mailchimp-signup-form .has-background {
+  background: rgba(54,112,170, 0.5);
+  padding: 10px;
+  padding-right: 20px;
+  color: white;
+}
+.mailchimp-signup-form small {
+  display: block;
+  color: white;
+}
+.mailchimp-signup-form input {
+  display: inline;
+}
+.mailchimp-signup-form .btn {
+  line-height: 24px;
+  padding: 3px 5px;
+  padding-bottom: 2px;
+}
