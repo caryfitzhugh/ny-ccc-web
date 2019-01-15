@@ -165,7 +165,6 @@ class SearchPage extends Component {
       toggle_facet: this.toggle_facet.bind(this),
       active_filters: this.active_filters.bind(this),
       pending_search: this.pending_search.bind(this),
-
     }
     return (
       <div className='search-page'>

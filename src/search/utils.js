@@ -27,6 +27,9 @@ const paramsToQString = (params) => {
     if (params.bounds) {
       query.bounding_box = params.bounds.toBBoxString();
     }
+    if (params.sort_by) {
+      query.sort_by = params.sort_by;
+    }
     if (params.query) {
       query.query = params.query;
     }
@@ -75,7 +78,7 @@ const paramsFromQString = (str) => {
 
   parsed.query = params.query;
   parsed.page = parseInt(params.page || "1", 10);
-
+  parsed.sort_by = params.sort_by || 'relevance';
   let bbox_s = params.bounding_box;
   if (bbox_s) {
     let bbox = bbox_s.split(",").map((v) => { return parseFloat(v); });
