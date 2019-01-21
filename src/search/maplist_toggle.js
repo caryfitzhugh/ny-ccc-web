@@ -13,9 +13,9 @@ class MapListToggle extends Component {
     let is_map = this.props.location.pathname === "/search/map";
 
     let sorting_options = [
-      {value: "oldest", display: "Oldest First"},
       {value: "newest", display: "Newest First"},
       {value: "relevance", display: "Most Relevant"},
+      {value: "oldest", display: "Oldest First"},
     ];
     return (
     <div className='maplist-toggle'>
