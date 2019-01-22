@@ -23,7 +23,7 @@ class MapListToggle extends Component {
           <span> Sort results by </span>
           <select onChange={this.change_sort.bind(this)} value={this.props.params.sort_by}>
             {sorting_options.map((opt) => {
-              return <option value={opt.value}>{opt.display}</option>
+              return <option key={opt.value + '-results-sort'} value={opt.value}>{opt.display}</option>
             })}
           </select>
       </div>

@@ -61,9 +61,8 @@ class SearchMapPage extends Component {
 
     let bbox = (this.props.params || {}).bounds;
 
-    geofocus_ids = [];
+    //geofocus_ids = [];
     // We need a way to limit these in size / complexity (dumb down any polygon geofocus which is too large... USA?)
-    // geofocus_ids.slice(0, );
 
     return (
       <div className='search-map'>

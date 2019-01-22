@@ -10,32 +10,39 @@ class GeofocusMap extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      geofocuses: {}
+      geofocuses: {},
+      geofocuses_missing: {}
     };
   }
 
-  componentDidMount() {
+  componentWillReceiveProps(newProps) {
+    let geofocus_ids = (newProps.geofocuses || []);
+    geofocus_ids.forEach((gfid) => {
+        let gf = this.state.geofocuses[gfid];
+        let gf_missing = this.state.geofocuses_missing[gfid];
+        if (!gf) {
+          getGeofocusGeoJSON(gfid)
+            .then((gf) => {
+              this.setState((old) => {
+                let new_state = Object.assign({}, old);
+                new_state.geofocuses[gfid] = gf;
+                return new_state;
+              });
+            })
+            .catch((e) => {
+                console.log("Error", e, gfid);
+                this.setState((old) => {
+                  let new_state = Object.assign({}, old);
+                  new_state.geofocuses_missing[gfid] = true;
+                  return new_state;
+                });
+            });
+        }
+      });
 
   }
 
-  geofocuses() {
-    return compact((this.props.geofocuses || []).map((gfid) => {
-                    let gf = this.state.geofocuses[gfid];
-                    if (!gf) {
-                      getGeofocusGeoJSON(gfid)
-                        .then((gf) => {
-                          this.setState((old) => {
-                            let new_state = Object.assign({}, old);
-                            new_state.geofocuses[gfid] = gf;
-                            return new_state;
-                          });
-                        })
-                        .catch((e) => {
-
-                        });
-                    }
-                    return gf;
-                  }));
+  componentDidMount() {
   }
 
   viewportZoomed (evt) {
@@ -67,11 +74,14 @@ class GeofocusMap extends Component {
   }
 
   bounds () {
-    let geofocuses = this.geofocuses();
-    let bbox = gjBounds.extent({type: "GeometryCollection", geometries: geofocuses})
+    let geofocuses = this.state.geofocuses || {};
+    let bbox = null;
+    if (geofocuses.length > 0) {
+      let bbox = gjBounds.extent({type: "GeometryCollection", geometries: geofocuses})
+    }
 
     let bounds = this.props.bounds || (
-        bbox[0] ?
+        (bbox && bbox[0]) ?
         new LatLngBounds([[bbox[1],bbox[0]],[bbox[3], bbox[2]]]) :
         new LatLngBounds([[45.015865,-79.76259],  [40.477399, -71.777491]])
     );
@@ -90,10 +100,9 @@ class GeofocusMap extends Component {
   }
   render() {
     let highlighted = this.props.highlight || [];
-    let geofocuses = this.geofocuses();
     let bounds = this.bounds();
     let onEachFeature = this.props.onEachFeature || ((feature, layer) => { layer.bindPopup(feature.properties.name); });
-
+    let unique_geofocuses = Object.entries(this.state.geofocuses || {});
     return (
           <div className='geofocus-map'>
             <Map ref='map'
@@ -106,7 +115,7 @@ class GeofocusMap extends Component {
               <TileLayer
                   attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                   url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'/>
-              {geofocuses.map((gf, i) => {
+              {unique_geofocuses.map((gf, i) => {
                 let is_highlighted = highlighted.includes(gf.id);
                 let color = is_highlighted ? "#f27421" : "#113f83";
                 let style = {
