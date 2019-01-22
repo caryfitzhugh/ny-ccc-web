@@ -4,7 +4,7 @@ import Facets from './facets';
 import MapListToggle from './maplist_toggle';
 import GeofocusMap from '../geofocus_map';
 import ActiveFacets from './active_facets';
-import {filter, without, uniq, flatten} from 'lodash';
+import {debounce, filter, without, uniq, flatten} from 'lodash';
 import './map.css';
 
 class SearchMapPage extends Component {
@@ -72,13 +72,13 @@ class SearchMapPage extends Component {
           <ActiveFacets {... this.props} />
           <GeofocusMap
             bounds={bbox}
-            onBoundsChanged={(bounds) => {
+            onBoundsChanged={debounce((bounds) => {
               try {
                 if (search_results ) {
                   this.props.onNewSearch(Object.assign({}, search_results.params, {page: 1, bounds: bounds}));
                 }
               } catch (e) { console.warn(e); }
-            }}
+            }, 1000)}
             onEachFeature={this.onEachFeature.bind(this)}
           geofocuses={geofocus_ids} highlight={highlighted}  />
         </div>
