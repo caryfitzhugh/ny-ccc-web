@@ -8,7 +8,7 @@ class MapPage extends Component {
     return (
       <div className='map-page'>
         <Header short_header={true}/>
-            <iframe title='MA CCC Map' src={"https://s3.amazonaws.com/ny-map-nescaum-ccsc-dataservices/map_viewer.html" + this.props.location.search} className="map"></iframe>
+            <iframe title='MA CCC Map' src={"https://s3.amazonaws.com/ny-map-nescaum-ccsc-dataservices/index.html" + this.props.location.search} className="map"></iframe>
       </div>
     );
   }
