@@ -118,7 +118,6 @@ class AgricultureSectorPage extends Component {
            content: <ul>
              <li><a href="http://climatesmartfarming.org/">Climate Smart Farming</a></li>
              <li><a href="https://www.nys-soilandwater.org/programs/crf.html">New York State Climate Resilient Farming</a></li>
-             <li><a href="https://www.climatehubs.oce.usda.gov/northeast">USDA Climate Hub</a></li>
             </ul>,
            subsections: []
           },
