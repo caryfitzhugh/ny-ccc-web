@@ -123,11 +123,6 @@ class TransportationSectorPage extends Component {
                 <li><Link to='https://www.dot.ny.gov/programs/climate-change' target="_blank">
                   New York State Department of Transportation
                   </Link></li>
-                <li>
-                  <Link to='https://www.transportation.gov/climate-change-clearinghouse' target="_blank">
-                    United States Department of Transportation Transportation and Climate Change Clearinghouse
-                  </Link>
-                </li>
               </ul>
           }
         ]}
