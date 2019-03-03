@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SectorDetailLayout from './layout';
+import Collection from '../layouts/collection';
 import SearchLink from '../utils/search_link';
 import agriculture_image from '../images/sectors/agriculture.jpg';
 
@@ -115,10 +116,7 @@ class AgricultureSectorPage extends Component {
           },
           {title: "Looking for Help?",
            id: "help",
-           content: <ul>
-             <li><a href="http://climatesmartfarming.org/">Climate Smart Farming</a></li>
-             <li><a href="https://www.nys-soilandwater.org/programs/crf.html">New York State Climate Resilient Farming</a></li>
-            </ul>,
+           content: <Collection collection_name="NY/agriculture/looking-for-help" />,
            subsections: []
           },
 
