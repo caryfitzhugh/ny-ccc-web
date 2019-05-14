@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SectorDetailLayout from './layout';
 import SearchLink from '../utils/search_link';
+import Collection from '../layouts/collection';
 import buildings_image from "../images/sectors/buildings.jpg";
 import { Link } from 'react-router-dom';
 
@@ -108,13 +109,10 @@ class BuildingsSectorPage extends Component {
                 </ul>
               }
             ]},
-          {title: "Looking for help?",
-            id: 'looking_for_help',
-            subsections: [],
-            content: <ul>
-              <li><Link to="https://climatesmart.ny.gov/" target="_blank">New York Climate Smart Communities</Link></li>
-              <li><Link to="https://www1.nyc.gov/site/planning/index.page" target="_blank">New York City Department of City Planning</Link></li>
-           </ul>
+          {title: "Looking for Help?",
+           id: "looking_for_help",
+           content: <Collection collection_name="NY/buildings/looking-for-help" />,
+           subsections: []
           }
         ]}>
         <p>
