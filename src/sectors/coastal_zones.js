@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SectorDetailLayout from './layout';
 import coastal_zones_image from '../images/sectors/coastal_zones.jpg';
+import Collection from '../layouts/collection';
 import SearchLink from "../utils/search_link";
 
 class CoastalZonesSectorPage extends Component {
@@ -112,15 +113,11 @@ class CoastalZonesSectorPage extends Component {
                 </ul>
               }
             ]},
-            {title: "Looking for help?",
-              subsections: [],
-              id: 'looking_for_help',
-              content: <ul>
-                <li><a href="https://www.dec.ny.gov/energy/94702.html">New York State Department of Environmental Conservation</a></li>
-                <li><a href="https://www.epa.gov/cre">U.S. Environmental Protection Agency’s Climate Ready Estuaries Program</a></li>
-                <li><a href="https://coast.noaa.gov/">National Oceanic and Atmospheric Administration (NOAA) Office for Coastal Management</a></li>
-              </ul>
-            }
+            {title: "Looking for Help?",
+            id: "looking_for_help",
+            content: <Collection collection_name="NY/coastal-zones/looking-for-help" />,
+            subsections: []
+            },
          ]}
          >
           <p>The Coastal Zones sector focuses on regions close to the ocean and Great Lakes.</p>
