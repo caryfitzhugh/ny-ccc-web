@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Collection from '../layouts/collection';
 import SectorDetailLayout from './layout';
 import { Link } from 'react-router-dom';
 import sector_image from '../images/sectors/ecosystems.jpg';
@@ -136,16 +137,11 @@ class EcosystemsSectorPage extends Component {
             }
            ]
           },
-          {title: "Looking for help?",
-           id: 'looking_for_help',
-           subsections: [],
-           content: <ul>
-             <li><a href="https://www.dec.ny.gov/">New York State Department of Environmental Conservation</a></li>
-             <li><a href="http://www.acris.nynhp.org/">New York Natural Heritage Program</a></li>
-             <li><Link target="_blank" to="https://www.nature.org/ourinitiatives/urgentissues/global-warming-climate-change/index.htm?intc=nature.tnav.ourwork">The Nature Conservancy</Link></li>
-             <li><a href="https://www.fs.usda.gov/ccrc/">USDA Forest Service Climate Change Resource Center</a></li>
-            </ul>
-          }
+          {title: "Looking for Help?",
+           id: "looking_for_help",
+           content: <Collection collection_name="NY/ecosystems/looking-for-help" />,
+           subsections: []
+          },
         ]}
         >
         <p>The Ecosystems sector encompasses the plants, fish, wildlife, and resources of all natural and managed landscapes (e.g., forests, grasslands, aquatic systems) in New York State except those land areas designated as agricultural, coastal, or urban. This sector includes timber and maple syrup industries and tourism and recreation businesses conducted within natural and managed ecosystems. It also encompasses interior wetlands, waterways, and lakes as well as their associated freshwater fisheries and recreational fishing.</p>
