@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Collection from '../layouts/collection';
 import SectorDetailLayout from './layout';
 import SearchLink from '../utils/search_link';
 import sector_image from '../images/sectors/water_resources.jpg';
@@ -103,15 +104,11 @@ class WaterResourcesSectorPage extends Component {
                 </ul>
               }
             ]},
-          {title: "Looking for help?",
-            id: 'looking_for_help',
-            subsections: [],
-            content: <ul>
-              <li><Link to="https://wri.cals.cornell.edu/hudson-river-estuary/climate-change-hudson-river-estuary" target="_blank">New York State Water Resources Institute</Link></li>
-              <li><Link to="http://drought.unl.edu/" target="_blank">National Drought Mitigation Center</Link></li>
-              <li><Link to="http://neiwpcc.org/" target="_blank">New England Interstate Water Pollution Control Commission (NEIWPCC)</Link></li>
-           </ul>
-          }
+          {title: "Looking for Help?",
+           id: "looking_for_help",
+           content: <Collection collection_name="NY/water-resources/looking-for-help" />,
+           subsections: []
+          },
         ]}
         >
           <p>The Water Resources sector encompasses four major themes: flooding in non-coastal regions, drinking water supply, water availability for non-potable uses (primarily agriculture and hydropower), and water quality.

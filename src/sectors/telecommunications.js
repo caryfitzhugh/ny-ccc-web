@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Collection from '../layouts/collection';
 import SectorDetailLayout from './layout';
 import SearchLink from '../utils/search_link';
 import sector_image from "../images/sectors/telecommunications.jpg";
@@ -96,14 +97,11 @@ class TelecommunicationSectorPage extends Component {
                 </ul>
               }
             ]},
-          {title: "Looking for help?",
-            id: 'looking_for_help',
-            subsections: [],
-            content: <ul>
-              <li><Link to="http://www1.nyc.gov/site/doitt/index.page" target="_blank">New York City Information Technology and Telecommunications</Link></li>
-              <li><Link to="http://www3.dps.ny.gov/W/PSCWeb.nsf/All/7F830C1FF90AB31285257687006F388D?OpenDocument" target="_blank">New York Public Service Commission – Telecommunications </Link></li>
-           </ul>
-          }
+          {title: "Looking for Help?",
+           id: "looking_for_help",
+           content: <Collection collection_name="NY/telecommunications/looking-for-help" />,
+           subsections: []
+          },
         ]}
         >
         <p>

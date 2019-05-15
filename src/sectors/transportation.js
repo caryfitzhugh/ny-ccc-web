@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Collection from '../layouts/collection';
 import SectorDetailLayout from './layout';
 import SearchLink from '../utils/search_link';
 import transportation_image from '../images/sectors/transportation.jpg';
@@ -116,15 +117,11 @@ class TransportationSectorPage extends Component {
                 </ul>
               },
             ]},
-          {title: "Looking for help?",
-            id: 'looking_for_help',
-            subsections: [],
-            content: <ul>
-                <li><Link to='https://www.dot.ny.gov/programs/climate-change' target="_blank">
-                  New York State Department of Transportation
-                  </Link></li>
-              </ul>
-          }
+          {title: "Looking for Help?",
+           id: "looking_for_help",
+           content: <Collection collection_name="NY/transportation/looking-for-help" />,
+           subsections: []
+          },
         ]}
         >
         <p>The Transportation sector consists of the built assets, operations, services, and institutions that serve public and private needs for moving goods and people. The Transportation sector and the Energy and Telecommunications sectors are highly interdependent.

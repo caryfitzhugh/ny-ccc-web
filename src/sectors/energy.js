@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Collection from '../layouts/collection';
 import SectorDetailLayout from './layout';
 import energy_image from '../images/sectors/energy.jpg';
 import SearchLink from '../utils/search_link';
@@ -119,14 +120,11 @@ class EnergySectorPage extends Component {
                 </ul>
               },
             ]},
-          {title: "Looking for help?",
-            id: 'looking_for_help',
-            subsections: [],
-            content: <ul>
-              <li><Link to="//www.nyserda.ny.gov" target="_blank">NYSERDA</Link></li>
-              <li><Link to="https://www.dec.ny.gov/60.html" target="_blank">New York State Department of Environmental Conservation</Link></li>
-              </ul>
-          }
+          {title: "Looking for Help?",
+           id: "looking_for_help",
+           content: <Collection collection_name="NY/energy/looking-for-help" />,
+           subsections: []
+          },
         ]}
         >
           <p>

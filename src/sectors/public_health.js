@@ -1,6 +1,7 @@
+import Collection from '../layouts/collection';
 import React, { Component } from 'react';
-import SectorDetailLayout from './layout';
 import SearchLink from '../utils/search_link';
+import SectorDetailLayout from './layout';
 import sector_image from "../images/sectors/public_health.jpg";
 import { Link } from 'react-router-dom';
 
@@ -116,14 +117,11 @@ Public health adaptation strategies include implementing urban heat warning and 
                 </ul>
               }
             ]},
-          {title: "Looking for help?",
-            id: 'looking_for_help',
-            subsections: [],
-            content: <ul>
-              <li><Link to="https://www.health.ny.gov/environmental/weather/index.htm" target="_blank">New York State Department of Health</Link></li>
-              <li><Link to="https://www.naccho.org/" target="_blank">National Association of County and City Health Officials (NACCHO)</Link></li>
-           </ul>
-          }
+          {title: "Looking for Help?",
+           id: "looking_for_help",
+           content: <Collection collection_name="NY/public-health/looking-for-help" />,
+           subsections: []
+          },
         ]}
         >
         </SectorDetailLayout>
