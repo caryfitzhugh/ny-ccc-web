@@ -26,8 +26,8 @@ class AboutPage extends Component {
 
             <h4>Populating the NYCCSC</h4>
             <p><span className="startText">What is included on the site.</span>The NYCCSC contains resources, data, and information that support decision-makers and planners in their work on climate change. This content includes information on greenhouse gas emissions and atmospheric concentrations, climate changes, effects, strategies for mitigating, adapting to, and building resiliency for climate change, and tools for implementing these strategies. The NYCCSC is committed to including information with scientific merit from credible sources.</p>
-            <p>Where applicable, the NYCCSC chooses data and information that NYS uses for statewide and local climate planning. The NYCCSC currently covers the sectors identified in <a href='/catalog/doc?DocId=vitroIndividual'>NYSERDA’s ClimAID report:</a> agriculture, buildings, coastal zones, ecosystems, energy, public health, telecommunications, transportation, and water resources.</p>
-            <p><span className="startText">Business rules for the site.</span>The NYCCSC <a href='/highlights/about#business-rules'>Business Rules</a> define what resources are included on the NYCCSC, with what priority, and in what form. The Business Rules were developed in collaboration with a group of sector experts to understand how the experts evaluate the resources that they use in their own work. The Business Rules address the scope, source, and format of resources considered for inclusion on the site.</p>
+            <p>Where applicable, the NYCCSC chooses data and information that NYS uses for statewide and local climate planning. The NYCCSC currently covers the sectors identified in <a href='/resources/resource::224/responding-to-climate-change-in-new-york-state-synthesis-report'>NYSERDA’s ClimAID report:</a> agriculture, buildings, coastal zones, ecosystems, energy, public health, telecommunications, transportation, and water resources.</p>
+            <p><span className="startText">Business rules for the site.</span>The NYCCSC <a href='#business-rules'>Business Rules</a> define what resources are included on the NYCCSC, with what priority, and in what form. The Business Rules were developed in collaboration with a group of sector experts to understand how the experts evaluate the resources that they use in their own work. The Business Rules address the scope, source, and format of resources considered for inclusion on the site.</p>
 
             <hr />
 
@@ -48,7 +48,7 @@ class AboutPage extends Component {
             <p>Phone: 607.273.6623 ext 22</p>
             </p>
 
-            <h4>Business Rules</h4>
+            <h4><a id='business-rules'></a>Business Rules</h4>
             <p> The expected audience for the New York Climate Change Science Clearinghouse includes decision makers, policy makers, researchers, and the general public. The Clearinghouse will apply the following business rules for populating the site with resources, including documents, data, maps, and tools.</p>
 
             <h4>I. Relevancy</h4>
