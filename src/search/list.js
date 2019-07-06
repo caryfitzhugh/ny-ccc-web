@@ -27,7 +27,7 @@ class SearchListPage extends Component {
       <div className='search-list-content'>
         <MapListToggle {... this.props} />
         <ActiveFacets {... this.props} />
-        {results.length > 0 ? '': noSearchResults}
+        {(results.length > 0 || this.props.requesting) ? '': noSearchResults}
         <SearchPagination {... this.props} />
         <div className='search-results'>
           {results.map((res) => {
