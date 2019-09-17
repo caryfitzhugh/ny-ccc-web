@@ -96,12 +96,14 @@ class Facets extends Component {
 
     return <div className={this.props.className + ' search-facets'}>
       <div className='controls'>
-        <button onClick={(evt) => {this.props.apply_filters()}}
+        <button aria-label="Apply the selected search filters"
+                onClick={(evt) => {this.props.apply_filters()}}
                 className={'btn btn-sm btn-block btn-primary ' + (this.props.pending_search() ? ' ' : 'disabled')}>
           Apply Filters
         </button>
 
-        <button onClick={(evt) => {this.props.clear_search()}}
+        <button aria-label="Clear the search filters"
+                onClick={(evt) => {this.props.clear_search()}}
                 className={'btn btn-sm btn-block btn-secondary ' + (this.props.active_filters() ? ' ' : 'disabled')}>
           Clear Filters
         </button>

@@ -82,10 +82,11 @@ class Footer extends Component {
            <div>
              <form action=
               "https://nyclimatescience.us19.list-manage.com/subscribe/post?u=4093691f5492e9c565654cd07&amp;id=94a51c0ed5"
-              method="post" id="mc-embedded-subscribe-form" name=
+              method="post" id="footer-mc-embedded-subscribe-form" name=
               "mc-embedded-subscribe-form" className="validate" target="_blank"
               noValidate="">
                <input type="email" name="EMAIL" className="email"
+                aria-label="email address for the newsletter signup"
                 id="mce-EMAIL" placeholder="Email address" required=""/>
                <div style={{position: 'absolute',  left: '-5000px'}} aria-hidden="true">
                   <input type="text" name="b_4093691f5492e9c565654cd07_94a51c0ed5" tabIndex="-1" value=""/>

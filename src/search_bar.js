@@ -71,7 +71,8 @@ class SearchBar extends Component {
                   type='text' title='search' aria-labelledby='search' className='form-control truncate' placeholder="Search maps, reports, & more"/>
               <span className='input-group-btn'>
                 {this.query_string() ? <span className='clear-button'><span onClick={(evt) => this.clear_query()} className='fa fa-times-circle-o' ></span> </span>: null }
-                <button id='search' className='btn btn-primary search' type='button'
+                <button aria-label="Submit the search query"
+                      id='search' className='btn btn-primary search' type='button'
                       onClick={(evt) => { this.submit_search(evt)}}>
                   Search&nbsp;
                   <span className='fa fa-search'></span>

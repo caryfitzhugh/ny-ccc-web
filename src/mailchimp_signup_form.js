@@ -16,8 +16,10 @@ class MailchimpSignupForm extends Component {
           noValidate="">
             <div id="mc_embed_signup_scroll">
               <h6> Subscribe to our newsletter</h6>
-              <input type="email" name="EMAIL" className="email"
-               id="mce-EMAIL" placeholder="Email address" required=""/>
+              <input
+                  aria-label="Your email address to signup for the newsletter"
+                  type="email" name="EMAIL" className="email"
+                  id="mce-EMAIL" placeholder="Email address" required=""/>
               <div style={{position: 'absolute',  left: '-5000px'}}
                aria-hidden="true">
                 <input type="text" name=

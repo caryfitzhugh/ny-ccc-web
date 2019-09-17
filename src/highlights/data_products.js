@@ -163,7 +163,7 @@ class DataProductPage extends Component {
                       </div> :
                       null
                       }
-			              	<button className="btn btn-sm btn-primary" onClick={() => {(this.setState({showMore: !this.state.showMore}))}}>{(this.state.showMore) ? "Less" : "More"}</button>
+			              	<button aria-label="toggle showing more or less of the report" className="btn btn-sm btn-primary" onClick={() => {(this.setState({showMore: !this.state.showMore}))}}>{(this.state.showMore) ? "Less" : "More"}</button>
 			              </div>
 			            </div>
 			          </div>

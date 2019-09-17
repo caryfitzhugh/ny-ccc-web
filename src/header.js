@@ -51,7 +51,7 @@ const NavBlocks = (props) =>
 
 const NavigationSub = (props) =>
     <div className='navbar navbar-expand-lg justify-content-end'>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNav">
+      <button aria-label="Toggle the navigation menu to be visible or not" className="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNav">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse justify-content-between" id="toggleNav">
