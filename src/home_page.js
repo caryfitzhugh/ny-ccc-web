@@ -106,11 +106,9 @@ class Homepage extends Component {
       <div className="home-page">
         <Header hide_subnav={true} anchors={true}/>
         <div className='header-search'>
-        <div className='tag-line'>
+        <div style={{textAlign: 'center', background: '#880000'}}  className='tag-line'>
          <div className='container'>
-          <p>Providing climate change data and information relevant to New York State to support scientifically sound decision making.
-            <Link to='/about' className="font-weight-bold about">About <span className='text-underline fa fa-angle-double-right'></span> </Link>
-          </p>
+          <p >This website will be shut down August 18, 2023</p>
          </div>
         </div>
         <span className="credit">
